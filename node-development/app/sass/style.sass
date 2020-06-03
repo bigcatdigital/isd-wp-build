@@ -219,6 +219,46 @@ iframe
 		background-color: $brand-secondary
 		@include activeLink
 			background-color: darken($brand-secondary, 6%)
+/* Inner page section navigation */
+$colors-idx: 1
+@each $name, $color-pair in $colors
+	@if $name != 'primary' and $name != 'secondary' and $name != 'brand-darker'
+		.bc-section-navigation__item
+			&:nth-child(#{$colors-idx}n)
+				.bc-section-navigation__link
+					color: nth($color-pair, 2)
+					background-color: nth($color-pair, 1)
+					transition: background-color 320ms ease-in-out
+					.bc-svg-icon 
+						fill: nth($color-pair, 2)
+					@include linkHover
+						background-color: darken(nth($color-pair, 1), 8%)
+		$colors-idx: ($colors-idx + 1) 
+.bc-header-sub-nav
+	& &__list
+		.bc-header-subnav__list:before, .bc-header-subnav__list:after
+			box-shadow: none
+		.bc-section-navigation__link
+			@include makeNeumporphic($position: relative, $isLink: true) 
+		&.is-active
+			&:before, &:after
+				box-shadow: none
+	//.bc-header-subnav__list
+		
+/* Floating navigation */
+.feature-page-navigation
+	&.feature-page-navigation--floating
+		.feature-page-navigation__wrapper
+			background-color: transparent
+			&:before, &:after
+				box-shadow: none
+		.feature-page-navigation__heading
+			margin-bottom: $vertical-unit / 2
+			background-color: $white
+			@include makeNeumporphic($position: relative, $isLink: false) 
+		.bc-section-navigation__link
+			@include makeNeumporphic($position: relative, $isLink: true) 
+			
 /* Project custom Heroes */
 .bc-hero
 	overflow: hidden

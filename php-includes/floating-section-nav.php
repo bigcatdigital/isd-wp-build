@@ -31,10 +31,10 @@
  echo	"		</div><!-- // .feature-page-navigation__toggle-nav -->";
  echo	"		<div class=\"feature-page-navigation__wrapper\">";
  echo	"			<h2 class=\"feature-page-navigation__heading\">$floating_nav_title</h2>";
- echo " 			<ul class=\"feature-page-navigation__list\"> ";
+ echo " 			<ul class=\"bc-section-navigation__list feature-page-navigation__list\"> ";
 	foreach ($floating_nav_links as $link_text => $link) {
- 		echo "			<li class=\"feature-page-navigation__item\">";
-		echo "				<a href=\"$link\" class=\"feature-page-navigation__link bc-icon-link\">";
+ 		echo "			<li class=\"bc-section-navigation__item feature-page-navigation__item\">";
+		echo "				<a href=\"$link\" class=\"bc-section-navigation__link bc-icon-link\">"; 
 		echo "					$link_text";
 		echo "					<svg class=\"bc-svg-icon\">";							
 		echo " 						<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>";						

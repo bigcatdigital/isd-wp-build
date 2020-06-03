@@ -107,10 +107,10 @@ if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "							</svg>";
  echo "						</a>	";
  echo "					</div>";
- echo "					<ul class=\"bc-header-sub-nav__list\"> ";
+ echo "					<ul class=\"bc-section-navigation__list bc-header-sub-nav__list\"> ";
 	foreach ($inner_nav_links as $link_text => $link) {
- 		echo "				<li class=\"bc-header-sub-nav__item\">";
-		echo "					<a href=\"$link\" class=\"bc-header-sub-nav__link bc-icon-link\">";
+ 		echo "				<li class=\"bc-section-navigation__item bc-header-sub-nav__item\">";
+		echo "					<a href=\"$link\" class=\"bc-section-navigation__link bc-icon-link\">";
 		echo "							$link_text";
 		echo "							<svg class=\"bc-svg-icon\">";							
 		echo " 								<use xlink:href=\"" . get_theme_file_uri('/media/svg/icons/bc-svgs.svg') . "#arrow\"></use>";						

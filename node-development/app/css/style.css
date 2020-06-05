@@ -1066,9 +1066,7 @@ figcaption {
 
 .site-quicklinks {
   position: relative;
-  padding-right: 0.75rem;
   padding-bottom: 0.75rem;
-  padding-left: 0.75rem;
   background-color: transparent;
   border-bottom: 1px solid #F2EF11;
   position: relative; }
@@ -1089,16 +1087,15 @@ figcaption {
     flex: 1 1 100%;
     width: 100%;
     overflow: visible;
-    margin-top: 0;
-    margin-bottom: 0;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    font-weight: 500;
-    font-size: 1.1487rem;
-    font-weight: 500; }
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.7411rem;
+    font-weight: 300; }
   .site-quicklinks .site-quicklinks__toggle {
     position: absolute;
-    right: -0.5%;
+    right: 0%;
     border-radius: 50%;
     background-color: #017CC0; }
     .site-quicklinks .site-quicklinks__toggle .bc-menu-icon {
@@ -1546,17 +1543,12 @@ figcaption {
   flex-direction: column;
   justify-content: stretch;
   height: calc(100vh); }
-  .bc-hero__background-image, .bc-hero--inpage__background-image {
+  .bc-hero__image, .bc-hero__video, .bc-hero--inpage__image, .bc-hero--inpage__video {
     position: absolute;
-    top: 0;
+    object-fit: cover;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url(./media/happy-kid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: transparent; }
+    height: 100vh; }
   .bc-hero h1, .bc-hero p, .bc-hero a:not(.bc-button), .bc-hero .bc-content-label, .bc-hero--inpage h1, .bc-hero--inpage p, .bc-hero--inpage a:not(.bc-button), .bc-hero--inpage .bc-content-label {
     color: #fff;
     margin-top: 0;
@@ -1568,6 +1560,7 @@ figcaption {
     padding-right: 0.75rem;
     position: relative;
     z-index: 10;
+    overflow: hidden;
     flex: 1 1 100%;
     width: 100%;
     display: flex;
@@ -1586,7 +1579,6 @@ figcaption {
     justify-content: center;
     align-items: flex-start; }
   .bc-hero__body, .bc-hero--inpage__body {
-    position: relative;
     flex: 1 0 80%;
     padding-right: 0;
     padding-bottom: 3rem;
@@ -1613,9 +1605,48 @@ figcaption {
     width: 100%;
     margin-top: 2.25rem;
     margin-bottom: 2.25rem; }
-  @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-    .bc-hero, .bc-hero--inpage {
-      height: 75vh; } }
+  .bc-hero .bc-hero__video__video, .bc-hero--inpage .bc-hero__video__video, .bc-hero .bc-hero--inpage__video__video, .bc-hero--inpage .bc-hero--inpage__video__video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh; }
+  .bc-hero .bc-hero__video__controls, .bc-hero--inpage .bc-hero__video__controls, .bc-hero .bc-hero--inpage__video__controls, .bc-hero--inpage .bc-hero--inpage__video__controls {
+    position: absolute;
+    bottom: 1%;
+    right: 0.75rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1875rem;
+    transition: background-color 320ms ease-in-out; }
+    .bc-hero .bc-hero__video__controls__play-icon, .bc-hero .bc-hero__video__controls__pause-icon, .bc-hero--inpage .bc-hero__video__controls__play-icon, .bc-hero--inpage .bc-hero__video__controls__pause-icon, .bc-hero .bc-hero--inpage__video__controls__play-icon, .bc-hero .bc-hero--inpage__video__controls__pause-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__play-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__pause-icon {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bc-hero .bc-hero__video__controls__play-icon .bc-svg-icon, .bc-hero .bc-hero__video__controls__pause-icon .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls__play-icon .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls__pause-icon .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls__play-icon .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls__pause-icon .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__play-icon .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__pause-icon .bc-svg-icon {
+        max-width: 2rem;
+        max-height: 2rem; }
+    .bc-hero .bc-hero__video__controls__play-icon, .bc-hero--inpage .bc-hero__video__controls__play-icon, .bc-hero .bc-hero--inpage__video__controls__play-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__play-icon {
+      display: none;
+      opacity: 0; }
+    .bc-hero .bc-hero__video__controls__text, .bc-hero--inpage .bc-hero__video__controls__text, .bc-hero .bc-hero--inpage__video__controls__text, .bc-hero--inpage .bc-hero--inpage__video__controls__text {
+      font-size: 0.758rem;
+      font-weight: 300;
+      margin-top: 0.1875rem; }
+    .bc-hero .bc-hero__video__controls .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls .bc-svg-icon {
+      fill: #fff; }
+    .bc-hero .bc-hero__video__controls:hover .bc-svg-icon, .bc-hero .bc-hero__video__controls:active .bc-svg-icon, .bc-hero .bc-hero__video__controls:focus .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls:hover .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls:active .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls:focus .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls:hover .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls:active .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls:focus .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls:hover .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls:active .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls:focus .bc-svg-icon {
+      fill: #f0f0f0; }
+  .bc-hero .bc-hero__video.is-paused .bc-hero__video__controls__play-icon, .bc-hero--inpage .bc-hero__video.is-paused .bc-hero__video__controls__play-icon, .bc-hero .bc-hero--inpage__video.is-paused .bc-hero__video__controls__play-icon, .bc-hero--inpage .bc-hero--inpage__video.is-paused .bc-hero__video__controls__play-icon {
+    display: initial; }
+  .bc-hero .bc-hero__video.is-paused .bc-hero__video__controls__pause-icon, .bc-hero--inpage .bc-hero__video.is-paused .bc-hero__video__controls__pause-icon, .bc-hero .bc-hero--inpage__video.is-paused .bc-hero__video__controls__pause-icon, .bc-hero--inpage .bc-hero--inpage__video.is-paused .bc-hero__video__controls__pause-icon {
+    display: none;
+    opacity: 0; }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .bc-hero {
+    height: 75vh; } }
 
 @media screen and (min-width: 720px) {
   .bc-hero__body {
@@ -1633,7 +1664,9 @@ figcaption {
     margin-right: auto;
     width: 100%;
     padding-left: 5.194rem;
-    padding-right: 5.194rem; } }
+    padding-right: 5.194rem; }
+  .bc-hero .bc-hero__video__controls, .bc-hero--inpage .bc-hero__video__controls, .bc-hero .bc-hero--inpage__video__controls, .bc-hero--inpage .bc-hero--inpage__video__controls {
+    right: 4.444rem; } }
 
 .bc-site-header {
   width: 100%;
@@ -2814,8 +2847,7 @@ iframe {
   min-width: 61.5rem; }
 
 .bc-fade-in-up--is-not-visible {
-  opacity: 0;
-  transform: translateY(2.5rem); }
+  opacity: 0; }
 
 /* Project custom site header */
 .bc-site-header__logo {
@@ -3082,7 +3114,6 @@ iframe {
     background-color: transparent;
     background: linear-gradient(to bottom, rgba(1, 124, 192, 0.618) 0%, rgba(1, 124, 192, 0.382) 25%, #02659B 100%); }
   .bc-hero .bc-hero__body {
-    position: relative;
     justify-content: flex-end;
     align-items: flex-start;
     z-index: 30; }
@@ -3109,7 +3140,7 @@ iframe {
     bottom: 0;
     opacity: 0.8;
     max-width: none;
-    width: 120%;
+    width: 140%;
     transform: translate(-50%, 0%); }
     @media screen and (min-width: 768px) {
       .bc-hero .is-kids-lines {
@@ -3117,11 +3148,15 @@ iframe {
     @media screen and (min-width: 768px) and (orientation: portrait) {
       .bc-hero .is-kids-lines {
         transform: translate(-50%, -30%); } }
+    @media screen and (min-width: 1024px) {
+      .bc-hero .is-kids-lines {
+        width: 100%; } }
   .bc-hero .bc-hero__heading {
     color: #F2EF11;
-    border-bottom: 1px solid #F2EF11;
-    padding-bottom: 1rem;
     margin-bottom: 1rem; }
+    .bc-hero .bc-hero__heading.has-tagline {
+      border-bottom: 1px solid #F2EF11;
+      padding-bottom: 1rem; }
   .bc-hero.bc-hero--inpage .bc-hero__body {
     padding-bottom: 2.25rem; }
     .bc-hero.bc-hero--inpage .bc-hero__body__text {
@@ -3152,11 +3187,20 @@ iframe {
   @media screen and (min-width: 768px) and (orientation: portrait) {
     .bc-hero .bc-hero__body {
       padding-bottom: 9rem; } }
+  @media screen and (min-width: 800px) {
+    .bc-hero .bc-hero__body__text {
+      max-width: 80%; }
+    .bc-hero.bc-hero--inpage .bc-hero__body__text {
+      max-width: none; } }
   @media screen and (min-width: 1024px) {
     .bc-hero .bc-hero__body {
       padding-bottom: 6rem; }
+      .bc-hero .bc-hero__body__text {
+        max-width: 61.8%; }
     .bc-hero.bc-hero--inpage .bc-hero__body {
-      max-width: 42rem; } }
+      max-width: 42rem; }
+      .bc-hero.bc-hero--inpage .bc-hero__body__text {
+        max-width: none; } }
   @media screen and (min-width: 1240px) {
     .bc-hero .bc-hero__body {
       padding-bottom: 4.5rem; } }

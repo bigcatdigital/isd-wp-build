@@ -6,20 +6,43 @@
 
 <body class="bc-feature-page"> 
 	<?php get_site_header(); ?>
+	<!-- Hero with image -->
 	<section class="bc-hero bc-hero--is-feature has-waves">
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
-				<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
+				<!--<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
 					<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
 					<p>ISD is an International Baccalaureate World School</p> 
-				</div>
+				</div>-->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
 					<h1 class="bc-hero__heading">International School of Dublin</h1>
-					<p class="bc-hero__tagline">International Education in the heart of Dublin</p> 
+					<div class="bc-hero__body__text__IB">
+						<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
+						<p>ISD is an International Baccalaureate World School</p> 
+					</div>
+					<!--<p class="bc-hero__tagline">International Education in the heart of Dublin</p> -->
 				</div><!-- // .bc-hero__body__text -->
 				<img src="<?php echo get_theme_file_uri('/media/kids-carefree--lines.svg'); ?>" alt="Feel the energy at ISD" class="is-kids-lines">
 			</div><!-- // .bc-hero__body -->
-			<div class="bc-hero__background-image"></div><!-- // .bc-hero__background-image -->  
+			<div class="bc-hero__video">
+				<video src="<?php echo get_theme_file_uri('/media/videos/ISD_trailer_no audio_no logos_low-br.mp4'); ?>" class="bc-hero__video__video" autoplay muted preload="metadata" playsinline></video>
+				<a href="javascript:void(0)" class="bc-hero__video__controls">
+					<span class="bc-hero__video__controls__play-icon">
+						<svg class="bc-svg-icon ">
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#play"></use>  
+						</svg>	
+						<span class="bc-hero__video__controls__text">Play video</span>
+					</span>
+					<span class="bc-hero__video__controls__pause-icon">
+						<svg class="bc-svg-icon bc-hero__video__controls__pause-icon">
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#pause"></use>  
+						</svg>	
+						<span class="bc-hero__video__controls__text">Pause video</span>
+					</span>
+				</a>
+			</div>
+			
+			<!--<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/happy-kid.jpg '); ?>" alt="Happy kid" >-->
 			<div class="media-overlay"></div><!-- // .media-overlay -->
 		</div><!-- // .bc-hero__content -->
 		<div class="wave-wrap">
@@ -222,7 +245,7 @@
 				</div><!-- // .bc-hero__body__text --> 
 			</div><!-- // .bc-hero__body -->
 			<div class="media-overlay"></div> 
-			<div class="bc-hero__background-image"></div>   
+			<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/happy-kid.jpg '); ?>" alt="Happy kid" >
 		</div><!-- // .bc-hero__content -->
 		<div class="wave-wrap">
 			<?php

@@ -5,17 +5,12 @@
 	flex-direction: column
 	justify-content: stretch
 	height: calc(100vh)
-	&__background-image
+	&__image, &__video
 		position: absolute
-		top: 0
+		object-fit: cover 
 		left: 0
 		width: 100%
-		height: 100%
-		background-image: url(./media/happy-kid.jpg)
-		background-repeat: no-repeat
-		background-size: cover
-		background-position: center		
-		background-color: transparent
+		height: 100vh
 	h1, p, a:not(.bc-button), .bc-content-label
 		color: $white
 		margin-top: 0
@@ -26,6 +21,7 @@
 		@include contentContainer
 		position: relative
 		z-index: 10
+		overflow: hidden
 		flex: 1 1 100%
 		width: 100%
 		display: flex
@@ -39,7 +35,6 @@
 		justify-content: center
 		align-items: flex-start
 	&__body
-		position: relative
 		flex: 1 0 80%
 		padding-right: 0
 		padding-bottom: $vertical-unit*2
@@ -67,12 +62,53 @@
 		width: 100%
 		margin-top: 	 $vertical-unit*1.5
 		margin-bottom: $vertical-unit*1.5
-		
-	
-	@media screen and (min-width: $med) and (max-width: ($large - 1px)) and (orientation: portrait) 
+	& &__video
+		&__video
+			object-fit: cover 
+			width: 100%
+			height: 100vh
+		&__controls
+			position: absolute
+			bottom: 1%
+			right: $gutter/2
+			z-index: 100
+			display: flex
+			justify-content: center
+			align-items: center
+			//width: 	2.5rem
+			//height: 2.5rem
+			padding: $gutter/8
+			transition: background-color 320ms ease-in-out
+			
+			&__play-icon, &__pause-icon
+				display: inline-flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.bc-svg-icon
+					max-width: 	2rem
+					max-height: 2rem
+			&__play-icon
+				display: none
+				opacity: 0
+			&__text
+				font-size: $text--2
+				font-weight: 300
+				margin-top: $vertical-unit/8
+			.bc-svg-icon
+				fill: $white
+			@include linkHover
+				.bc-svg-icon
+					fill: $shade-02
+		&.is-paused
+			.bc-hero__video__controls__play-icon
+				display: initial
+			.bc-hero__video__controls__pause-icon
+				display: none
+				opacity: 0
+@media screen and (min-width: $med) and (max-width: ($large - 1px)) and (orientation: portrait) 
+	.bc-hero
 		height: 75vh
-	
-
 @media screen and (min-width: 720px)
 	.bc-hero
 		&__body
@@ -80,8 +116,6 @@
 			&__text
 				padding-left:  	$gutter
 				padding-right:  $gutter
-	
-
 @media screen and (min-width: $large) 
 	.bc-hero, .bc-hero--inpage
 		.bc-hero__body
@@ -95,6 +129,9 @@
 			width: 100%
 			padding-left: (4.444rem + $gutter/2)
 			padding-right: (4.444rem + $gutter/2)	
+		& &__video
+			&__controls
+				right: 4.444rem
 
 
 

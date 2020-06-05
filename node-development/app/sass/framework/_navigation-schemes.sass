@@ -19,7 +19,6 @@
 		&__line
 			stroke-width: 0.36rem;
 			stroke: $white; 
-	
 			&--top
 				top: 0%
 			&--middle
@@ -71,10 +70,8 @@
 	@media screen and (min-width: $large)
 		padding-top: 		$vertical-unit *2
 .site-quicklinks
-	position: relative
-	padding-right: 	$gutter/2
-	padding-bottom: $gutter/2
-	padding-left: 	$gutter/2
+	position: relative 
+	padding-bottom: $gutter/2 
 	background-color: transparent
 	border-bottom: 1px solid $brand-secondary
 	@include makeMarkRight($brand-secondary)
@@ -88,16 +85,15 @@
 		flex: 1 1 100%
 		width: 100%
 		overflow: visible
-		margin-top:  	 0
-		margin-bottom: 0
 		padding-top:  	$vertical-unit/2
 		padding-bottom: $vertical-unit/2
-		font-weight: 500
-		font-size: $h3
-		font-weight: 500
+		margin-top:  	 0
+		margin-bottom: 0
+		font-size: $text-04
+		font-weight: 300
 	& &__toggle 
 		position: absolute
-		right: -0.5%
+		right: 0%
 		border-radius: 50%
 		background-color: $brand-primary
 		.bc-menu-icon
@@ -292,9 +288,7 @@
 		display: grid
 		grid-template: auto / 1fr
 	&__item
-		
 		display: flex
-		
 	&__link
 		flex: 1 1 auto
 		display: inline-flex

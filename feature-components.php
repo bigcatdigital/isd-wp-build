@@ -5,7 +5,6 @@
 <body class="bc-feature-page"> 
 	<?php get_site_header(); ?>
 	<section id="bc-hero-main" class="bc-hero bc-hero--is-feature has-waves is-full-vh">
-		
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
 				<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
@@ -32,7 +31,6 @@
 		</div><!-- // .bc-wave-wrap -->
 	</section><!-- // .bc-hero -->
 	<section id="bc-hero-in-page" class="bc-hero bc-hero--inpage has-waves has-mid-green-grad is-full-vh"> 
-		  
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
 				<div class="bc-hero__body__text__IB bc-content-label bc-fade-in-up--is-not-visible">
@@ -52,14 +50,7 @@
 								<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 							</svg>
 						</a> 
-						<a href="javascript:void(0)" class="bc-feature-component__next">
-							<span class="bc-feature-component__next__text">Next content</span>
-							<span class="bc-feature-component__next__icon">
-								<svg class="bc-svg-icon">
-									<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
-								</svg>
-							</span>
-						</a>
+						
 					</div>
 				</div> 
 			</div><!-- // .bc-hero__body -->

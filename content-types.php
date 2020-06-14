@@ -9,10 +9,7 @@
 	<section class="bc-hero bc-hero--is-feature has-waves">
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
-				<!--<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
-					<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
-					<p>ISD is an International Baccalaureate World School</p> 
-				</div>-->
+				
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
 					<h1 class="bc-hero__heading">Hero with image</h1>
 					<div class="bc-hero__body__text__IB">
@@ -97,6 +94,49 @@
 			</div>
 		</div>
 	</section><!-- // .bc-4x4-grid-feature -->
+	<!-- Two col media feature -->
+	<section id="bc-two-col-media-feature" class="bc-2-col-media-feature bc-feature-component has-shade-gradient">
+		<article class="bc-feature-component__content">
+			<p class="bc-content-label">
+					<svg class="bc-svg-icon"> 
+						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#pupil-experience-reverse"></use>  
+					</svg>
+					Content label
+			</p>
+			<div class="bc-2-col-media-feature__media">
+				<picture class="bc-2-col-media-feature__image bc-responsive-embed">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/FOhS6viEg4w?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		
+				</picture>
+			</div>
+			<div class="bc-2-col-media-feature__text">
+				
+				<h1 class="bc-feature-component__heading">Two-col media feature</h1>
+				<p class="bc-feature-component__intro">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. </p>
+				<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit ex ea commodi consequatur?</p>
+				<div class="bc-feature-component__cta">
+					<a class="bc-button" href="javascript:void(0)">
+						Find out more about 
+						<svg class="bc-svg-icon"> 
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
+						</svg>
+					</a>	
+				</div>
+			</div>
+		</article>
+		<div class="bc-elipses"> 
+			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
+				<title>Elipses</title>
+				<!-- fill:url(#linear-gradient) -->
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" /> 
+			</svg>
+		</div>
+	</section><!-- // .bc-2-col-media-feature -->
+	<!-- // Two col media feature -->
 	<!-- Hero slider -->
 	<section id="bc-hero-slider" class="bc-flickty-slider is-full-width"> 
 		<a href="javascript:void(0)" class="bc-flickty-slider__prev is-inactive">

@@ -55,8 +55,9 @@
 					</div>-->
 				</div><!-- // .bc-hero__body__text --> 
 			</div><!-- // .bc-hero__body -->
+			<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/irish-family.jpg '); ?>" alt="A family" >
 			<div class="media-overlay"></div> 
-			<div class="bc-hero__background-image"></div>   
+			
 		</div><!-- // .bc-hero__content -->
 		<div class="wave-wrap">
 			<?php

@@ -306,42 +306,54 @@ $colors-idx: 1
 		&.has-tagline
 			border-bottom: 1px solid $brand-secondary
 			padding-bottom: $vertical-unit/1.5
-			
-	&.bc-hero--inpage
-		.bc-hero__body
-			padding-bottom: $vertical-unit * 1.5
-			&__text
-				background-color: transparent
-				padding: $vertical-unit/2 0
-				p 
-					margin-bottom: $vertical-unit/2
-		.bc-hero__heading
-			padding-bottom: 0
-			margin-bottom: $vertical-unit/2
-			border-bottom: none
-		.bc-hero__tagline
-			margin-bottom: $vertical-unit/2
-		&.has-mid-green-grad
-			.bc-button
-				color: darken($mid-green, 6%)
-				.bc-svg-icon
-					fill: darken($mid-green, 6%)
-			
-			.media-overlay
-			  background-image: linear-gradient(to bottom, rgba($mid-green, 0) 10%, rgba($mid-green, 1) 72%)
+	&.has-mid-green-grad
+		.bc-button
+			color: darken($mid-green, 6%)
+			.bc-svg-icon
+				fill: darken($mid-green, 6%)
+		.media-overlay
+			@include gradOverlay('main-hero', $start-colour: rgba($mid-green, 0.618), $mid-colour: rgba($mid-green, 0.382), $end-colour: $mid-green)  
+			//background-image: linear-gradient(to bottom, rgba($mid-green, 0) 10%, rgba($mid-green, 1) 72%) 
+		&.has-waves
 			.wave-wrap
 				svg
 					.isd-wave
 						fill: $mid-green
-		&.has-brand-grad 
-			.wave-wrap
-				svg
-					.isd-wave
-						fill: $brand-primary
-	&.has-waves
+	&.has-brand-grad 
+		.wave-wrap
+			svg
+				.isd-wave
+					fill: $brand-primary
+	&.bc-hero--inpage
+		height: auto
+		.bc-hero__content
+			height: auto
+		.bc-hero__body
+			padding-top: 		$vertical-unit * 6
+			padding-bottom: $vertical-unit * 2
+			&__text
+				background-color: transparent
+				padding-top: 		0
+				padding-left: 	0
+				padding-right: 	0
+				p 
+					margin-bottom: $vertical-unit/2
+		.bc-hero__heading
+			margin-bottom: $vertical-unit/2
+			border-bottom: none
+		.bc-hero__tagline
+			margin-bottom: $vertical-unit/2
+		.bc-hero__cta
+			margin-bottom: 0
+		
+	&.has-waves:not(.bc-hero--inpage)
 		height: auto
 		.bc-hero__content
 			height: 100vh
+		.wave-wrap
+			svg
+				.isd-wave
+					fill: $brand-darker
 	
 	
 	
@@ -774,7 +786,7 @@ $colors-idx: 1
 				&__heading
 					color: $purple
 /* 
- *	2-column cards - they are pulled left and right consecutively into the page margin in larger screens 
+ *	2-column - they are pulled left and right consecutively into the page margin in larger screens 
  */ 
 /* Card wrapper - pulls into the left and right page margins */
 .has-coloured-cards
@@ -1343,12 +1355,7 @@ $waves-height: 50px
 			&__wave
 				transform-origin: 50% 50%
 				transform: rotate(180deg)
-.bc-hero
-	&.has-waves
-		.wave-wrap
-			svg
-				.isd-wave
-					fill: $brand-darker
+
 .bc-feature-component
 	&.has-waves
 		&.has-high-chroma
@@ -1368,6 +1375,8 @@ $waves-height: 50px
 	.has-waves	
 		&.has-#{$name} 
 			background-color: transparent
+			.bc-feature-component__wrap
+				background-color: $shade
 			.media-overlay
 				background-color: $shade
 				z-index: 0
@@ -1398,7 +1407,9 @@ $waves-height: 50px
 		&.has-waves 
 			background-color: transparent
 			.media-overlay
+				background-image: none
 				background-color: $color
+				
 				z-index: 0
 			.wave-wrap
 				z-index: 5

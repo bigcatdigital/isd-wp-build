@@ -19,7 +19,7 @@
  echo  	"			</svg>";
  echo  	"			Admissions";
  echo  	"		</p>"; 
- echo  	"		<h1 class=\"bc-feature-component__heading\">Getting started at ISD";
+ echo  	"		<h1 class=\"bc-feature-component__heading\">Getting Started at ISD";
  echo  	"			<svg class=\"bc-svg-icon isd-cta-arrow\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340.2 99\">";
  echo  	"				<title>Getting started at ISD</title> ";
  echo  	"				<circle class=\"isd-cta-arrow__circle\" cx=\"290.7\" cy=\"49.5\" r=\"48\"/>";

@@ -41,12 +41,11 @@ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation
  echo "					<div class=\"bc-main-navigation__sub-navigation\">"; 
  echo "						<h3 class=\"bc-site-header__sub-sub-heading\">Quick links</h3>";
  echo "						<ul class=\"bc-main-navigation__links\">";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">School calendar</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">School bus</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Student experience</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Community</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">For Irish families</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Contact</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">School Timetable</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">After School Program</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">School Bus</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Catered Lunch Program</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Contact</a></li>";
  echo "						</ul>";	
  echo "					</div>";
  echo "				</div>";

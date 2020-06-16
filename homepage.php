@@ -126,9 +126,10 @@
 				</svg>
 				Welcome to ISD
 			</p>
-			<h1 class="bc-feature-component__heading">Innovative, inclusive, progressive</h1>
-			<p class="bc-feature-component__intro">The International School of Dublin (ISD) was established in 2007 and is the first accredited <a href="https://www.ibo.org/">International Baccalaureate</a> World Primary School in Ireland. It is a culturally diverse, private, not for profit school that is co-educational and non-denominational.</p>
-			<p>At ISD, we feel a fundamental goal of education is to encourage a love of learning. Upon a visit, you will find a welcoming and lively environment which is characterised by collaborative and purposeful activity. Students benefit from an innovative form of engagement and a broad education that promotes learning how to think instead of what to think.</p>
+			<h1 class="bc-feature-component__heading">Innovative, Inclusive, Progressive</h1>
+			<p class="bc-feature-component__intro">The International School of Dublin (ISD) was established in 2007 and is the first accredited <a href="https://www.ibo.org/">International Baccalaureate</a> (IB) World Primary School in Ireland. It is a culturally diverse, private, not for profit school that is co-educational and non-denominational.</p>
+			<p>At ISD, one of the fundamental goals of education is to encourage a love of learning. Upon a visit, you will find a welcoming and lively environment which is characterised by collaborative and purposeful activity. Students benefit from an innovative form of engagement and a broad education that promotes learning how to think instead of what to think.</p>
+			<p>Small class sizes are guided by internationally experienced staff.  Through inquiry, learners explore the world in which they live and ultimately develop themselves as internationally-minded citizens</p>
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
@@ -264,7 +265,7 @@
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
 					<h1 class="bc-hero__heading">A progressive learning alternative</h1>
 					<p class="bc-hero__tagline">International education for families in Ireland</p>
-					<p>The International School of Dublin offers international families and families in Ireland multi-denominational, co-educational and inclusive option for primary education.</p>
+					<p>An international education is not solely for international families, find out how ISD offers local families a progressive learning alternative.</p>
 					<div class="bc-hero__cta">
 						<a href="javascript:void(0)" class="bc-button ">
 							Learn about our teaching method

@@ -3156,7 +3156,9 @@ iframe {
   box-shadow: none; }
 
 .bc-header-sub-nav .bc-header-sub-nav__list .bc-section-navigation__link {
-  position: relative; }
+  position: relative;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem; }
   .bc-header-sub-nav .bc-header-sub-nav__list .bc-section-navigation__link:after, .bc-header-sub-nav .bc-header-sub-nav__list .bc-section-navigation__link:before {
     transition: opacity 380ms ease-out;
     background-color: transparent;

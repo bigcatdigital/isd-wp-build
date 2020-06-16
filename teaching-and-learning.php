@@ -22,7 +22,7 @@
 				<p class="bc-feature-component__intro">One of the fundamental goals of an education at ISD is to encourage a love of learning. Welcoming and lively learning environments are characterised by collaborative and purposeful activity.</p> 
 				<p>Small class sizes are guided by international experienced teachers who work to facilitate holistic and innovative forms of engagement which promote learning that is process, rather than topic driven.</p>  
 				<p>Ultimately, ISD students are equipped with the knowledge and skills needed to become autonomous lifelong learners.</p>
-				<p>Read on for more about leanding and teaching at ISD.</p>
+				<p>Read on for more about learning and teaching at ISD.</p>
 				</div><!-- // .bc-feature-component__content__text-content -->
 			</article><!-- // .bc-feature-component__content -->
 	</section><!-- // .bc-inner-page-content -->
@@ -31,8 +31,8 @@
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
 				<h1>The International Baccalaureate</h1> 
-				<p class="bc-intro-paragraph">All teaching and learning is guided by the International Baccalaureate Primary Years Programme (IB PYP). An IB education is based on a continuum which focuses on the total and unique growth of the developing learner encompassing social, physical, emotional and cultural needs in addition to academic development.</p> 
-				<p>Therefore education at ISD is inquiry driven and student centred. It is focused on promoting global contexts and life skills.</p>
+				<p class="bc-intro-paragraph">Imagine a worldwide community of schools, educators and students with a shared vision and mission to empower young people with the skills, values and knowledge to create a better and more peaceful world. This is the International Baccalaureate”</p> 
+				<p><strong> -- International Baccalaureate Organisation</strong></p>
 			</div>
 		</header><!-- // .bc-feature-component__header -->
 		<div class="bc-feature-component__content ">
@@ -52,7 +52,6 @@
 					</ul>
 					<div class="bc-expandible-block__body">
 							<p>	IB Mission Statement:  The International Baccalaureate aims to develop inquiring, knowledgeable and caring young people who help to create a better and more peaceful world through intercultural understanding and respect. To this end the organisation works with schools, governments and international organisations to develop challenging programmes of international education and rigorous assessment. These programmes encourage students across the world to become active, compassionate and lifelong learners who understand that other people, with their differences, can also be right.</p>
-							<p>At the International School of Dublin (ISD) we strive for our students to be active inquirers, learners who are engaged in educational material and experiences. </p>
 							<p>Throughout the curriculum, students are guided by the inquiry cycle.  The nature of a cycle is flexible and never ending, a process of which one may move forward, backward and in all directions.  The cycle provides opportunities for students to navigate their learning in a personally significant manner.</p>
 					</div><!-- // .bc-expandible-block__body -->
 				</div>
@@ -167,15 +166,22 @@
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
 					<h2 class="bc-gr-feature__heading">About the Primary Years Programme</h2>
-					<p class="bc-gr-feature__intro">The Primary Years Programme (PYP) focuses on the education of students aged 3-12 years.  It comprises a curriculum that is engaging and relevant across the globe.</p>  
+					<p class="bc-gr-feature__intro">The Primary Years Programme (PYP) focuses on the education of students aged 3-12 years. It comprises a curriculum that is engaging and relevant across the globe.</p>  
 					<p>Students learn in an inquiry based transdisciplinary manner, which means they focus on issues that transfer across the subject areas. </p>
+					<p>The programme is underpinned by six themes selected for their relevance to the real world. The themes are taught across the academic year through Units of Inquiry.</p>
 					<div class="bc-expandible-block__body">
 						<div class="bc-expandible-block__body__text">
-							<p>Such learners are able to reflect on themselves, their experiences and the process of learning in order to demonstrate commitment to personal growth.</p>
-							<p>Personal development permeates the entire curriculum and therefore is taught within the contexts of the Units of Inquiry as well as through teaching and learning experiences in other subject areas. The development of physical, emotional, cognitive, spiritual and social health are important features of the curriculum.</p>
-							<p>In addition, personal development is underpinned by the IB Learner Profile, which describes a broad range of human capacities and responsibilities that go beyond academic success.</p>
-							<p>An understanding of one's own identity shapes one's concept of self-worth and affects his or her approach to learning and how he or she interacts with others. An understanding of and appreciation for other cultures shapes international-mindedness.</p>
-							<p>At ISD we nurture independent thinking skills, which aim to help students develop self confidence and passion for learning. Interpersonal relationships are fundamental in all developmental aspects and we emphasise the importance of productive and healthy relationships.</p>
+							<p><strong>PYP themes:</strong></p>
+							<ul>
+								<li>Who we are</li>
+								<li>Where we are in place and time</li>
+								<li>How we express ourselves</li>
+								<li>How the world works</li>
+								<li>How we organise ourselves</li>
+								<li>Sharing the planet</li>
+							</ul>
+							<p>The PYP focuses on the holistic development of a child: academic, social, physical and emotional. Students learn how to think for themselves and take responsibility for their own learning through an inquiry approach. Students acquire the necessary tools to co-construct knowledge. They focus on acquisition as well as the development of skills necessary to lead successful lives.</p>
+							<p>The PYP community is committed to developing the attributes of the IB Learner Profile among its members. As a community of life-long learners and inquirers, every member is expected to take Action to positively impact local and/or global communities.</p>
 							</div>
 					</div><!-- // .bc-expandible-block__body -->
 				</div>
@@ -202,20 +208,47 @@
 				<div class="bc-gr-feature__text bc-column">
 					<h2 class="bc-gr-feature__heading">Personal Development</h2>
 					<p class="bc-gr-feature__intro">ISD focuses on a holistic approach to education developing students’ academic, social and emotional wellbeing.</p>  
-					<p>Wellbeing is linked to all aspects of a student’s experience at school and beyond. It is paramount for our students to feel empowered by their learning, to value and take responsibility for their learning and to demonstrate resilience.</p>
+					<p>Wellbeing is linked to all aspects of a student’s experience at school and beyond.  It is paramount for our students to feel empowered by their learning, to value and take responsibility for their learning and to demonstrate resilience.</p>
+					<p>Such learners are able to reflect on themselves, their experiences and the process of learning in order to demonstrate commitment to personal growth.</p>
 					<div class="bc-expandible-block__body">
 						<div class="bc-expandible-block__body__text">
-							<p>The programme is underpinned by six themes selected for their relevance to the real world.  The themes are taught across the academic year through Units of Inquiry.</p>
-							<ul> 
-								<li>Benefit from universities and colleges developing recognition policies making it clear how IB students gain places on their courses</li>
-								<li>Attend all types of third level education including highest ranking universities around the world</li>
-								<li>Are highly likely to complete undergraduate degrees and pursue graduate work</li>
-								<li>Are prepared for college level coursework, are able to cope with demanding workloads and are likely to be engaged in various aspects of university life</li>
-								<li>Provide ongoing professional development to ensure all educators are creative and innovative in practice</li>
-								<li>Have an established global network with fellow IB alum</li>	
-							</ul>
-							<p>The PYP focuses on the holistic development of a child: academic, social, physical and emotional. Students learn how to think for themselves and take responsibility for their own learning through an inquiry approach. Students acquire the necessary tools to co-construct knowledge. They focus on acquisition as well as the development of skills necessary to lead successful lives.</p>	
-							<p>The PYP community is committed to developing the attributes of the <a href="https://www.ibo.org/benefits/learner-profile/">IB Learner Profile</a> among its members. As a community of life-long learners and inquirers, every member is expected to take Action to positively impact local and/or global communities.</p>
+							<p>Personal development permeates the entire curriculum and therefore is taught within the contexts of the Units of Inquiry as well as through teaching and learning experiences in other areas.</p>
+							<p>The development of physical, emotional, cognitive, spiritual and social health are important features of the curriculum.  In addition, personal development is underpinned by the IB Learner Profile, which describes a broad range of human capacities and responsibilities that go beyond academic success.</p>
+							<p>Understanding one’s identity shapes a person’s self-worth and affects their approach to learning as well as their interactions and attitudes towards others.  An understanding of one's own identity shapes one's concept of self-worth and affects his or her approach to learning and how he or she interacts with others.</p>
+							<p>An understanding of and appreciation for other cultures shapes international-mindedness. At ISD we nurture independent thinking skills, which aim to help students develop self confidence and passion for learning. Interpersonal relationships are fundamental in all developmental aspects and we emphasise the importance of productive and healthy relationships.</p>
+						</div>
+					</div><!-- // .bc-expandible-block__body -->
+				</div>
+				<div class="bc-expandible-block__expander">
+					<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
+						<span class="bc-expandible-block__expander__button__text">
+							<span class="inactive-text">Show more</span> 
+							<span class="active-text">Show less</span>
+						</span>
+						<span class="bc-expandible-block__expander__button__icon">
+							<svg class="bc-svg-icon">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use> 	
+							</svg>	
+						</span>
+					</a>
+				</div><!-- // .bc-expandible-block__expander -->
+			</article><!-- // .bc-expandible-block -->
+			<!-- Language Support -->
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block   has-colored-text"> 
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="<?php echo get_theme_file_uri('/media/student-centred-learning.jpg'); ?>" alt="Happy kids">
+				</picture>
+				<div class="bc-gr-feature__text bc-column">
+					<h2 class="bc-gr-feature__heading">Language Support</h2>
+					<p class="bc-gr-feature__intro">Language plays a key role in human development. We use languages to communicate with others and to learn about the world around us. Learning more than one language gives students the opportunity to broaden their horizons.</p>  
+					<p>Wellbeing is linked to all aspects of a student’s experience at school and beyond.  It is paramount for our students to feel empowered by their learning, to value and take responsibility for their learning and to demonstrate resilience.</p>
+					<p>At ISD language learning permeates the entire school curriculum through authentic contexts in a culturally rich and diverse environment. Language development at ISD is the shared responsibility of all teachers, students and parents.</p> 
+					<div class="bc-expandible-block__body">
+						<div class="bc-expandible-block__body__text">
+							<p>Language development at ISD is the shared responsibility of all teachers, students and parents. We believe language is directly connected to identity and empowers students to understand, interpret and respond to ideas, attitudes and feelings.  The development of language skills gives students the capacity to solve problems, think critically, work collaboratively and act creatively.</p>
+							<p>At ISD all classrooms are multilingual. The language of instruction is English and all teachers communicate through and model this language. Students who are native speakers of English continue to develop their language skills through an academic context. Students who are non-native speakers of English are assessed and provided English language support as needed.</p>
+							<p>Support is provided in class by the teachers, as well as through sessions with a specialised language teacher.</p>
+							<p>As an IB school, ISD offers additional language learning. Multilingualism is considered a key advantage in a global world. ISD offers Spanish tuition with a native Spanish teacher. Classes are differentiated and content is tailored to suit native and non-native Spanish speakers.  In addition, students’ mother tongues are highly valued and differentiated instruction promotes the use of native languages in everyday engagements.</p>
 						</div>
 					</div><!-- // .bc-expandible-block__body -->
 				</div>

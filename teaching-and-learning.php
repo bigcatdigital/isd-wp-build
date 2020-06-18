@@ -19,7 +19,7 @@
 		</header><!-- // .bc-feature-component__header -->
 		<article class="bc-feature-component__content">
 			<div class="bc-feature-component__content__text-content"> 
-				<p class="bc-feature-component__intro">One of the fundamental goals of an education at ISD is to encourage a love of learning. Welcoming and lively learning environments are characterised by collaborative and purposeful activity.</p> 
+				<p class="bc-feature-component__intro">One of the fundamental goals of an education at International School of Dublin (ISD) is to encourage a love of learning. Welcoming and lively learning environments are characterised by collaborative and purposeful activity.</p> 
 				<p>Small class sizes are guided by international experienced teachers who work to facilitate holistic and innovative forms of engagement which promote learning that is process, rather than topic driven.</p>  
 				<p>Ultimately, ISD students are equipped with the knowledge and skills needed to become autonomous lifelong learners.</p>
 				<p>Read on for more about learning and teaching at ISD.</p>

@@ -10,7 +10,7 @@
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-inner-page-content__heading">Frquently Asked Questions</h1>
-				<p class="bc-inner-page-content__intro">We got you covered right here.</p>	
+				<p class="bc-inner-page-content__intro">We got you covered here.</p>	
 			</div>
 		</header>
 		<article class="bc-feature-component__content">

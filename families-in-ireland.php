@@ -42,17 +42,9 @@
 					For Families in Ireland
 				</div><!-- // .bc-content-label -->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<h1 class="bc-hero__heading">A progressive learning alternative</h1>
-					<p class="bc-hero__tagline">International education for families in Ireland</p>
-					<p>The International School of Dublin offers international families and families in Ireland multi-denominational, co-educational and inclusive option for primary education.</p>
-					<!--<div class="bc-hero__cta">
-						<a href="javascript:void(0)" class="bc-icon-link--featured">
-							Learn about the IB gold-standard education alternative
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
-							</svg>
-						</a> 
-					</div>-->
+					<h1 class="bc-hero__heading">For Families Based in Ireland</h1>
+					<p>An international education is not solely for international families, find out how ISD offers local families a progressive learning alternative.</p>
+					
 				</div><!-- // .bc-hero__body__text --> 
 			</div><!-- // .bc-hero__body -->
 			<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/irish-family.jpg '); ?>" alt="A family" >
@@ -81,7 +73,7 @@
 					</svg>	
 					Teaching and learning
 				</p>
-				<h1 class="bc-feature-component__heading">Learning for Life</h1>
+				<h1 class="bc-feature-component__heading">Options in Education</h1>
 					<p class="bc-feature-component__intro">The International School of Dublin (ISD) comprises both local and international families.  We believe that an international education is not solely for international families.</p>
 					<p class="">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
 			</div>	
@@ -117,7 +109,7 @@
 					<img src="<?php echo get_theme_file_uri('/media/multicultural-kids.jpg'); ?>" alt="Multicultural kids">
 				</picture>
 				<div class="bc-gr-feature__text bc-column"> 
-					<h2 class="bc-gr-feature__heading">International-mindedness</h2>
+					<h2 class="bc-gr-feature__heading">Internationally Minded</h2>
 						<p class="bc-expandible-block__intro__intro">International-mindedness is at the heart of an IB and ISD education.  This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p> 
 						<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
 						<div class="bc-expandible-block__body">
@@ -153,10 +145,13 @@
 				<div class="bc-gr-feature__text bc-column"> 
 					<h2 class="bc-gr-feature__heading">Transition to Secondary School</h2>
 						<p class="bc-expandible-block__intro__intro">The transition from primary to post-primary/secondary education represents a significant milestone.  It is a period filled with change not only for the student but for the entire family.</p> 
-						<p>One of the key functions of primary education is to prepare children to engage effectively with further learning, throughout life. </p>
+						<p>By the time students reach their final year at ISD, we aim for the students to feel excited and prepared to move on in their educational journey.  We find our students transition very successfully to a range of secondary school options.</p>
 						<div class="bc-expandible-block__body">
 							<div class="bc-expandible-block__body__text">
-								<p><b>TBC</b></p>
+								<p>By Grade 6, students are deeply familiar with school routines and environments. They have been presented with increasingly advanced concepts and workload demands; and they have been developing a wide skill set to be more autonomous in their learning. In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts.</p>
+								<p>In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts. This endeavor is challenging and provides the students the space to apply all they have learned throughout primary school to a personal inquiry.</p>
+								<p>It is at this time that the students truly learn the value of strategies such as: goal setting, time and organisational management, study habits self assessment and reflection.</p>
+								<p>ISD is happy to provide assistance to families in the quest for suitable secondary school options. ISD has relationships with a variety of surrounding secondary schools offering different options (e.g. single sex, coeducational, national Irish curriculum, IB curriculum) and can explain these to families to help them identify which schools may be of interest to them. ISD can then guide and help facilitate communication between families, teachers and secondary schools.</p>
 							</div>
 						</div><!-- // .bc-expandible-block__body -->
 				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
@@ -187,7 +182,7 @@
 					Student Experience
 				</p>
 				<h1 class="bc-feature-component__heading">Testimonials</h1>
-				<p class="bc-feature-component__intro">Hear other parents and students describe their experience at ISD</p>
+				<p class="bc-feature-component__intro">Hear local Irish parents and students describe their experience with ISD.</p>
 					
 			</div>	
 		</header><!-- // .bc-feature-component__heading -->

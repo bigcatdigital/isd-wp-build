@@ -267,7 +267,7 @@
 					<p class="bc-hero__tagline">International education for families in Ireland</p>
 					<p>An international education is not solely for international families, find out how ISD offers local families a progressive learning alternative.</p>
 					<div class="bc-hero__cta">
-						<a href="javascript:void(0)" class="bc-button ">
+						<a href="<?php echo get_permalink(15) ?>" class="bc-button ">
 							Learn about our teaching method
 							<svg class="bc-svg-icon">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	

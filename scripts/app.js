@@ -606,9 +606,6 @@
 				const $videoSlide = $sliderElement.querySelectorAll('.bc-flickty-slider__slide--video')[0];
 				const $videoSlideWrap = $sliderElement.querySelectorAll('.bc-flickty-slider__video-wrap')[0];
 				$bc.responsiveiFrames('.bc-flickty-slider .bc-flickty-slider__slide--video');
-				
-				//	const $videoSlideContent = $videoSlide.querySelector('.bc-flickty-slider__slide__content'); 
-				//const $videoSlidePlay = $videoSlide.querySelector('.bc-flickty-slider__slide--video__play'); 
 				const $videoSlideHeading = $videoSlide.querySelector('.bc-flickty-slider__slide__heading');
 				const $videoSlideSubHeading = $videoSlide.querySelector('.bc-flickty-slider__slide__sub-heading');
 				const $videoSlideLeader = $videoSlide.querySelector('.bc-flickty-slider__slide__leader');

@@ -492,14 +492,7 @@
 		get_inner_section_nav('More about this', array('Sub-page #1' => 'javascript:void(0)', 'Sub-page #2' => 'javascript:void(0)', 'Sub-page #3' => 'javascript:void(0)', 'Sub-page #4' => 'javascript:void(0)', 'Sub-page #5' => 'javascript:void(0)'));
 		get_global_CTA();
 		get_footer();
-		
-		get_floating_section_nav('All components', array(
-			'One col features' => '#bc-one-col-feature', 
-			'Big slider' => '#bc-hero-slider',
-			'Two col feature with media' => '#bc-two-col-media-feature',
-			'Four col features' => '#bc-4-col-feature',
-			'Plain text components' => '#bc-plain-text-component-grey')
-    ); 
+		get_floating_section_nav(); 
 	?> 
 	
 	<script src="scripts/app-concat.min.js"></script> 

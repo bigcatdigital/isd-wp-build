@@ -24,14 +24,16 @@
  echo "	<header class=\"bc-site-header is-overlay\">";
  echo "		<div class=\"bc-site-header__content\">";
  echo "			<div class=\"bc-site-header__logo\">";
- echo "				<img src=\"" . get_theme_file_uri('/media/isd-logo.png') . "\" alt=\"International School of Dublin\" class=\"\">";
+ echo "				<a href=\"" . home_url() . "\" class=\"bc-site-header__logo__link\">";
+ echo "					<img src=\"" . get_theme_file_uri('/media/isd-logo.png') . "\" alt=\"International School of Dublin\" class=\"\">";
+ echo "				</a>";
  echo "			</div>";
  echo "			<nav class=\"bc-main-navigation\">"; 
  echo "				<h1 class=\"bc-site-header__heading\">Welcome to International School of Dublin</h1>";
  echo "				<div class=\"bc-main-navigation__navs\">";
  echo "					<div class=\"bc-main-navigation__main-nav\">";
  echo "						<ul class=\"bc-main-navigation__links\">";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(6) . "\">Learning &amp; Teaching</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(86) . "\">Learning &amp; Teaching</a></li>";
  echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(24) . "\">Student experience</a></li>";
  echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(15) . "\">For Families in Ireland</a></li>";
 echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(20) . "\">Admissions</a></li>";
@@ -39,13 +41,13 @@ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation
  echo "						</ul>";
  echo "					</div>";
  echo "					<div class=\"bc-main-navigation__sub-navigation\">"; 
- echo "						<h3 class=\"bc-site-header__sub-sub-heading\">Quick links</h3>";
+ echo "						<h3 class=\"bc-site-header__sub-sub-heading\">Quick Links</h3>";
  echo "						<ul class=\"bc-main-navigation__links\">";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">School Timetable</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">After School Program</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">School Bus</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Catered Lunch Program</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"javascript:void(0)\">Contact</a></li>";
+ echo " 						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(90) . "\">Daily Schedule</a></li>";
+ echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(100) . "\">Academic Calendar</a></li>";
+ echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(104) . "\">School Bus</a></li>";
+ echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(22) . "\">Frequently Asked Questions</a></li>";
+ echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(88) . "\">Contact</a></li>";
  echo "						</ul>";	
  echo "					</div>";
  echo "				</div>";
@@ -70,7 +72,7 @@ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation
  echo "		</div>";
  echo "		<div class=\"bc-main-navigation__underlay\"></div>";
  echo "	</header>";
-if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
+if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' && is_array($inner_nav_links)) {
 	echo "	<section class=\"bc-inner-page-header bc-content-section has-inner-sub-nav has-waves\">";   
 } else {
 	echo "	<section class=\"bc-inner-page-header bc-content-section has-waves\">";   
@@ -78,7 +80,7 @@ if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "			<div class=\"bc-inner-page-header__wrap\">";
  echo "				<div class=\"bc-inner-page-header__bg-svg\">";
  echo "					<svg class=\"families-svg\" viewbox=\"0 0 100 100\">";
- echo "						<use xlink:href=\"" .get_theme_file_uri('media/svg/images/families.svg') . "#familiy_3\"></use> ";	
+ echo "						<use xlink:href=\"" .get_theme_file_uri($headericon) . "\"></use> ";	
  echo "					</svg>";
  echo "				</div>";
  echo "				<div class=\"bc-elipses\">"; 
@@ -96,7 +98,7 @@ if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
 if ($innersubtitle !== '') {
  echo "				<h2 class=\"bc-inner-page-header__sub-heading\">$innersubtitle</h2>";
 }
-if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
+if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "				<nav class=\"bc-header-sub-nav\">";
  echo "					<div class=\"bc-header-sub-nav__toggle\"> ";
  echo "						<h3 class=\"bc-header-sub-nav__toggle__label\">$inner_nav_title:</h3> ";
@@ -135,22 +137,25 @@ if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "	<nav class=\"bc-breadcrumbs\">";
  echo "		<div class=\"bc-breadcrumbs__wrap\">";
  echo "			<ul class=\"bc-breadcrumbs__links\">";
-$bcidx = 0;
-foreach ($breadcrumbs as $link_text => $link) {
- 
-	if ($bcidx < count($breadcrumbs)-1) {
- echo "				<li class=\"bc-breadcrumbs__links__link\">";
- echo "					<a href=\"$link\">$link_text</a>";
- echo "					<svg class=\"bc-svg-icon bc-breadcrumbs__link-separator\">	";
- echo "						<use xlink:href=\"" . get_theme_file_uri('/media/svg/icons/bc-svgs.svg') . "#carat\"></use> 	";
- echo "					</svg>";
-	} else {
-	echo "				<li class=\"bc-breadcrumbs__links__link\">";
- echo 						"$link_text</a>";
+if (is_array($breadcrumbs)) {
+	$bcidx = 0;
+	foreach ($breadcrumbs as $link_text => $link) {
+
+		if ($bcidx < count($breadcrumbs)-1) {
+	 echo "				<li class=\"bc-breadcrumbs__links__link\">";
+	 echo "					<a href=\"$link\">$link_text</a>";
+	 echo "					<svg class=\"bc-svg-icon bc-breadcrumbs__link-separator\">	";
+	 echo "						<use xlink:href=\"" . get_theme_file_uri('/media/svg/icons/bc-svgs.svg') . "#carat\"></use> 	";
+	 echo "					</svg>";
+		} else {
+		echo "				<li class=\"bc-breadcrumbs__links__link\">";
+	 echo 						"$link_text";
+		}
+	 echo "				</li> ";
+		$bcidx++;
 	}
- echo "				</li> ";
-	$bcidx++;
 }
+
  echo "			</ul>";
  echo "		</div>";
  echo "	</nav><!-- // .bc-breadcrumbs -->";

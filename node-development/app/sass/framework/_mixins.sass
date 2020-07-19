@@ -14,7 +14,20 @@
 	@if $nested
 		margin-left: 	-$gutter/2
 		margin-right: -$gutter/2
-		
+
+@mixin makeColumn()
+	flex: 1 1 0
+	padding-left: 	$gutter/2
+	padding-right: 	$gutter/2
+@mixin makeRow($nested: false)
+	display: grid
+	@debug $nested
+	@if $nested == true
+		margin-left: 	-$gutter/2
+		margin-right: -$gutter/2
+	@else 
+		margin-left: 	$gutter/2
+		margin-right: $gutter/2
 
 @mixin makeContentGrid($cols: $base-cols, $break-at: $small, $nested: false)
 	@include makeGrid($cols, $break-at, $nested)

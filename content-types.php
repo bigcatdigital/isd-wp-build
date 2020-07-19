@@ -227,6 +227,7 @@
 	<?php
 		get_global_CTA();
 		get_footer();
+		get_floating_section_nav(); 
 	?>
 	
 	<script src="scripts/app-concat.min.js"></script>

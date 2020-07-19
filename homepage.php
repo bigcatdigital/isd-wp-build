@@ -41,7 +41,6 @@
 					</span>
 				</a>
 			</div>
-			
 			<!--<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/happy-kid.jpg '); ?>" alt="Happy kid" >-->
 			<div class="media-overlay"></div><!-- // .media-overlay -->
 		</div><!-- // .bc-hero__content -->
@@ -87,16 +86,15 @@
 						</h2>
 						<div class="site-quicklinks__wrapper">
 							<ul class="site-quicklinks__list" style="padding-bottom: 0.75rem"> 
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Admissions</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">About the School</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Teaching and Learning at ISD</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">The International Baccalaureate</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Support for your transition</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Language support for your children</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Parents&apos; Community</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">After School Care</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Our Mission &amp; Values</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="javascript:void(0)">Meet the people at ISD</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(20) ?>">Admissions</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(13) ?>">About the School</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(86) ?>">Learning and Teaching at ISD</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(176) ?>">Support for your transition</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo rtrim(get_permalink(86), '/') . '#language-support' ?>">Language support for your children</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(15) . '#isd-community' ?>">Parents&apos; Community</a></li> 
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(102) ?>">After School Program</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(13) ?>">Our Mission &amp; Values</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo rtrim(get_permalink(13), '/') . '#our-team'?>">Meet the people at ISD</a></li>
 							</ul>		
 						</div>
 					</nav><!-- // .site-quicklinks --> 
@@ -175,7 +173,7 @@
 				<div class="bc-column bc-card">
 					<h2 class="bc-card__heading">Teaching &amp; Learning</h2>
 					<p>See why our teaching method is regarded as a gold-standard mesurement by universities and graduate employers.</p>
-					<a class="bc-icon-link" href="<?php echo get_permalink(6) ?>">
+					<a class="bc-icon-link" href="<?php echo get_permalink(86) ?>">
 						Find out about our adademic program
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
@@ -197,13 +195,13 @@
 		
 	</section>
 	<!-- // Get started here -->
-	<section class="bc-feature-component bc-2-col-full-features" aria-label="The Pupil Experience at ISD"> 
+	<section class="bc-feature-component bc-2-col-full-features" aria-label="An IB Word School and Student Experience"> 
 		<article class="bc-2-col-full-feature is-brand-primary">
 			<div class="bc-feature-component__content">
 				<div class="bc-2-col-full-feature__image">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri('/media/children-running-up-driveway--16x9.jpg'); ?>" media="(max-width: 859px)">
-						<img src="<?php echo get_theme_file_uri('/media/children-running-up-driveway.jpg'); ?>" alt="Find out about the Student Experience at ISD">
+						<source srcset="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour-padded.png'); ?>" media="(max-width: 859px)">
+						<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour-padded.png'); ?>" alt="International Baccalaureate World School logo">
 					</picture>
 				</div>
 				<div class="bc-2-col-full-feature__text">
@@ -228,8 +226,8 @@
 			<div class="bc-feature-component__content">
 				<div class="bc-2-col-full-feature__image">
 					<picture>
-						<source srcset="<?php echo get_theme_file_uri('/media/children-running-up-driveway--16x9.jpg'); ?>" media="(max-width: 859px)">
-						<img src="<?php echo get_theme_file_uri('/media/children-running-up-driveway.jpg'); ?>" alt="Find out about the Student Experience at ISD">
+						<source srcset="<?php echo get_theme_file_uri('/media/children-together.jpg'); ?>" media="(max-width: 859px)">
+						<img src="<?php echo get_theme_file_uri('/media/children-together.jpg'); ?>" alt="Find out about the Student Experience at ISD">
 					</picture>
 				</div>
 				<div class="bc-2-col-full-feature__text">
@@ -239,9 +237,9 @@
 						</svg>
 						Student Experience
 					</p>
-					<h1 class="bc-2-col-full-feature__heading">An experience for life</h1>
-					<p class="bc-feature-component__intro">The International School of Dublin (ISD) is an International Baccalaureate (IB) World School.  There are more than one million IB students (aged 3-19) in over 150 countries worldwide.</p>
-					<p>The IB is increasingly recognised as the gold-standard measurement of academic and intellectual development both by universities and leading graduate employers.</p> 
+					<h1 class="bc-2-col-full-feature__heading">An Experience for Life</h1>
+					<p class="bc-feature-component__intro">At ISD we work hard to ensure our students&apos; learning experiences are distinctive, varied and eclectic.</p>
+					<p>We pride ourselves on our ability to make students&apos; educational journeys fun and engaging.</p> 
 					
 					<a class="bc-button" href="<?php echo get_permalink(13) ?>">
 						Find out what sets us apart
@@ -263,12 +261,12 @@
 					Families in Ireland
 				</div><!-- // .bc-content-label -->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<h1 class="bc-hero__heading">A progressive learning alternative</h1>
+					<h1 class="bc-hero__heading">A Progressive Learning Alternative</h1>
 					<p class="bc-hero__tagline">International education for families in Ireland</p>
 					<p>An international education is not solely for international families, find out how ISD offers local families a progressive learning alternative.</p>
 					<div class="bc-hero__cta">
-						<a href="<?php echo get_permalink(15) ?>" class="bc-button ">
-							Learn about our teaching method
+						<a href="<?php echo get_permalink(15) ?>" class="bc-icon-link--featured">
+							Learn more about this learning alternative
 							<svg class="bc-svg-icon">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
 							</svg>
@@ -294,4 +292,5 @@
 	<?php  
 		get_global_CTA();
 		get_footer();
+		get_floating_section_nav(); 
 	?>

@@ -35,21 +35,19 @@
 	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad"> 
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
-				<div class="bc-hero__body__text__IB bc-content-label bc-fade-in-up--is-not-visible">
-					<svg class="bc-svg-icon"> 
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#family-simple-icon"></use>  
-					</svg>
-					For Families in Ireland
-				</div><!-- // .bc-content-label -->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
+					<p class="bc-content-label">
+						<svg class="bc-svg-icon"> 
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#family-simple-icon"></use>  
+						</svg>
+							For Families in Ireland
+						</p>
 					<h1 class="bc-hero__heading">For Families Based in Ireland</h1>
-					<p>An international education is not solely for international families, find out how ISD offers local families a progressive learning alternative.</p>
-					
+					<p class="bc-hero__tagline">Find out how we offer local families a progressive primary school learning alternative.</p>
 				</div><!-- // .bc-hero__body__text --> 
 			</div><!-- // .bc-hero__body -->
 			<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/irish-family.jpg '); ?>" alt="A family" >
 			<div class="media-overlay"></div> 
-			
 		</div><!-- // .bc-hero__content -->
 		<div class="wave-wrap">
 			<?php
@@ -67,36 +65,31 @@
 	<section class="bc-feature-component bc-expandible-blocks-component"  id="learning-for-life">
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
-				<p class="bc-content-label ib-world-school"> 
-					<svg class="bc-svg-icon">
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#learning-icon-reverse"></use> 	
-					</svg>	
-					Teaching and learning
-				</p>
+				
 				<h1 class="bc-feature-component__heading">Options in Education</h1>
-					<p class="bc-feature-component__intro">The International School of Dublin (ISD) comprises both local and international families.  We believe that an international education is not solely for international families.</p>
+					<p class="bc-feature-component__intro">The International School of Dublin (ISD) comprises both local and international families. We believe that an international education is not solely for international families.</p>
 					<p class="">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
 			</div>	
 		</header><!-- // .bc-feature-component__heading -->
 		<div class="bc-feature-component__content">
-			<article class="bc-gr-feature bc-gr-columns"> 
+			<article class="bc-gr-feature bc-gr-columns has-colored-text"> 
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="<?php echo get_theme_file_uri('/media/multicultural-kids.jpg'); ?>" alt="Multicultural kids">
+					<img src="<?php echo get_theme_file_uri('/media/children-learning-together.jpg'); ?>" alt="Children learning together">
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
-					<h2 class="bc-gr-feature__heading">Language development</h2>
-					<p><b>We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</b></p> 
+					<h2 class="bc-gr-feature__heading">Culturally Diverse</h2>
+					<p class="bc-gr-feature__intro">We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</p> 
 				</div><!-- // .bc-gr-feature__text bc-column -->
 			</article><!-- // .bc-gr-columns.bc-expandible-block -->
-			<article class="bc-gr-feature bc-gr-columns">
+			<article class="bc-gr-feature bc-gr-columns has-colored-text">
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="<?php echo get_theme_file_uri('/media/multicultural-kids.jpg'); ?>" alt="Multicultural kids">
+					<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="International Baccalaureate World School crest">
 				</picture>
 				<div class="bc-gr-feature__text bc-column"> 
 					<h2 class="bc-gr-feature__heading">The International Baccalaureate</h2>
-					<p><b>ISD offers the <a href="<?php echo get_permalink(6) ?>">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</b></p> 
+					<p class="bc-gr-feature__intro">ISD offers the <a href="<?php echo get_permalink(86) ?>">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</p> 
 					<p>It is regarded as the gold-standard measurement of academic and intellectual development both by universities and graduate employers.</p>	
-					<a href="<?php echo get_permalink(6) ?>" class="bc-icon-link">
+					<a href="<?php echo get_permalink(86) ?>" class="bc-icon-link">
 						Read more about the International Baccalaureate
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>
@@ -104,48 +97,57 @@
 					</a>
 				</div><!-- // bc-gr-feature__text.bc-column | About the International Baccalaureate -->
 			</article><!-- // .bc-gr-columns.bc-expandible-block -->
-			<article class="bc-gr-feature bc-gr-columns bc-expandible-block">
+			<article class="bc-gr-feature bc-gr-columns has-colored-text">
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="<?php echo get_theme_file_uri('/media/multicultural-kids.jpg'); ?>" alt="Multicultural kids">
+					<img src="<?php echo get_theme_file_uri('/media/the-world-in-your-hand.jpeg'); ?>" alt="International Mindedness">
 				</picture>
 				<div class="bc-gr-feature__text bc-column"> 
 					<h2 class="bc-gr-feature__heading">Internationally Minded</h2>
-						<p class="bc-expandible-block__intro__intro">International-mindedness is at the heart of an IB and ISD education.  This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p> 
-						<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
-						<div class="bc-expandible-block__body">
-							<div class="bc-expandible-block__body__text">
-								<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
-								<h3>Global citizenship</h3>
-								<p>Any Irish citizen will develop in an ever increasingly interconnected world where their home location will be influenced by global forces; and there are proven benefits for children attending international schools, whether they are local citizens or expatriates.</p>  
-								<p>Allowing students to interact and have experience with global awareness and understanding in a first person context from the very start of their education sets them apart from others; this plants the seed for future worldwide networking.</p>  
-								<h3>International Network</h3>
-								<p>It provides valuable skills for later life such as building relationships with people from a variety of cultures and backgrounds, it also equips students with the confidence to travel and work in other countries opening opportunities and experiences throughout adulthood.</p>
-								<p>Students thus engage with both local and global issues as they have gained valuable personal connections, knowledge and understanding.  They benefit from understanding the value of the interconnected nature of the world and work to make a difference in the lives of everyone.</p>
-							</div>
-						</div><!-- // .bc-expandible-block__body -->
+					<p class="bc-gr-feature__intro">International-mindedness is at the heart of an IB and ISD education. This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p> 
+					<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
 				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
-				<div class="bc-expandible-block__expander">
-					<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
-						<span class="bc-expandible-block__expander__button__text">
-							<span class="inactive-text">Show more</span> 
-							<span class="active-text">Show less</span>
-						</span>
-						<span class="bc-expandible-block__expander__button__icon">
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use> 	
-							</svg>	
-						</span>
-					</a>
-				</div><!-- // .bc-expandible-block__expander -->
-			</article><!-- // .bc-expandible-block --> 
-			<article class="bc-gr-feature bc-gr-columns bc-expandible-block">
+			</article><!-- // .bc-gr-feature --> 
+			<article class="bc-gr-feature bc-gr-columns has-colored-text">
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="<?php echo get_theme_file_uri('/media/students-working-at-a-laptop.jpg'); ?>" alt="Students working at a laptop">
+				</picture>
+				<div class="bc-gr-feature__text bc-column"> 
+					<h2 class="bc-gr-feature__heading">Global Citizenship</h2>
+					<p class="bc-gr-feature__intro">Any Irish citizen will develop in an ever increasingly interconnected world where their home location will be influenced by global forces; and there are proven benefits for children attending international schools, whether they are local citizens or expatriates.</p>  
+					<p>Allowing students to interact and have experience with global awareness and understanding in a first person context from the very start of their education sets them apart from others; this plants the seed for future worldwide networking.</p>  
+				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
+			</article><!-- // .bc-gr-feature --> 
+			<article class="bc-gr-feature bc-gr-columns has-colored-text">
 				<picture class="bc-gr-feature__media bc-column">
 					<img src="<?php echo get_theme_file_uri('/media/multicultural-kids.jpg'); ?>" alt="Multicultural kids">
 				</picture>
 				<div class="bc-gr-feature__text bc-column"> 
+					<h2 class="bc-gr-feature__heading">International Network</h2>
+					<p  class="bc-gr-feature__intro">It provides valuable skills for later life such as building relationships with people from a variety of cultures and backgrounds, it also equips students with the confidence to travel and work in other countries opening opportunities and experiences throughout adulthood.</p>
+					<p>Students thus engage with both local and global issues as they have gained valuable personal connections, knowledge and understanding. They benefit from understanding the value of the interconnected nature of the world and work to make a difference in the lives of everyone.</p>
+				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
+			</article><!-- // .bc-gr-feature --> 
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block has-colored-text">
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="<?php echo get_theme_file_uri('/media/excited-child.jpeg'); ?>" alt="A child heading off into the future">
+				</picture>
+				<div class="bc-gr-feature__text bc-column"> 
 					<h2 class="bc-gr-feature__heading">Transition to Secondary School</h2>
-						<p class="bc-expandible-block__intro__intro">The transition from primary to post-primary/secondary education represents a significant milestone.  It is a period filled with change not only for the student but for the entire family.</p> 
-						<p>By the time students reach their final year at ISD, we aim for the students to feel excited and prepared to move on in their educational journey.  We find our students transition very successfully to a range of secondary school options.</p>
+						<p class="bc-gr-feature__intro">The transition from primary to post-primary/secondary education represents a significant milestone. It is a period filled with change not only for the student but for the entire family.</p> 
+						<p>By the time students reach their final year at ISD, we aim for the students to feel excited and prepared to move on in their educational journey. We find our students transition very successfully to a range of secondary school options.</p>
+						<div class="bc-expandible-block__expander">
+							<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
+								<span class="bc-expandible-block__expander__button__text">
+									<span class="inactive-text">Show more</span> 
+									<span class="active-text">Show less</span>
+								</span>
+								<span class="bc-expandible-block__expander__button__icon">
+									<svg class="bc-svg-icon">
+										<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use> 	
+									</svg>	
+								</span>
+							</a>
+						</div><!-- // .bc-expandible-block__expander -->
 						<div class="bc-expandible-block__body">
 							<div class="bc-expandible-block__body__text">
 								<p>By Grade 6, students are deeply familiar with school routines and environments. They have been presented with increasingly advanced concepts and workload demands; and they have been developing a wide skill set to be more autonomous in their learning. In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts.</p>
@@ -155,32 +157,42 @@
 							</div>
 						</div><!-- // .bc-expandible-block__body -->
 				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
-				<div class="bc-expandible-block__expander">
-					<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
-						<span class="bc-expandible-block__expander__button__text">
-							<span class="inactive-text">Show more</span> 
-							<span class="active-text">Show less</span>
-						</span>
-						<span class="bc-expandible-block__expander__button__icon">
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use> 	
-							</svg>	
-						</span>
-					</a>
-				</div><!-- // .bc-expandible-block__expander -->
+			</article><!-- // .bc-expandible-block --> 
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block has-colored-text" id="isd-community">
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="<?php echo get_theme_file_uri('/media/multicultural-kids.jpg'); ?>" alt="Multicultural kids">
+				</picture>
+				<div class="bc-gr-feature__text bc-column"> 
+					<h2 class="bc-gr-feature__heading">ISD Community</h2>
+						<p class="bc-gr-feature__intro">ISD prides itself in having a strong, close-knit community composed of students, parents, staff, directors and alumni.</p> 
+						<p>The community is culturally rich and spread across the globe. With an open door policy it is not unusual to have alumni popping in during a flying visit to Dublin or parents stopping in to the office for a morning chat.</p>
+						<div class="bc-expandible-block__expander">
+							<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
+								<span class="bc-expandible-block__expander__button__text">
+									<span class="inactive-text">Show more</span> 
+									<span class="active-text">Show less</span>
+								</span>
+								<span class="bc-expandible-block__expander__button__icon">
+									<svg class="bc-svg-icon">
+										<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use> 	
+									</svg>	
+								</span>
+							</a>
+						</div><!-- // .bc-expandible-block__expander -->
+						<div class="bc-expandible-block__body">
+							<div class="bc-expandible-block__body__text">
+								<p>At ISD we believe an excellent education requires a collaborative approach and thus formal and informal channels are provided for community members to create meaningful ties that span the student’s school years in ISD and beyond.</p> 
+								<p>Parental involvement is welcomed in varying capacities and the school calendar features events which provide opportunities to link up whilst celebrating student accomplishments.</p>
+							</div>
+						</div><!-- // .bc-expandible-block__body -->
+				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
 			</article><!-- // .bc-expandible-block --> 
 		</div> <!-- // .bc-feature-component__content -->	
 	</section><!-- // .bc-expandible-blocks-component -->
-	<section class="bc-feature-component bc-expandible-blocks-component has-waves has-shade-01">
+	<section class="bc-feature-component has-waves has-shade-01">
 		<div class="bc-feature-component__wrap">
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
-				<p class="bc-content-label ib-world-school"> 
-					<svg class="bc-svg-icon">
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#pupil-experience"></use> 	
-					</svg>	
-					Student Experience
-				</p>
 				<h1 class="bc-feature-component__heading">Testimonials</h1>
 				<p class="bc-feature-component__intro">Hear local Irish parents and students describe their experience with ISD.</p>
 					
@@ -188,52 +200,34 @@
 		</header><!-- // .bc-feature-component__heading -->
 		<div class="bc-feature-component__content">
 			<div class="bc-feature-component__content__text-content">
-				<article class="bc-1-columns bc-expandible-block">
-					<div class="bc-column"> 
-						<div class="bc-featured-quote is-testimonial ">
-							<h2 class="bc-featured-quote__heading">Reponsible, caring individuals in the real world</h2> 
-							<div class="bc-featured-quote__icon">
-								<svg class="bc-svg-icon">
-									<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#quotes"></use> 
-								</svg>	
-							</div>
-							<div class="bc-featured-quote__body">
-								<p class="bc-expandible-block__intro">I have never been a fan of private education, being a firm believer is exposing my kids to the real world and developing them as responsible, caring individuals.</p>
-								<p>When we traveled as a family, to Denmark and to India, however, we found that the IB system of education offered in the fee-paying international schools available to us were at an incredible standard and suited the needs of our children perfectly.</p>
-							</div>	
-						</div><!-- // .bc-featured-quote -->
-						<div class="bc-expandible-block__body">
-							<div class="bc-expandible-block__body__text">
-								<div class="bc-featured-quote is-testimonial">
-									<div class="bc-featured-quote__body">
-										<p>The IB system is a holistic education system that encompasses all facets of learning and works to develop each individual child based upon their IEP and learning style.</p>
-										<p>It is not unusual to visit an IB classroom in which there are several children standing, others sitting on the floor and there may even be children wearing headphones to concentrate more closely on the lesson at hand.  All children will be learning about the same subject matter, but they have the freedom to learn in the way best suited to them.</p>
-										<p>If a child has a specific talent and interest in an area, they will have the opportunity to explore it in an IB School. School concerts are often full of wonderful performances by classical pianists and talented vocalists. On returning to Ireland, therefore, it was imperative that we continued in the same vein, working with a school that understood our children’s needs and how best to address them.</p>			
-										<p>We were delighted when we found ISD.  Cristen and the team were so welcoming and my children settled in immediately.</p>
-										<p>We were part of a big family in the school, where each of the children knew each other and had the opportunity to interact with other classes during the day.</p>
-										<p>We saw great development in both the children, academically, emotionally and artistically.  My daughter made a very competent presentation at her Grade 6 graduation, in which she used her passion for photography to communicate a message about a charity she worked with.</p>
-										<p>I saw my children learn skills that I was encouraged to develop only when I completed my Leaving Cert and went to University!  I would highly recommend ISD as a safe, caring environment in which you will see your children thrive and develop in all areas.</p>
-									</div>	
-									<p class="bc-featured-quote__attribution">Fiona O&apos;Brien - Irish - Mother of two students at ISD</p>
-								</div><!-- // .bc-featured-quote -->
-								
-							</div>
-						</div><!-- // .bc-expandible-block__body -->
-					</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
-					<div class="bc-expandible-block__expander">
-						<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
-							<span class="bc-expandible-block__expander__button__text">
-								<span class="inactive-text">Show more</span> 
-								<span class="active-text">Show less</span>
-							</span>
-							<span class="bc-expandible-block__expander__button__icon">
-								<svg class="bc-svg-icon">
-									<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use> 	
-								</svg>	
-							</span>
-						</a>
-					</div><!-- // .bc-expandible-block__expander -->
-				</article><!-- // .bc-expandible-block --> 
+				<div class="bc-flickty-slider bc-text-slider">
+						<a href="" class="bc-flickty-slider__prev is-inactive">
+						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+						</svg>
+					</a>
+					<a href="" class="bc-flickty-slider__next">
+						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+						</svg>
+					</a>
+					<article class="bc-flickty-slider__slide ">
+						<p class="bc-quote-text">&quot;I have never been a fan of private education, being a firm believer is exposing my kids to the real world and developing them as responsible, caring individuals.</p>
+						<p class="bc-quote-text">&quot;When we traveled as a family, to Denmark and to India, however, we found that the IB system of education offered in the fee-paying international schools available to us were at an incredible standard and suited the needs of our children perfectly.</p>
+						<p><strong>-- Fiona O’Brien - Irish - Mother of two students at ISD</strong></p>
+						
+					</article><!-- // .bc-flickty-slider__slide --> 
+					<article class="bc-flickty-slider__slide ">
+						<p class="bc-quote-text">&quot;I highly recommend ISD because everyone is very nice. Everyone treats one another so well and most of all keeps the students really HAPPY.</p> 
+						<p class="bc-quote-text">&quot;ISD really represents all of the IB Learner Profile so well uses it all the time. At ISD you can meet people from all around the world. The teachers adapt the learning to your own skills and talents and always have time to help students who need a little bit more help. ISD is the best school ever (in my opinion)!</p>
+						<p><strong>-- Joshua Merry - Irish - Age 11</strong></p>
+					</article><!-- // .bc-flickty-slider__slide --> 
+					<article class="bc-flickty-slider__slide">
+						<p class="bc-quote-text">&quot;I chose ISD initially because of class size and teacher ratio, and the broadminded international focus of the curriculum. However, we have stayed at ISD throughout my child’s entire primary education for all the benefits it continues to provide, like the feeling of a big family who come from all different places.</p> 
+						<p class="bc-quote-text">&quot; My child has developed inquiry skills, so she can continually learn about how her decisions and behaviour affects her group, her community and the world. There is a tremendous feeling of warmth in the ISD community that benefits both the local Irish families and the expatriate families.</p>
+						<p><strong>-- Hazel Cullen - Irish - Mother of one student at ISD</strong></p>
+					</article><!-- // .bc-flickty-slider__slide --> 
+				</div>
 			</div>
 		</div>
 		</div>
@@ -252,9 +246,5 @@
 	<?php  
 		get_global_CTA();
 		get_footer();
-		get_floating_section_nav('On this page', array(
-			'Learning for life' => '#learning-for-life', 
-			'Learning for life 2 col' => '#learning-for-life-2-col',
-			'Apply now' => '#global-cta') 
-    ); 
+		get_floating_section_nav(); 
 	?>

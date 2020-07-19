@@ -1,15 +1,21 @@
-.bc-gr-feature
+.bc-gr-feature, .bc-1-4-feature
 	margin-bottom: $vertical-unit*2.5
+	&__text, &__media 
+		@include makeColumn
 	&__text
 		display: flex
 		flex-direction: column
-		justify-content: center
+		justify-content: flex-start
+		padding-top: $vertical-unit/2
 		p:last-child 
 			margin-bottom: 0
+		img
+			margin-bottom: $vertical-unit
 	& &__heading
 		margin-top: 0
 		margin-bottom: $vertical-unit/1.5
 		font-size: $text-04
+		font-weight: 300
 		display: flex
 		align-items: center
 		img 
@@ -18,19 +24,41 @@
 	p, a
 		margin-bottom: $vertical-unit/1.5
 	& &__intro
-		font-weight: 500	
+		font-size: 		$text-01
+		font-weight: 	300	
 	&:last-of-type
 		margin-bottom: $vertical-unit
-	&:nth-of-type(2n)
-		@media screen and (min-width: $med) 
-			grid-template: auto / 61.8fr 38.2fr
-			.bc-gr-feature__text 
-				order: 0
-			.bc-gr-feature__media 
-				order: 1 
 	@media screen and (min-width: $med) 
 		&__text, &__media
-			margin-bottom: 0
+				margin-bottom: 0
+
+@media screen and (min-width: $med) 	
+	.bc-gr-feature, .bc-1-4-feature
+		@include makeRow(true)
+	.bc-gr-feature
+		max-width: none
+		grid-template: auto / 38.2fr 61.8fr
+		& &__text 
+			img
+				max-width: 50%
+		&:nth-of-type(2n)
+			grid-template: auto / 61.8fr 38.2fr
+			.bc-gr-feature__text
+				order: 0
+			.bc-gr-feature__media
+				order: 1 
+	.bc-1-4-feature
+		max-width: none !important
+		grid-template: auto / 1fr 4fr
+		&:nth-of-type(2n)
+			grid-template: auto / 4fr 1fr
+			.bc-1-4-feature__text 
+				order: 0
+			.bc-1-4-feature__text 
+				order: 1 
+
+
+	
 	
 	
 	

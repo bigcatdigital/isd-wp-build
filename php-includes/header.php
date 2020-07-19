@@ -2,6 +2,15 @@
 	echo "<!DOCTYPE html>";
 	echo "<html lang=\"en\">";
 	echo "<head>";
+	echo "<!-- Global site tag (gtag.js) - Google Analytics -->"
+	echo "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-162752764-1\"></script>";
+  echo "<script>";
+  echo "	window.dataLayer = window.dataLayer || [];";
+  echo "	function gtag(){dataLayer.push(arguments);}";
+  echo "	gtag('js', new Date());";
+  echo "	gtag('config', 'UA-162752764-1');"
+  echo "</script>"
+
 	echo "	<meta charset=\"UTF-8\">";
 	echo "	<meta name=\"viewport\" content=\"width=device-width\">";
 	echo "<meta property=\"og:title\" content=\"International School of Dublin\">";

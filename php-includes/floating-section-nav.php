@@ -8,6 +8,7 @@
  echo	"			<polygon points=\"47.4,11 25.7,32.8 22,29 50,1 78,29 74.3,32.8 52.6,11 52.6,99 47.4,99 \"/>";
  echo	"		</svg>";
  echo	"	</a>";
+/*
  echo	"	<nav class=\"feature-page-navigation feature-page-navigation--floating\">";
  echo	"		<div class=\"feature-page-navigation__toggle\">";
  echo	"			<a href=\"javascript:void(0)\" class=\"feature-page-navigation__toggle__link  bc-navigation-toggle\">";
@@ -45,5 +46,6 @@
  echo "				</ul>";
  echo	"			</div> <!-- // .feature-page-navigation__wrapper --> ";
  echo	"	</nav>";
+*/
  echo	"</section><!-- // .feature-page-navigation--floating -->";
 ?>

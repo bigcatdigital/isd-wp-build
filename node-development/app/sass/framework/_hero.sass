@@ -39,7 +39,10 @@
 		padding-right: 0
 		padding-bottom: $vertical-unit*2
 		padding-left: 0
-		
+		& &__text
+			max-width: calc(100% - #{$gutter})
+			position: absolute
+			bottom: calc(20% - 30px)
 	&__heading
 		font-size: $large-text
 	&__tagline
@@ -62,6 +65,14 @@
 		width: 100%
 		margin-top: 	 $vertical-unit*1.5
 		margin-bottom: $vertical-unit*1.5
+	.bc-icon-link, .bc-icon-link--featured
+		&:hover
+			.bc-svg-icon
+				fill: $white
+	&.bc-hero--inpage
+		.bc-hero__body
+			&__text
+				position: static
 	& &__video
 		&__video
 			object-fit: cover 
@@ -69,7 +80,7 @@
 			height: 100vh
 		&__controls
 			position: absolute
-			bottom: 1%
+			bottom: 8%
 			right: $gutter/2
 			z-index: 100
 			display: flex
@@ -109,16 +120,31 @@
 @media screen and (min-width: $med) and (max-width: ($large - 1px)) and (orientation: portrait) 
 	.bc-hero
 		height: 75vh
+		& &__video
+			&__controls
+				bottom: 7.5%
+				right: 5%
+				&__text
+					font-size: $text--1
+					margin-top: $vertical-unit/3
+				&__play-icon, &__pause-icon
+					.bc-svg-icon
+						max-width: 	3rem
+						max-height: 3rem
 @media screen and (min-width: 720px)
 	.bc-hero
 		&__body
 			padding-bottom: $vertical-unit*2.5
-			&__text
+			& &__text
+				max-width: 80%
 				padding-left:  	$gutter
 				padding-right:  $gutter
 @media screen and (min-width: $large) 
+	.bc-hero
+		&__body
+			& &__text
+				bottom: 14%
 	.bc-hero, .bc-hero--inpage
-		.bc-hero__body
 		&.bc-hero--inpage
 			.bc-hero__body__text
 				padding-left: 	0
@@ -131,7 +157,19 @@
 			padding-right: (4.444rem + $gutter/2)	
 		& &__video
 			&__controls
-				right: 4.444rem
+				bottom: 5%
+				right: (4.444rem + $gutter/2)
+				opacity: 0.9
+				transition: opacity 320ms ease-in-out
+				&:hover, &:active, &:focus
+					opacity: 1
+				&__text
+					font-size: $text-00
+					margin-top: $vertical-unit/2.5
+				&__play-icon, &__pause-icon
+					.bc-svg-icon
+						max-width: 	2.75rem
+						max-height: 2.75rem
 
 
 

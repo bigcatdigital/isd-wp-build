@@ -1,0 +1,36 @@
+
+.modula .modula-item img { 
+	object-fit: cover; 
+	object-position: center; } 
+.modula .modula-item:hover img { 
+	transition: scale 460ms ease-in-out; } 
+.modula .modula-item:hover img, .modula .modula-items .modula-item.tg-loaded:hover img.pic { 
+	opacity: 1 !important; 
+	transform: scale(1.1) } 
+.modula .modula-items .modula-item .figc { 
+	display: flex; 
+	align-items: flex-end;
+	z-index: 20;
+} 
+.modula .modula-items .modula-item .figc .figc-inner { 
+	position: absolute; 
+	text-align: left; 
+	width: 100%; 
+	padding: 0.1875rem 0.75rem ; 
+	opacity: 0; 
+	background-color: #f6f6f6; 
+	bottom: 0;
+  transform: translateY(100%);
+	transition: opacity 300ms ease-in-out, transform 320ms ease-in-out; } 
+.modula .modula-item:hover .figc .figc-inner, .modula .modula-itemtg-loaded:hover .figc .figc-inner { 
+	opacity: 1;
+	transform: translateY(0);
+} 
+.modula .modula-item.effect-pufrobo .jtg-title::after { 
+	display: none !important; } 
+.modula .modula-item.effect-pufrobo .jtg-title, .modula .modula-item.effect-pufrobo p { 
+	position: static !important; 
+	transform: none !important; 
+	transform: none; } 
+.modula .modula-item.effect-pufrobo .jtg-title { 
+	font-size: 0.8706rem; }

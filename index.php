@@ -77,7 +77,7 @@
 						<h4><a href="<?php echo get_permalink(15) ?>" class="">For families in Ireland</a></h4>
 					</li>
 					<li>
-						<h4><a href="<?php echo get_permalink(6) ?>" class="">Learning &amp; Teaching</a></h4>
+						<h4><a href="<?php echo get_permalink(86) ?>" class="">Learning &amp; Teaching</a></h4>
 					</li>
 					<li>
 						<h4><a href="<?php echo get_permalink(24) ?>" class="">Student Experience</a></h4>
@@ -131,3 +131,4 @@
 		</article><!-- // .bc-4-col-feature__content -->
 	</section><!-- // .bc-4-col-feature -->
 	get_footer();	
+	get_floating_section_nav(); 

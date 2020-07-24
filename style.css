@@ -1901,6 +1901,11 @@ figcaption {
     overflow: scroll; }
     .bc-site-header.has-active-navigation .bc-main-navigation {
       position: fixed; }
+    .bc-site-header.has-active-navigation .bc-site-header__content {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0; }
 
 .bc-main-navigation {
   position: absolute;
@@ -5487,5 +5492,3 @@ hr.is-featured {
 
 .modula .modula-item.effect-pufrobo .jtg-title {
   font-size: 0.8706rem; }
-
-/*# sourceMappingURL=style.css.map */

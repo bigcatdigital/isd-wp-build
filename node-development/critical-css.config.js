@@ -2,10 +2,10 @@ module.exports = {
 	base: './', 
 	inline: true,
 	html: undefined,
-	src: 'dist/',	
+	src: '../',	
 	isDir: true,
 	css: '../style.css', 
-	dest: 'dist/', 
+	dest: '../', 
 	width: undefined, 
 	height: undefined, 
 	dimensions:  [{
@@ -25,7 +25,7 @@ module.exports = {
 			height: 1080
 	}],
 	extract: true,
-	minify: false,
+	minify: true,
 	pathPrefix: undefined,
 	ignore: undefined,
 	ignoreOptions: {},

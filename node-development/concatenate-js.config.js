@@ -1,4 +1,9 @@
-module.exports = {
+let opts = {
 	target: '../scripts/app-concat.min.js',
-	files: ['node_modules/gsap/dist/gsap.min.js', 'node_modules/gsap/dist/ScrollToPlugin.min.js', 'node_modules/flickity/dist/flickity.pkgd.js', './app/scripts/app.js']
+};
+if (process.env.NODE_ENV === 'production') {
+	opts.files = ['node_modules/gsap/dist/gsap.min.js', 'node_modules/gsap/dist/ScrollToPlugin.min.js', 'node_modules/flickity/dist/flickity.pkgd.js', './app/scripts/app-temp.js'];
+} else {
+	opts.files = ['node_modules/gsap/dist/gsap.min.js', 'node_modules/gsap/dist/ScrollToPlugin.min.js', 'node_modules/flickity/dist/flickity.pkgd.js', './app/scripts/app.js'];
 }
+module.exports = opts;

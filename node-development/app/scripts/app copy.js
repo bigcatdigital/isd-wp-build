@@ -369,7 +369,7 @@
 			navTogglersFactory($landingPageToggle, {activeStroke:'#fff',duration:.16}, function() { 
 				var duration=.4;
 				var ease='ease.out';
-				var $thisWrapper=$landingPageNav.querySelector('.site-quicklinks__wrapper'); 
+				var $thisWrapper=$landingPageNav.querySelector('.site-quicklinks__wrapper');
 				var $thisContainer=$landingPageNav.closest('.site-quicklinks');
 				if ($thisWrapper.classList.contains('is-active')) { 
 					$thisContainer.classList.toggle('is-active');
@@ -697,7 +697,7 @@
 						$bc.gsap.to($videoPlayIcon, { opacity: 1, duration: duration });
 					});
 				}
-			}); 
+			});
 		}// end if ..bc-hero__video
 		function resizeForWaves() {
 			const wavyComponents = document.querySelectorAll('.has-waves') ? document.querySelectorAll('.has-waves') : null;

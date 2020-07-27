@@ -303,8 +303,6 @@
 	</section>
 	<!-- // About Dublin -->
 	<?php  
-		//get_inner_section_nav('More About ISD', array('Frequently Asked Questions' => '' . get_permalink(22) . '', 'Fees' => '' . get_permalink(57) . ''));
-		get_inner_section_nav();
 		get_global_CTA();
 		get_footer();
 		get_floating_section_nav(); 

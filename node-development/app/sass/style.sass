@@ -985,6 +985,9 @@ hr.is-featured
 			font-size: $h4
 		h4 
 			font-size: $h5
+		&.is-active 
+			&__text 
+				display: block;
 		&__media
 			img
 				width: 100%
@@ -1371,15 +1374,22 @@ $waves-height: 50px
 			padding-top: $vertical-unit * 3
 			padding-bottom: $vertical-unit * 3
 		&.site-quicklinks-component
-			.bc-feature-component__wrap
+			.bc-feature-component__wrap 
 				padding-top: $vertical-unit 
-				padding-bottom: $vertical-unit * 1
+				padding-bottom: $vertical-unit * 1.75
 .has-waves 
 	position: relative
 	z-index: 20
 	.wave-wrap
 		width: 100%
+		position: relative
 		svg
+			width: 100%
+			@media screen and (max-width: 499px) 
+				position: relative
+				top: -3px
+			
+			
 			.isd-wave
 				fill: $white
 		&__rainbow
@@ -1672,11 +1682,10 @@ $waves-height: 50px
 		display: flex
 		align-items: center
 		margin-left: -$gutter/2
-		margin-right: -$gutter/2
+		margin-right: -$gutter/2 
 		li
 			list-style: none
 			display: flex
-			
 			a 
 				display: flex
 				justify-content: center
@@ -1687,9 +1696,12 @@ $waves-height: 50px
 					.bc-svg-icon
 						fill: darken($white, 12%)
 			.bc-svg-icon
-				max-width: 	1.75rem
-				max-height: 1.75rem
+				max-width: 	1.5rem
+				max-height: 1.5rem
 				transition: fill 320ms ease-in-out
+				&.bc-instagram-icon
+					max-width: 	1.65rem
+					max-height: 1.65rem
 /* Contact Form 7 WP Plugin */
 .wpcf7-form
 	max-width: $text-max-width

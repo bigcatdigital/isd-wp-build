@@ -66,17 +66,14 @@
 	box-shadow: 4px 4px 8px rgba($black, 0.16), -4px -4px 8px rgba($black, 0.16);
 .bc-feature-component
 	&.site-quicklinks-component
-	padding-top: 		$vertical-unit * 2
-	padding-bottom: $vertical-unit * 2
-	@media screen and (min-width: $large)
-		padding-top: 		$vertical-unit *2
+		&.has-waves
+			.bc-feature-component__wrap
+				padding-bottom: $vertical-unit * 3
+		.bc-feature-component__content
+			margin-bottom: 0
+	
 .site-quicklinks
 	position: relative 
-	padding-bottom: $gutter/2 
-	background-color: transparent
-	border-bottom: 1px solid $brand-secondary
-	@include makeMarkRight($brand-secondary)
-	
 	& &__heading
 		position: relative	
 		z-index: 10
@@ -89,9 +86,10 @@
 		padding-top:  	$vertical-unit/2
 		padding-bottom: $vertical-unit/2
 		margin-top:  	 0
-		margin-bottom: 0
-		font-size: $text-04
+		margin-bottom: 0 
 		font-weight: 300
+	& &__heading__label 
+		max-width: calc(100% - #{(36/14)}rem);
 	& &__toggle 
 		position: absolute
 		right: 0%
@@ -111,8 +109,6 @@
 		z-index: 0
 		height: 0
 		overflow: hidden
-		margin-bottom: $vertical-unit/2
-		transition: border-width 320ms
 	& &__list
 		display: flex
 		flex-direction: row
@@ -165,8 +161,9 @@
 		&__menu
 			display: none
 @media screen and (min-width: $med)
-	& &__heading
-		font-size: $h2
+	.site-quicklinks
+		& &__heading
+			font-size: $text-04
 @media screen and (min-width: $small)
 	.site-quicklinks
 		& &__list

@@ -21,6 +21,13 @@
 										</a>		
 									</li>
 									<li>
+										<a target="_blank" href="https://www.instagram.com/isddublin/" title="Follow us on Instagram">
+											<svg class="bc-svg-icon bc-instagram-icon">
+												<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#instagram"></use>  
+											</svg>
+										</a>		
+									</li>
+									<li>
 										<a target="_blank" href="https://twitter.com/isdublin" title="Follow us on Twitter">
 											<svg class="bc-svg-icon">
 												<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#twitter"></use>  

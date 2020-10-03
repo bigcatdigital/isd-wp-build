@@ -594,7 +594,6 @@
 			const $expandButtons = document.querySelectorAll('.bc-expandible-block__expander__button');
 			$expandButtons.forEach(($btn) => {
 				const $expandableBlock = $btn.closest('.bc-expandible-block');
-				const blockOffsets = $bc.getElOffset($expandableBlock);
 				const $expandableBody = $expandableBlock.querySelector('.bc-expandible-block__body');
 				$btn.addEventListener('click', function () {
 					if ($btn.classList.contains('is-active')) {
@@ -604,7 +603,6 @@
 					} else {
 						showAccordionBody($expandableBody, function () {
 							$btn.classList.toggle('is-active');
-							$bc.gsapFns.scrollTo({ scrollTo: { y: blockOffsets.top }, duration: 0.2 });
 						});
 					}
 				});

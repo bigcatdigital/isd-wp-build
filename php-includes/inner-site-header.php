@@ -34,8 +34,8 @@
  echo "					<div class=\"bc-main-navigation__main-nav\">";
  echo "						<ul class=\"bc-main-navigation__links\">";
  echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(86) . "\">Learning &amp; Teaching</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(24) . "\">Student experience</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(15) . "\">For Families in Ireland</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(24) . "\">Student Experience</a></li>";
+ echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(15) . "\">For Families Based in Ireland</a></li>";
 echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(20) . "\">Admissions</a></li>";
  echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(13) . "\">About the School</a></li>";
  echo "						</ul>";

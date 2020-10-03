@@ -10,10 +10,6 @@
 	<section class="bc-hero bc-hero--is-feature has-waves">
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
-				<!--<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
-					<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
-					<p>ISD is an International Baccalaureate World School</p> 
-				</div>-->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
 					<h1 class="bc-hero__heading">International School of Dublin</h1>
 					<div class="bc-hero__body__text__IB">
@@ -154,49 +150,6 @@
 			</svg>
 		</div>
 	</section><!-- // .bc-one-col-feature -->
-	<section class="bc-feature-component has-coloured-cards has-shade-01">
-		<div class="bc-feature-component__wrap">
-			<header class="bc-feature-component__header bc-feature-component__header--minor">
-				<div class="bc-feature-component__content__text-content">
-					<h1 class="bc-feature-component__heading">Get Started Here</h1>
-				</div>
-			</header>
-			<div class="bc-feature-component__content bc-3-columns ">
-				<div class="bc-column bc-card">
-					<h2 class="bc-card__heading">Admissions</h2>
-					<p>Find the answers to all of your questions about starting at ISD here.</p>
-					<a class="bc-icon-link" href="<?php echo get_permalink(20) ?>">
-							Our admissions process explained
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
-							</svg>
-					</a>
-				</div>
-				<div class="bc-column bc-card">
-					<h2 class="bc-card__heading">Learning &amp; Teaching</h2>
-					<p>Our teaching method is guided by the International Baccalaureate.</p>
-					<a class="bc-icon-link" href="<?php echo get_permalink(86) ?>">
-						Find out about our adademic program
-						<svg class="bc-svg-icon">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
-						</svg>
-					</a>
-				</div>
-				<div class="bc-column bc-card">
-					<h2 class="bc-card__heading">About ISD</h2>
-					<p>ISD is the first accredited IB World Primary School in Ireland.</p>
-					<a class="bc-icon-link" href="<?php echo get_permalink(13) ?>">
-						Find out more about us
-						<svg class="bc-svg-icon">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
-						</svg>
-					</a>
-				</div>
-			</div>
-		</div><!-- // .bc-feature-component__wrap -->
-		
-	</section>
-	<!-- // Get started here -->
 	<section class="bc-feature-component bc-2-col-full-features" aria-label="An IB Word School and Student Experience"> 
 		<article class="bc-2-col-full-feature is-brand-primary">
 			<div class="bc-feature-component__content">
@@ -215,8 +168,8 @@
 					<p class="bc-feature-component__intro">The International School of Dublin (ISD) is an International Baccalaureate (IB) World School. There are more than one million IB students (aged 3-19) in over 150 countries worldwide.</p>
 					<p>The IB is increasingly recognised as the gold-standard measurement of academic and intellectual development both by universities and leading graduate employers.</p> 
 
-					<a class="bc-button" href="<?php echo get_permalink(13) ?>">
-						Find out what sets us apart
+					<a class="bc-button" href="<?php echo get_permalink(86) ?>">
+						Find out about Learning &amp; Teaching at ISD
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
 						</svg>

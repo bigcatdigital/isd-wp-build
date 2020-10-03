@@ -1177,27 +1177,14 @@ figcaption {
 .is-floating-nav {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.16), -4px -4px 8px rgba(0, 0, 0, 0.16); }
 
-.bc-feature-component {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-  @media screen and (min-width: 1024px) {
-    .bc-feature-component {
-      padding-top: 3rem; } }
+.bc-feature-component.site-quicklinks-component.has-waves .bc-feature-component__wrap {
+  padding-bottom: 4.5rem; }
+
+.bc-feature-component.site-quicklinks-component .bc-feature-component__content {
+  margin-bottom: 0; }
 
 .site-quicklinks {
-  position: relative;
-  padding-bottom: 0.75rem;
-  background-color: transparent;
-  border-bottom: 1px solid #F2EF11;
   position: relative; }
-  .site-quicklinks:after {
-    content: "";
-    height: 4px;
-    width: 9%;
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    background-color: #F2EF11; }
   .site-quicklinks .site-quicklinks__heading {
     position: relative;
     z-index: 10;
@@ -1211,8 +1198,9 @@ figcaption {
     padding-bottom: 0.75rem;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.7411rem;
     font-weight: 300; }
+  .site-quicklinks .site-quicklinks__heading__label {
+    max-width: calc(100% - 2.57143rem); }
   .site-quicklinks .site-quicklinks__toggle {
     position: absolute;
     right: 0%;
@@ -1231,9 +1219,7 @@ figcaption {
   .site-quicklinks .site-quicklinks__wrapper {
     z-index: 0;
     height: 0;
-    overflow: hidden;
-    margin-bottom: 0.75rem;
-    transition: border-width 320ms; }
+    overflow: hidden; }
   .site-quicklinks .site-quicklinks__list {
     display: flex;
     flex-direction: row;
@@ -1281,8 +1267,8 @@ figcaption {
       display: none; }
 
 @media screen and (min-width: 768px) {
-  __heading {
-    font-size: 1.5157rem; } }
+  .site-quicklinks .site-quicklinks__heading {
+    font-size: 1.7411rem; } }
 
 @media screen and (min-width: 540px) {
   .site-quicklinks .site-quicklinks__list {
@@ -3076,14 +3062,12 @@ figcaption {
 .bc-responsive-table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  min-width: 720px; }
   .bc-responsive-table td, .bc-responsive-table th {
     padding: 0.75rem 0.375rem;
     text-align: left;
     border-bottom: 1px solid #e0e0e0; }
-  @media screen and (max-width: 720px) {
-    .bc-responsive-table {
-      max-width: 720px; } }
 
 .bc-table-meta-row {
   background-color: #f0f0f0;
@@ -4413,6 +4397,8 @@ hr.is-featured {
     font-size: 1rem; }
   .bc-expandible-block__body h4 {
     font-size: 1rem; }
+  .bc-expandible-block__body.is-active__text {
+    display: block; }
   .bc-expandible-block__body__media img {
     width: 100%; }
 
@@ -4774,15 +4760,22 @@ hr.is-featured {
     padding-bottom: 4.5rem; }
   .bc-feature-component.has-waves.site-quicklinks-component .bc-feature-component__wrap {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
+    padding-bottom: 2.625rem; }
 
 .has-waves {
   position: relative;
   z-index: 20; }
   .has-waves .wave-wrap {
-    width: 100%; }
-    .has-waves .wave-wrap svg .isd-wave {
-      fill: #fff; }
+    width: 100%;
+    position: relative; }
+    .has-waves .wave-wrap svg {
+      width: 100%; }
+      @media screen and (max-width: 499px) {
+        .has-waves .wave-wrap svg {
+          position: relative;
+          top: -3px; } }
+      .has-waves .wave-wrap svg .isd-wave {
+        fill: #fff; }
     .has-waves .wave-wrap__rainbow {
       fill: url(#isd-rainbow-grad); }
     .has-waves .wave-wrap__wave {
@@ -5415,9 +5408,12 @@ hr.is-featured {
       .bc-social .bc-social__links li a:hover .bc-svg-icon, .bc-social .bc-social__links li a:active .bc-svg-icon, .bc-social .bc-social__links li a:focus .bc-svg-icon {
         fill: #e0e0e0; }
     .bc-social .bc-social__links li .bc-svg-icon {
-      max-width: 1.75rem;
-      max-height: 1.75rem;
+      max-width: 1.5rem;
+      max-height: 1.5rem;
       transition: fill 320ms ease-in-out; }
+      .bc-social .bc-social__links li .bc-svg-icon.bc-instagram-icon {
+        max-width: 1.65rem;
+        max-height: 1.65rem; }
 
 /* Contact Form 7 WP Plugin */
 .wpcf7-form {

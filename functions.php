@@ -68,8 +68,9 @@
 		return $urls;
 	}
 	// ******************** Clean up WordPress Header END ********************** //
+
 	function ISD_build_styles() {
-		wp_enqueue_style('google-poppins', '//fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap', NULL, microtime());	
+		wp_enqueue_style('scope-one', '//fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap', NULL, microtime());	
 		wp_enqueue_style('isd-styles', get_stylesheet_uri());	
 	}
 	add_action('wp_enqueue_scripts', 'ISD_build_styles');
@@ -87,7 +88,6 @@
 
 	add_action('wp_head', function () {
   	global $wp_scripts;
-	
 	  foreach ($wp_scripts->queue as $handle) {
 	    $script = $wp_scripts->registered[$handle];
 	    
@@ -98,4 +98,5 @@
 	    echo "<link rel='preload' href='{$source}' as='script'/>\n";
 	  }
 	}, 1);
+	
 ?>

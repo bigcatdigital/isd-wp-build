@@ -29,7 +29,7 @@
 	</section><!-- // .bc-inner-page-content -->
 	
 	<!-- About the IB -->
-	<section class="bc-feature-component has-shade-01">   
+	<section class="bc-feature-component has-shade-01" id="about-the-ib">   
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
 				<h1>The International Baccalaureate</h1> 

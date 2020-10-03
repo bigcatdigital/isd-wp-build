@@ -89,7 +89,7 @@
 					<h2 class="bc-gr-feature__heading">The International Baccalaureate</h2>
 					<p class="bc-gr-feature__intro">ISD offers the <a href="<?php echo get_permalink(86) ?>">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</p> 
 					<p>It is regarded as the gold-standard measurement of academic and intellectual development both by universities and graduate employers.</p>	
-					<a href="<?php echo get_permalink(86) ?>" class="bc-icon-link">
+					<a href="<?php echo get_permalink(86) ?>#about-the-ib" class="bc-icon-link">
 						Read more about the International Baccalaureate
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>
@@ -135,6 +135,15 @@
 					<h2 class="bc-gr-feature__heading">Transition to Secondary School</h2>
 						<p class="bc-gr-feature__intro">The transition from primary to post-primary/secondary education represents a significant milestone. It is a period filled with change not only for the student but for the entire family.</p> 
 						<p>By the time students reach their final year at ISD, we aim for the students to feel excited and prepared to move on in their educational journey. We find our students transition very successfully to a range of secondary school options.</p>
+						
+						<div class="bc-expandible-block__body">
+							<div class="bc-expandible-block__body__text">
+								<p>By Grade 6, students are deeply familiar with school routines and environments. They have been presented with increasingly advanced concepts and workload demands; and they have been developing a wide skill set to be more autonomous in their learning. In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts.</p>
+								<p>In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts. This endeavor is challenging and provides the students the space to apply all they have learned throughout primary school to a personal inquiry.</p>
+								<p>It is at this time that the students truly learn the value of strategies such as: goal setting, time and organisational management, study habits self assessment and reflection.</p>
+								<p>ISD is happy to provide assistance to families in the quest for suitable secondary school options. ISD has relationships with a variety of surrounding secondary schools offering different options (e.g. single sex, coeducational, national Irish curriculum, IB curriculum) and can explain these to families to help them identify which schools may be of interest to them. ISD can then guide and help facilitate communication between families, teachers and secondary schools.</p>
+							</div>
+						</div><!-- // .bc-expandible-block__body -->
 						<div class="bc-expandible-block__expander">
 							<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
 								<span class="bc-expandible-block__expander__button__text">
@@ -148,14 +157,6 @@
 								</span>
 							</a>
 						</div><!-- // .bc-expandible-block__expander -->
-						<div class="bc-expandible-block__body">
-							<div class="bc-expandible-block__body__text">
-								<p>By Grade 6, students are deeply familiar with school routines and environments. They have been presented with increasingly advanced concepts and workload demands; and they have been developing a wide skill set to be more autonomous in their learning. In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts.</p>
-								<p>In their final term at ISD, students are responsible for engaging in an independent Exhibition, a “thesis” of sorts. This endeavor is challenging and provides the students the space to apply all they have learned throughout primary school to a personal inquiry.</p>
-								<p>It is at this time that the students truly learn the value of strategies such as: goal setting, time and organisational management, study habits self assessment and reflection.</p>
-								<p>ISD is happy to provide assistance to families in the quest for suitable secondary school options. ISD has relationships with a variety of surrounding secondary schools offering different options (e.g. single sex, coeducational, national Irish curriculum, IB curriculum) and can explain these to families to help them identify which schools may be of interest to them. ISD can then guide and help facilitate communication between families, teachers and secondary schools.</p>
-							</div>
-						</div><!-- // .bc-expandible-block__body -->
 				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
 			</article><!-- // .bc-expandible-block --> 
 			<article class="bc-gr-feature bc-gr-columns bc-expandible-block has-colored-text" id="isd-community">

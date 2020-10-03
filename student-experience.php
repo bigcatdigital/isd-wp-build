@@ -7,8 +7,8 @@
 		
 	<?php get_inner_site_header('Student Experience', '', 'More About Student Experience', array('End of Unit Sharing' => '' . get_permalink(112) . '', 'Field Trips and Guest Speakers' => '' . get_permalink(136) . ''), ['Homepage' => home_url(), 'Student Experience' => '' ], 'pupil-experience-reverse.svg#experience--rev'); ?> 
 	<section class="bc-feature-component">   
-		<header class="bc-feature-component__header">
-			<div class="bc-feature-component__content__text-content">
+		<article class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content"> 
 				<p class="bc-content-label ib-world-school">
 					<svg class="bc-svg-icon"> 
 						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>'); ?>#pupil-experience-reverse"></use>  
@@ -16,10 +16,6 @@
 					Student Experience
 				</p>
 				<h1 class="bc-feature-component__heading">ISD Students</h1>
-			</div>
-		</header><!-- // .bc-feature-component__header -->
-		<article class="bc-feature-component__content">
-			<div class="bc-feature-component__content__text-content"> 
 				<p class="bc-feature-component__intro">The student experience at the International School of Dublin (ISD) cannot be simply summarised into one  statement. There are so many factors which contribute to our students having distinctive, varied and eclectic experiences.</p> 
 				<p>Families attending ISD continually remark on how much their “children love coming to school” and we pride ourselves on our ability to truly listen to our students, individualise their educational journey and provide opportunities that keep learning fun and engaging.</p>  
 				<p>You don’t have to take our word for it, see what our students have to say:</p>
@@ -28,32 +24,32 @@
 						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
 						</svg>
-					</a>
+					</a><!-- // .bc-flickty-slider__prev -->
 					<a href="" class="bc-flickty-slider__next">
 						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
 						</svg>
-					</a>
+					</a><!-- // .bc-flickty-slider__next -->
 					<div class="bc-flickty-slider__slide has-mark-right--red">
 						<p class="bc-quote-text">&quot;I love ISD because everyone is international, there is an interesting mix of people and everyone understands when we have to come and go.&quot;</p>
 						<p>
 							<strong>Alexandra – age 9</strong>
 						</p>
-					</div>
+					</div><!-- // .bc-flickty-slider__slide -->
 					<div class="bc-flickty-slider__slide has-mark-right--orange">
 						<p class="bc-quote-text">&quot;ISD is an excellent school that is always striving to better itself, even the teachers talk about how they are learners just like us. I’m proud to be one of its students.&quot;</p>
 						<p>
 							<strong>Noah – age 12</strong>
 						</p>
-					</div>
+					</div><!-- // .bc-flickty-slider__slide -->
 					<div class="bc-flickty-slider__slide has-mark-right--purple">
 						<p class="bc-quote-text">&quot;At ISD you have the chance to give your own opinion and learn to give reasons for your
 Thoughts. You have a chance to help and participate in the school community.&quot;</p>						
 						<p>
 							<strong>Suzanne - age 11</strong>
 						</p>
-					</div>
-				</div>
+					</div><!-- // .bc-flickty-slider__slide -->
+				</div><!-- // .bc-flickty-slider -->
 			</div><!-- // .bc-feature-component__content__text-content -->
 		</article><!-- // .bc-feature-component__content -->
 	</section><!-- // .bc-inner-page-content -->
@@ -84,14 +80,6 @@ Thoughts. You have a chance to help and participate in the school community.&quo
 						</picture>
 						<h2 class="bc-card__heading">Parent Workshop</h2>
 						<p>ISD parents have the opportunity to become more familiar with the IBPYP curriculum through interactive workshops provided by the ISD teaching team. </p>
-						<p class="bc-card__cta">
-							<a href="javascript:void(0)" class="bc-icon-link--featured">
-								Card CTA
-								<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-									<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
-								</svg>
-							</a>	
-						</p>
 						
 					</div><!-- // Parent Workshop -->
 					<div class="bc-card has-image bc-flickty-slider__slide">	

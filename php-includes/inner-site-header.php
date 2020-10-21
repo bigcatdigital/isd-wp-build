@@ -21,57 +21,59 @@
  echo "			</linearGradient>";
  echo "		</defs>";
  echo "	</svg>";
- echo "	<header class=\"bc-site-header is-overlay\">";
- echo "		<div class=\"bc-site-header__content\">";
- echo "			<div class=\"bc-site-header__logo\">";
+ echo "<header class=\"bc-site-header is-overlay\">";
+ echo "	<div class=\"bc-site-header__content\">";
+ echo "		<div class=\"bc-site-header__logo\">";
  echo "				<a href=\"" . home_url() . "\" class=\"bc-site-header__logo__link\">";
  echo "					<img src=\"" . get_theme_file_uri('/media/isd-logo.png') . "\" alt=\"International School of Dublin\" class=\"\">";
  echo "				</a>";
- echo "			</div>";
- echo "			<nav class=\"bc-main-navigation\">"; 
- echo "				<h1 class=\"bc-site-header__heading\">Welcome to International School of Dublin</h1>";
- echo "				<div class=\"bc-main-navigation__navs\">";
- echo "					<div class=\"bc-main-navigation__main-nav\">";
- echo "						<ul class=\"bc-main-navigation__links\">";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(86) . "\">Learning &amp; Teaching</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(24) . "\">Student Experience</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(15) . "\">For Families Based in Ireland</a></li>";
-echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(20) . "\">Admissions</a></li>";
- echo "						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(13) . "\">About the School</a></li>";
- echo "						</ul>";
- echo "					</div>";
- echo "					<div class=\"bc-main-navigation__sub-navigation\">"; 
- echo "						<h3 class=\"bc-site-header__sub-sub-heading\">Quick Links</h3>";
- echo "						<ul class=\"bc-main-navigation__links\">";
- echo " 						<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(90) . "\">Daily Schedule</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(100) . "\">Academic Calendar</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(104) . "\">School Bus</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(22) . "\">Frequently Asked Questions</a></li>";
- echo "							<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(88) . "\">Contact</a></li>";
- echo "						</ul>";	
- echo "					</div>";
- echo "				</div>";
- echo "			</nav>";
- echo "			<div class=\"bc-main-navigation-toggle\">";
- echo "				<a class=\"menu-icon-wrap bc-navigation-toggle\" href=\"javascript:void(0)\">";
- echo "					<?xml version=\"1.0\" encoding=\"utf-8\"?>";
- echo "						<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
- echo "						<svg version=\"1.1\" class=\"bc-menu-icon \" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"  viewBox=\"0 0 100 100\" xml:space=\"preserve\">";
- echo "							<g class=\"bc-menu-icon__lines\">";
- echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top\" x1=\"1\" y1=\"25\" x2=\"99\" y2=\"25\"/>";
- echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle\" x1=\"1\" y1=\"50\" x2=\"99\" y2=\"50\"/>";
- echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom\" x1=\"1\" y1=\"75\" x2=\"99\" y2=\"75\"/>";						
- echo "							</g>";
- echo "							<g class=\"bc-menu-icon__active-lines\">";
- echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first\" x1=\"-70\" y1=\"-70\" x2=\"0\" y2=\"0\"/>";
- echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second\" x1=\"100\" y1=\"0\" x2=\"170\" y2=\"-70\"/>";
- echo "							</g>";
- echo "						</svg>";
- echo "					</a>";
- echo "			</div><!-- // .bc-main-navigation-toggle -->";
  echo "		</div>";
- echo "		<div class=\"bc-main-navigation__underlay\"></div>";
- echo "	</header>";
+ echo "		<div class=\"bc-site-header__welcome\">";
+ echo " 		<h1 class=\"bc-site-header__heading\">Welcome to ISD</h1>";
+ echo "		</div>";
+ echo "		<div class=\"bc-main-navigation-toggle\">";
+ echo "			<a class=\"menu-icon-wrap bc-navigation-toggle\" href=\"javascript:void(0)\">";
+ echo "				<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+ echo "					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
+ echo "					<svg version=\"1.1\" class=\"bc-menu-icon \" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"  viewBox=\"0 0 100 100\" xml:space=\"preserve\">";
+ echo "						<g class=\"bc-menu-icon__lines\">";
+ echo "							<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top\" x1=\"1\" y1=\"25\" x2=\"99\" y2=\"25\"/>";
+ echo "							<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle\" x1=\"1\" y1=\"50\" x2=\"99\" y2=\"50\"/>";
+ echo "							<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom\" x1=\"1\" y1=\"75\" x2=\"99\" y2=\"75\"/>";						
+ echo "						</g>";
+ echo "						<g class=\"bc-menu-icon__active-lines\">";
+ echo "							<line class=\"bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first\" x1=\"-70\" y1=\"-70\" x2=\"0\" y2=\"0\"/>";
+ echo "							<line class=\"bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second\" x1=\"100\" y1=\"0\" x2=\"170\" y2=\"-70\"/>";
+ echo "						</g>";
+ echo "					</svg>";
+ echo "				</a>";
+ echo "		</div><!-- // .bc-main-navigation-toggle -->";
+ echo "	</div>";//.bc-site-header__content
+ echo "	<nav class=\"bc-main-navigation\">";
+ echo "		<div class=\"bc-main-navigation__navs\">";
+ echo "			<div class=\"bc-main-navigation__main-nav\">";
+ echo "				<ul class=\"bc-main-navigation__links\">";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(86) . "\">Learning &amp; Teaching</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(24) . "\">Student Experience</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(15) . "\">For Families Based in Ireland</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(20) . "\">Admissions</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(13) . "\">About the School</a></li>";
+ echo "				</ul>";
+ echo "			</div>";
+ echo "			<div class=\"bc-main-navigation__sub-navigation\"> ";
+ echo "				<h3 class=\"bc-site-header__sub-sub-heading\">Quick Links</h3>";
+ echo "				<ul class=\"bc-main-navigation__links\">";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(90) . "\">Daily Schedule</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(100) . "\">Academic Calendar</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(104) . "\">School Bus</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(22) . "\">Frequently Asked Questions</a></li>";
+ echo "					<li class=\"bc-main-navigation__item\"><a class=\"bc-main-navigation__item__link\" href=\"" . get_permalink(88) . "\">Contact</a></li>";
+ echo "				</ul>";
+ echo "			</div>";
+ echo "		</div>";
+ echo "	</nav>";
+ echo "	<div class=\"bc-main-navigation__underlay\"></div>";
+ echo " </header>";
 if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' && is_array($inner_nav_links)) {
 	echo "	<section class=\"bc-inner-page-header bc-content-section has-inner-sub-nav has-waves\">";   
 } else {
@@ -96,7 +98,7 @@ if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' &
  echo "				<div class=\"bc-inner-page-header__content\">";
  echo "				<h1 class=\"bc-inner-page-header__heading\">$innertitle</h1>";
 if ($innersubtitle !== '') {
- echo "				<h2 class=\"bc-inner-page-header__sub-heading\">$innersubtitle</h2>";
+ echo "				<h2 class=\"bc-inner-page-header__sub-heading\"> $innersubtitle</h2>";
 }
 if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "				<nav class=\"bc-header-sub-nav\">";
@@ -113,9 +115,6 @@ if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' &
  		echo "				<li class=\"bc-section-navigation__item bc-header-sub-nav__item\">";
 		echo "					<a href=\"$link\" class=\"bc-section-navigation__link bc-icon-link\">";
 		echo "							$link_text";
-		echo "							<svg class=\"bc-svg-icon\">";							
-		echo " 								<use xlink:href=\"" . get_theme_file_uri('/media/svg/icons/bc-svgs.svg') . "#arrow\"></use>";						
-		echo " 							</svg>";
 		echo " 					</a>";
 		echo " 				</li>";
 	}
@@ -123,6 +122,7 @@ if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' &
  echo "				</nav><!-- // .bc-header-sub-nav -->";
 }
  echo "			</div><!-- // .bc-innerpage-header__content -->";
+ 
  echo "		</div><!-- // .bc-innerpage-header__wrap -->";
  echo " 	<div class=\"wave-wrap\">";
  echo "			<?xml version=\"1.0\" encoding=\"utf-8\"?>";
@@ -133,7 +133,8 @@ if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' &
  echo "				<path class=\"isd-wave wave-wrap__wave\" id=\"isd-wave\" d=\"M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z\"/>";
  echo "			</svg>";
  echo "		</div><!-- // .bc-wave-wrap -->";
- echo "	</section><!-- // .bc-innerpage-header -->";
+ /*echo "		<img class=\"bc-inner-page-header__image\" src=\"" . get_theme_file_uri('/media/irish-family.jpg ') . "\" alt=\"A family\" >";*/
+ echo "	</section><!-- // .bc-inner-page-header -->";
  echo "	<nav class=\"bc-breadcrumbs\">";
  echo "		<div class=\"bc-breadcrumbs__wrap\">";
  echo "			<ul class=\"bc-breadcrumbs__links\">";

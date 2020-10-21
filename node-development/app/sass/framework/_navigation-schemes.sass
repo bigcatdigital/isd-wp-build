@@ -52,6 +52,7 @@
 			margin-right: $gutter/6
 			font-size: $small-text
 			font-weight: 300
+			color: $shade-05
 			> a 
 				font-size: $small-text
 				font-weight: 300
@@ -125,7 +126,7 @@
 		padding-left: $gutter/2
 		padding-right: $gutter/2
 		margin-top: $vertical-unit/4 
-		margin-bottom: $vertical-unit/4 
+		margin-bottom: $vertical-unit/4		
 		> a
 			flex: 1 1 100% 
 			display: inline-flex
@@ -282,25 +283,21 @@
 	&__links
 		margin: 0
 		padding: 0
-		display: grid
-		grid-template: auto / 1fr
 	&__item
+		padding-left: $gutter
 		display: flex
 	&__link
 		flex: 1 1 auto
 		display: inline-flex
 		align-items: flex-end
-		padding: $vertical-unit / 4
-		padding-top: $vertical-unit*1.5
-		margin-bottom: $vertical-unit/2
-		color: $white
-		background-color: $brand-primary
-		font-size: $text-01
+		padding-top: $vertical-unit / 2
+		padding-bottom: $vertical-unit/2
 		font-weight: 300
 		.bc-svg-icon
-			fill: $white
+			fill: $brand-primary
+			max-height: 1.5rem 
 		@include linkHover
-			background-color: darken($brand-primary, 4%)
+			background-color: darken($white, 4%)
 	@media screen and (min-width: $small)
 		.bc-section-navigation__links
 			grid-template: auto / 2fr
@@ -331,19 +328,20 @@
 //Section nav in inner page header
 .bc-header-sub-nav
 	position: relative
-	margin-top: 	 $vertical-unit*2 
+	margin-top: 	 $vertical-unit 
 	&.is-active
 		z-index: 20
+	ul 
+		padding: 0
 	ul, li
 		list-style: none
 		margin: 0
-		padding: 0
 	& &__toggle
 		display: flex
 		align-items: center
 		&__label
-			font-size: $text-01
-			font-weight: 300
+			font-size: $text-00
+			font-weight: 400
 			color: $white
 			margin-top: 		0
 			margin-bottom: 	0
@@ -355,47 +353,54 @@
 			display: inline-flex
 			align-items: center
 			justify-content: center
-			padding: $gutter/3  
+			padding: $gutter/4  
 			border: 1px solid $white
 			border-left: none
 			border-radius: 	50%
 			transition: background-color 280ms ease-out
 			.bc-svg-icon
 				transform: rotate(45deg)
-				width: 	$text-00
-				height: $text-00
+				width: 	$text--1
+				height: $text--1
 				fill: $white
 			@include activeLink
 				background-color: darken($brand-primary, 4%)
 	& &__list
-		position: absolute
 		width: 100%
 		height: 0
 		top: 3rem
 		margin: $vertical-unit/2 auto 
 		overflow: hidden
+		transition: height 260ms ease-out
 		&.is-active
 			overflow: visible
-			@include makeNeumporphic($position: absolute)
+			.bc-section-navigation__item
+				opacity: 1
 	& &__item
-		padding: 0	
+		position: relative
 		display: flex
-		&:last-of-type
-			> .bc-header-sub-nav__link
-				border-bottom: none
-	& &__link
-		flex: 1 1 auto
-		padding: $gutter/2 $gutter
-		border-bottom: 1px solid
-		justify-content: space-between
-		align-items: center
-		font-weight: 300
-		color: $brand-primary
-		background-color: $white
-		transition: background-color 280ms ease-out
+		padding-left: $gutter 
+		color: $white
+		opacity: 0
+		transition: opacity 220ms ease-out 140ms
+		&:before 
+			content: '\2014'
+			position: absolute
+			left: 0
+			display: flex
+			align-items: center
+			height: 100%
+			font-weight: 200
+			color: $white
+	.bc-section-navigation__link 
+		padding-top: 		$gutter/4
+		padding-bottom: $gutter/4
+		color: $white
 		@include activeLink
-			background-color: darken($white, 6%)
-			text-decoration: underline
+			color: $white
+			background-color: transparent
+			.bc-svg-icon
+				fill: $white
 
 		
 			

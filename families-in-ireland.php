@@ -36,12 +36,6 @@
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<p class="bc-content-label">
-						<svg class="bc-svg-icon"> 
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#family-simple-icon"></use>  
-						</svg>
-							For Families in Ireland
-						</p>
 					<h1 class="bc-hero__heading">For Families Based in Ireland</h1>
 					<p class="bc-hero__tagline">Find out how we offer local families a progressive primary school learning alternative.</p>
 				</div><!-- // .bc-hero__body__text --> 
@@ -65,10 +59,9 @@
 	<section class="bc-feature-component bc-expandible-blocks-component"  id="learning-for-life">
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
-				
 				<h1 class="bc-feature-component__heading">Options in Education</h1>
-					<p class="bc-feature-component__intro">The International School of Dublin (ISD) comprises both local and international families. We believe that an international education is not solely for international families.</p>
-					<p class="">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
+				<p class="bc-feature-component__intro">The International School of Dublin (ISD) comprises both local and international families. We believe that an international education is not solely for international families.</p>
+				<p class="">At ISD we offer a different option for education. ISD is multi-denominational, co-educational and inclusive. We have small class sizes to promote individualised education.</p>
 			</div>	
 		</header><!-- // .bc-feature-component__heading -->
 		<div class="bc-feature-component__content">
@@ -192,46 +185,48 @@
 	</section><!-- // .bc-expandible-blocks-component -->
 	<section class="bc-feature-component has-waves has-shade-01">
 		<div class="bc-feature-component__wrap">
-		<header class="bc-feature-component__header">
-			<div class="bc-feature-component__content__text-content">
-				<h1 class="bc-feature-component__heading">Testimonials</h1>
-				<p class="bc-feature-component__intro">Hear local Irish parents and students describe their experience with ISD.</p>
-					
-			</div>	
-		</header><!-- // .bc-feature-component__heading -->
-		<div class="bc-feature-component__content">
-			<div class="bc-feature-component__content__text-content">
-				<div class="bc-flickty-slider bc-text-slider">
-						<a href="" class="bc-flickty-slider__prev is-inactive">
-						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-						</svg>
-					</a>
-					<a href="" class="bc-flickty-slider__next">
-						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-						</svg>
-					</a>
-					<article class="bc-flickty-slider__slide ">
-						<p class="bc-quote-text">&quot;I have never been a fan of private education, being a firm believer is exposing my kids to the real world and developing them as responsible, caring individuals.</p>
-						<p class="bc-quote-text">&quot;When we traveled as a family, to Denmark and to India, however, we found that the IB system of education offered in the fee-paying international schools available to us were at an incredible standard and suited the needs of our children perfectly.</p>
-						<p><strong>-- Fiona O’Brien - Irish - Mother of two students at ISD</strong></p>
-						
-					</article><!-- // .bc-flickty-slider__slide --> 
-					<article class="bc-flickty-slider__slide ">
-						<p class="bc-quote-text">&quot;I highly recommend ISD because everyone is very nice. Everyone treats one another so well and most of all keeps the students really HAPPY.</p> 
-						<p class="bc-quote-text">&quot;ISD really represents all of the IB Learner Profile so well uses it all the time. At ISD you can meet people from all around the world. The teachers adapt the learning to your own skills and talents and always have time to help students who need a little bit more help. ISD is the best school ever (in my opinion)!</p>
-						<p><strong>-- Joshua Merry - Irish - Age 11</strong></p>
-					</article><!-- // .bc-flickty-slider__slide --> 
-					<article class="bc-flickty-slider__slide">
-						<p class="bc-quote-text">&quot;I chose ISD initially because of class size and teacher ratio, and the broadminded international focus of the curriculum. However, we have stayed at ISD throughout my child’s entire primary education for all the benefits it continues to provide, like the feeling of a big family who come from all different places.</p> 
-						<p class="bc-quote-text">&quot; My child has developed inquiry skills, so she can continually learn about how her decisions and behaviour affects her group, her community and the world. There is a tremendous feeling of warmth in the ISD community that benefits both the local Irish families and the expatriate families.</p>
-						<p><strong>-- Hazel Cullen - Irish - Mother of one student at ISD</strong></p>
-					</article><!-- // .bc-flickty-slider__slide --> 
-				</div>
-			</div>
-		</div>
-		</div>
+			<header class="bc-feature-component__header">
+				<div class="bc-feature-component__content__text-content">
+					<h1 class="bc-feature-component__heading">Testimonials</h1>
+					<p class="bc-feature-component__intro">Hear local Irish parents and students describe their experience with ISD.</p>
+
+				</div>	
+			</header><!-- // .bc-feature-component__heading -->
+			<div class="bc-feature-component__content">
+				<div class="bc-feature-component__content__text-content">
+					<div class="bc-flickty-slider bc-text-slider">
+						<div class="bc-flickty-slider__slider">
+							<a href="" class="bc-flickty-slider__prev is-inactive">
+								<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+								</svg>
+							</a>
+							<a href="" class="bc-flickty-slider__next">
+								<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+								</svg>
+							</a>
+							<article class="bc-flickty-slider__slide ">
+								<p class="bc-quote-text">&quot;I have never been a fan of private education, being a firm believer is exposing my kids to the real world and developing them as responsible, caring individuals.</p>
+								<p class="bc-quote-text">&quot;When we traveled as a family, to Denmark and to India, however, we found that the IB system of education offered in the fee-paying international schools available to us were at an incredible standard and suited the needs of our children perfectly.</p>
+								<p><strong>-- Fiona O’Brien - Irish - Mother of two students at ISD</strong></p>
+
+							</article><!-- // .bc-flickty-slider__slide --> 
+							<article class="bc-flickty-slider__slide ">
+								<p class="bc-quote-text">&quot;I highly recommend ISD because everyone is very nice. Everyone treats one another so well and most of all keeps the students really HAPPY.</p> 
+								<p class="bc-quote-text">&quot;ISD really represents all of the IB Learner Profile so well uses it all the time. At ISD you can meet people from all around the world. The teachers adapt the learning to your own skills and talents and always have time to help students who need a little bit more help. ISD is the best school ever (in my opinion)!</p>
+								<p><strong>-- Joshua Merry - Irish - Age 11</strong></p>
+							</article><!-- // .bc-flickty-slider__slide --> 
+							<article class="bc-flickty-slider__slide">
+								<p class="bc-quote-text">&quot;I chose ISD initially because of class size and teacher ratio, and the broadminded international focus of the curriculum. However, we have stayed at ISD throughout my child’s entire primary education for all the benefits it continues to provide, like the feeling of a big family who come from all different places.</p> 
+								<p class="bc-quote-text">&quot; My child has developed inquiry skills, so she can continually learn about how her decisions and behaviour affects her group, her community and the world. There is a tremendous feeling of warmth in the ISD community that benefits both the local Irish families and the expatriate families.</p>
+								<p><strong>-- Hazel Cullen - Irish - Mother of one student at ISD</strong></p>
+							</article><!-- // .bc-flickty-slider__slide --> 
+						</div><!-- // .bc-flickty-slider__slider -->
+					</div><!-- // .bc-flickty-slider -->
+				</div><!-- // .bc-feature-component__content__text-content -->
+			</div><!-- // .bc-feature-component__content -->
+		</div><!-- // .bc-feature-component__wrap -->
 		<div class="wave-wrap">
 			<?php
 				echo '<?xml version="1.0" encoding="utf-8"?>'

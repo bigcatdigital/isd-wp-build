@@ -92,8 +92,7 @@
 								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(176) ?>">Support for your transition</a></li>
 								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo rtrim(get_permalink(86), '/') . '#language-support' ?>">Language support for your children</a></li>
 								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(15) . '#isd-community' ?>">Parents&apos; Community</a></li> 
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(102) ?>">After School Program</a></li>
-								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(13) ?>">Our Mission &amp; Values</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo get_permalink(102) ?>">After School Programme</a></li>
 								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="<?php echo rtrim(get_permalink(13), '/') . '#our-team'?>">Meet the people at ISD</a></li>
 							</ul>		
 						</div>

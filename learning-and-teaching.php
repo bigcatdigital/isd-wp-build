@@ -5,20 +5,10 @@
 ?>
 <body> 
 	<?php get_inner_site_header('Learning and Teaching', '', 'More about Learning and Teaching', array('Daily Schedule' => get_permalink(90), 'Class Groupings' => get_permalink(94), 'Academic Calendar' => get_permalink(100), 'After School Programme' => get_permalink(102), 'School Bus' => get_permalink(104)), array('Homepage' => home_url(), 'Learning & Teaching' => get_permalink(86)), 'learning-icon-reverse.svg#learning-icon'); ?> 
-	<section class="bc-feature-component">   
-		<header class="bc-feature-component__header">
-			<div class="bc-feature-component__content__text-content">
-				<p class="bc-content-label ib-world-school">
-					<svg class="bc-svg-icon"> 
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#learning-icon-reverse"></use>  
-					</svg>
-					Learning &amp; Teaching
-				</p>
-				<h1 class="bc-feature-component__heading">Overview</h1>
-			</div>
-		</header><!-- // .bc-feature-component__header -->
+	<section class="bc-feature-component">  
 		<article class="bc-feature-component__content">
 			<div class="bc-feature-component__content__text-content"> 
+				<h1 class="bc-feature-component__heading">Overview</h1>
 				<p class="bc-feature-component__intro">One of the fundamental goals of an education at the International School of Dublin (ISD) is to encourage a love of learning. Welcoming and lively learning environments are characterised by collaborative and purposeful activity.</p> 
 				<p>Small class sizes are guided by international experienced teachers who work to facilitate holistic and innovative forms of engagement which promote learning that is process, rather than topic driven. </p> 
 				<p>Ultimately, ISD students are equipped with the knowledge and skills needed to become autonomous lifelong learners.</p>

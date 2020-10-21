@@ -19,58 +19,62 @@
 			background-color: $black
 	& &__close
 		position: absolute
-		top: 		$vertical-unit/3
-		right: 	5%
-		transform: translateX(50%)
-		z-index: 30
-		max-width: 10%
+		top: 		$vertical-unit/2
+		right: 	$gutter
 		display: flex
-		flex-direction: column
 		justify-content: center
 		align-items: center
+		z-index: 20
 		.bc-svg-icon
-			fill: $shade-02
-			padding: $vertical-unit/3
-			margin-bottom: $vertical-unit/4
+			max-width: 	1rem
+			max-height: 1rem
+			fill: $shade-03
 		&__text
-			font-size: $text--1
-			color: $shade-02
+			padding-right: $gutter/2
+			font-size: $text--2
+			color: $shade-03
 	.bc-lightbox-slider
+		flex: 1 1 100%
 		display: flex
 		flex-direction: column
 		justify-content: center
 		padding-top: 3rem
 		padding-bottom: 3rem
+		
+		.bc-flickty-slider__controls
+			padding-right: $gutter/2
+			.bc-flickty-slider__counter
+				color: $shade-03
+				
 		.bc-flickty-slider
+			&__prev, &__next
+				background-color: transparent
+				.bc-svg-icon
+					fill: $shade-03
 			&__slide
 				position: relative
+				overflow: hidden
 				display: flex
 				justify-content: center
+				align-items: stretch 
+				min-height: 50vh
 				max-height: 70vh
 				width: 100%
-				padding-left: 	10%
-				padding-right: 	10%
+				padding-left: 	$gutter
+				padding-right: 	$gutter
 				margin-right: 10%
 				.bc-card
-					flex: 1 1 100%
-					position: relative
+					width: 100%
+					height: 100%
+					justify-content: center
+					align-items: center
 					img
-						width: 100%
-						height: 100%
-						object-fit: cover
-						object-position: center
+						flex: 0 0 0
+						width: auto
+						min-width: 50%
 				.bc-card__heading
-					font-size: $text-02
+					font-size: $text-00
 					color: $white
-				
-			@media screen and (orientation: landscape)
-				&__slide
-					padding-left: 	28%
-					padding-right: 	28%
-			@media screen and (orientation: landscape) and (min-width: $large)
-				&__slide
-					padding-left: 	28%
-					padding-right: 	28%
 		.flickity-page-dots
 			display: flex
 			justify-content: center

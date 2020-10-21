@@ -8,12 +8,6 @@
 	<section class="bc-feature-component">   
 			<article class="bc-feature-component__content">
 				<div class="bc-feature-component__content__text-content">
-					<p class="bc-content-label">
-						<svg class="bc-svg-icon">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#about-isd"></use>  
-						</svg>
-						Welcome to ISD
-					</p>
 					<h1 class="bc-inner-page-content__heading--large">A Warm Welcome</h1>
 					<div class="bc-featured-quote ">
 						<h2 class="bc-featured-quote__heading">Welcome from Head of School, Cristen Schwab</h2> 
@@ -48,7 +42,10 @@
 			<div class="bc-feature-component__content__text-content">
 				<div class="bc-media-embed">
 					<div class="bc-media-embed__media">
-						<iframe width="" height="" src="https://videopress.com/embed/BnS1zBSC?hd=0&autoPlay=0&permalink=0&loop=0" frameborder="0" title="The International School of Dublin Story"></iframe>
+						<video controls currentTime=1>
+							<source src="<?php echo get_theme_file_uri('/media/videos/ISD-short-promo-trailer.mp4'); ?>" type="video/mp4">
+							
+						</video>
 					</div>
 					<div class="bc-media-embed__caption">The ISD Story</div>
 				</div>
@@ -64,7 +61,7 @@
 				<h1 class="bc-inner-page-content__heading">Meet Our Team</h1>
 				<p class="bc-inner-page-content__intro">ISD is very proud of our outstanding team of international educators. Collectively, we share extensive experience in international primary education and like many of our families; have moved to Ireland and made Dublin our home.</p>	
 				<p>
-					<a class="bc-icon-link" href="javascript:void(0)">
+					<a class="bc-icon-link" href="<?php echo get_permalink(get_page_by_path('about-isd/employment')) ?>">
 						See here for employment opportunities and internships at ISD
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
@@ -122,14 +119,12 @@
 					</div>
 				</div><!-- // Louise Kearns -->
 				<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
-					<!--<picture class="bc-card__media">
-						<img src="<?php echo get_theme_file_uri('/media/people/louise-kearns.jpeg'); ?>" alt="Louise Kearns">
-					</picture>-->
+					
 					<h2 class="bc-card__heading">Marcella Tesoriero</h2>
 					<h3 class="bc-card__sub-heading">Kindergarten Class Teacher</h3>
 					<div class="bc-card__cta">
 						<a href="<?php echo get_permalink(66) ?>" class="bc-icon-link">
-							Read more about Louise 
+							Read more about Marcella 
 							<svg class="bc-svg-icon">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
 							</svg>
@@ -137,14 +132,12 @@
 					</div>
 				</div><!-- // Marcella Tesoriero -->
 				<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
-					<!--<picture class="bc-card__media">
-						<img src="<?php echo get_theme_file_uri('/media/people/louise-kearns.jpeg'); ?>" alt="Louise Kearns">
-					</picture>-->
+				
 					<h2 class="bc-card__heading">Mairead Lawyer</h2>
 					<h3 class="bc-card__sub-heading">Grade 1,2 Class Teacher</h3>
 					<div class="bc-card__cta">
 						<a href="<?php echo get_permalink(68) ?>" class="bc-icon-link">
-							Read more about Louise 
+							Read more about Mairead 
 							<svg class="bc-svg-icon">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
 							</svg>
@@ -233,14 +226,14 @@
 					</picture>-->
 					<h2 class="bc-card__heading">Frank Cooney</h2>
 					<h3 class="bc-card__sub-heading">Director</h3>
-					<div class="bc-card__cta">
+					<!--<div class="bc-card__cta">
 						<a href="<?php echo get_permalink(82) ?>" class="bc-icon-link">
 							Read more about Frank
 							<svg class="bc-svg-icon">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
 							</svg>
 						</a>
-					</div>
+					</div>-->
 				</div><!-- // Frank -->
 				<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
 					<picture class="bc-card__media">

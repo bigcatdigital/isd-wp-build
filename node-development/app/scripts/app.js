@@ -341,23 +341,22 @@
 		if ($headerSubNav) {
 			const $headerSubNavToggle = $headerSubNav.querySelector('.bc-header-sub-nav__toggle__icon');
 			const $headerSubNavToggleIcon = $headerSubNavToggle.querySelector('.bc-header-sub-nav__toggle__icon .bc-svg-icon');
-			const $headerSubNavBody = $headerSubNav.querySelector('.bc-header-sub-nav__list');
+			const $headerSubNavList = $headerSubNav.querySelector('.bc-header-sub-nav__list');
 			$headerSubNavToggle.addEventListener('click', function (evt) {
 				evt.preventDefault();
-				const navBodyHeight = $headerSubNavBody.scrollHeight;
+				const navBodyHeight = $headerSubNavList.scrollHeight;
+				//const duration = 0.28;
 				if ($headerSubNavToggle.classList.contains('is-active')) {
-					$bc.gsap.to($headerSubNavBody, { height: 0, duration: 0.328 }).eventCallback('onComplete', function () {
-						$headerSubNavBody.classList.toggle('is-active');
-						$headerSubNavBody.removeAttribute('style');
-						$headerSubNavToggle.classList.toggle('is-active');
-					});
-					$bc.gsap.to($headerSubNavToggleIcon, { rotate: '45deg', duration: 0.4 });
+					$headerSubNavList.style.height = 0;
+					$headerSubNavList.removeAttribute('style');
+					$headerSubNavList.classList.toggle('is-active');
+					$headerSubNavToggle.classList.toggle('is-active');
+					$bc.gsap.to($headerSubNavToggleIcon, { rotate: '45deg', duration: 0.3 });
 				} else {
-					$bc.gsap.to($headerSubNavBody, { height: navBodyHeight + 'px', duration: 0.328 }).eventCallback('onComplete', function () {
-						$headerSubNavBody.classList.toggle('is-active');
-						$headerSubNavToggle.classList.toggle('is-active');
-					});
-					$bc.gsap.to($headerSubNavToggleIcon, { rotate: '90deg', duration: 0.4 });
+					$headerSubNavList.style.height = navBodyHeight + 'px';
+					$headerSubNavList.classList.toggle('is-active');
+					$headerSubNavToggle.classList.toggle('is-active');
+					$bc.gsap.to($headerSubNavToggleIcon, { rotate: '90deg', duration: 0.3 });
 				}
 			});
 		}
@@ -460,16 +459,11 @@
 			});
 		}// end if $pageFeatures
 		function initializeFlicktySlider($sliderEl, opts) {
-			const $sliderNext = $sliderEl.querySelector('.bc-flickty-slider__next');
-			const $sliderPrev = $sliderEl.querySelector('.bc-flickty-slider__prev');
-			let slides = Array.from($sliderEl.querySelectorAll('.bc-flickty-slider__slide'));
-			let slidesMaxHeight = 0;
-			slides = slides.sort(function (a, b) {
-				a.clientHeight - b.clientHeight;
-			});
-			slidesMaxHeight = slides[0].clientHeight;
-			slides.forEach(function (slide) {
-				slide.style.height = slidesMaxHeight + 'px';
+			const $sliderWrap = $sliderEl.closest('.bc-flickty-slider');
+			const $sliderNext = $sliderWrap.querySelector('.bc-flickty-slider__next');
+			const $sliderPrev = $sliderWrap.querySelector('.bc-flickty-slider__prev');
+			$sliderEl.querySelectorAll('.bc-flickty-slider__slide').forEach(($slide) => {
+				$slide.style.height = $slide.clientHeight + 'px';	
 			});
 			const $newSlider = new Flickity($sliderEl, opts);
 			if ($newSlider.selectedIndex === 0) {
@@ -510,32 +504,48 @@
 					$sliderNext.classList.remove('is-inactive');
 				}
 			});
+			if ($sliderWrap.querySelector('.bc-flickty-slider__counter')) {
+				const $sliderCounter = $sliderWrap.querySelector('.bc-flickty-slider__counter');
+				const $sliderCounter__current =  $sliderCounter.querySelector('.bc-flickty-slider__counter__current');
+				$sliderCounter__current.innerHTML = $newSlider.selectedIndex + 1;
+				const $sliderCounter__total =  $sliderCounter.querySelector('.bc-flickty-slider__counter__total');
+				$sliderCounter__total.innerHTML =  $newSlider.cells.length;
+				$newSlider.on('change', (idx) => {
+					console.log(`${idx} ${idx + 1 > 1 && Number.isInteger(opts.groupCells)}`);
+					$sliderCounter__current.innerHTML = (idx + 1 > 1 && Number.isInteger(opts.groupCells)) ? idx + opts.groupCells : idx + 1; 
+				});	
+			}
+			
 			return $newSlider;
 		}
-		const pageSliders = document.querySelectorAll('.bc-flickty-slider:not(.bc-lightbox-slider)');
+		const pageSliders = document.querySelectorAll('.bc-flickty-slider__slider:not(.bc-lightbox-slider__slider)'); 
 		pageSliders.forEach(function ($thisSlider) {
+			const $sliderWrap =  $thisSlider.closest('.bc-flickty-slider');
+			let adaptHeight = ($sliderWrap.classList.contains('bc-text-slider')) ? true : false;
 			var sliderOpts = {
 				cellSelector: '.bc-flickty-slider__slide',
 				prevNextButtons: false,
 				pageDots: false,
-				adaptiveHeight: true,
-				groupCells: $thisSlider.classList.contains('bc-card-slider') && window.innerWidth > 767 ? (window.innerWidth > 1023 ? 3 : 2) : false,
-				cellAlign: $thisSlider.classList.contains('bc-card-slider') ? 'left' : 'center',
+				adaptiveHeight: adaptHeight,
+				groupCells: ($sliderWrap.classList.contains('bc-card-slider') && window.innerWidth > 540) ? ((window.innerWidth > 767) ? 3 : 2) : false,
+				cellAlign: $sliderWrap.classList.contains('bc-card-slider') ? 'left' : 'center',
 				contain: true,
 			};
+			console.log(`${$sliderWrap.classList} ${sliderOpts.groupCells}`);
 			initializeFlicktySlider($thisSlider, sliderOpts);
 		});
 		function destroyLightboxSlider($lightbox) {
-			const $slider = $lightbox.querySelector('.bc-lightbox-slider');
+			const $slider = $lightbox.querySelector('.bc-flickty-slider__slider');
 			if ($slider.querySelectorAll('.bc-flickty-slider__slide').length > 0) {
 				Array.from($slider.querySelectorAll('.bc-flickty-slider__slide')).forEach(function (elm) {
 					elm.remove();
 				});
 			}
 		}
-		function initializeLightboxSlider($lightbox, slides) {
+		function buildLightboxSlider($lightbox, slides) {
 			destroyLightboxSlider($lightbox);
-			const $slider = $lightbox.querySelector('.bc-lightbox-slider');
+			const $slider = $lightbox.querySelector('.bc-flickty-slider__slider');
+			
 			slides.forEach(function (slide) {
 				$slider.appendChild(slide);
 			});
@@ -544,6 +554,7 @@
 		if (Array.from(document.querySelectorAll('.modula.modula-gallery')).length > 0) {
 			const imageGalleries = Array.from(document.querySelectorAll('.modula.modula-gallery'));
 			const $lightbox = document.querySelector('.bc-lightbox');
+			const $sliderCounter = $lightbox.querySelector('.bc-flickty-slider__counter');
 			const $closeLightbox = $lightbox.querySelector('.bc-lightbox__close');
 			imageGalleries.forEach(function ($thisGallery) {
 				const $galleryItems = Array.from($thisGallery.querySelectorAll('.modula-item'));
@@ -554,7 +565,7 @@
 					const lightboxCard = document.createElement('div');
 					lightboxCard.classList.add('bc-card');
 					const lightboxImg = document.createElement('img');
-					lightboxImg.setAttribute('src', $galleryItem.querySelector('img').getAttribute('data-src'));
+					lightboxImg.src = $galleryItem.querySelector('img').getAttribute('data-src');
 					lightboxImg.setAttribute('alt', $galleryItem.querySelector('img').getAttribute('alt'));
 					lightboxCard.appendChild(document.createElement('picture').appendChild(lightboxImg));
 					const lightboxTitle = document.createElement('h2');
@@ -569,18 +580,28 @@
 				$galleryItems.forEach(function ($thisItem) {
 					$thisItem.addEventListener('click', function (evt) {
 						evt.preventDefault();
+						const sliderLen = $galleryItems.length;
+						let currentIdx = $galleryItems.findIndex(function (el) {
+							return evt.currentTarget.isSameNode(el);
+						});
 						const sliderOpts = {
 							cellSelector: '.bc-flickty-slider__slide',
 							prevNextButtons: false,
-							pageDots: true,
-							adaptiveHeight: true,
-							initialIndex: $galleryItems.findIndex(function (el) {
-								return evt.currentTarget.isSameNode(el);
-							}),
+							pageDots: false,
+							adaptiveHeight: false,
+							initialIndex: currentIdx,
 							contain: true,
 						};
-						initializeLightboxSlider($lightbox, lightboxSlides);
-						const $thisSlider = initializeFlicktySlider($lightbox.querySelector('.bc-lightbox-slider'), sliderOpts);
+						buildLightboxSlider($lightbox, lightboxSlides);
+						const $thisSlider = initializeFlicktySlider($lightbox.querySelector('.bc-flickty-slider__slider'), sliderOpts);
+						const $sliderCounter__current =  $sliderCounter.querySelector('.bc-flickty-slider__counter__current');
+						$sliderCounter__current.innerHTML = currentIdx + 1;
+						const $sliderCounter__total =  $sliderCounter.querySelector('.bc-flickty-slider__counter__total');
+						$sliderCounter__total.innerHTML = sliderLen;
+						$thisSlider.on('change', (idx) => {
+							currentIdx = idx;
+							$sliderCounter__current.innerHTML = idx + 1;
+						});
 						$closeLightbox.addEventListener('click', function (evt) {
 							evt.preventDefault();
 							$lightbox.style.display = 'none';
@@ -642,20 +663,16 @@
 						const $accordionTriggerIcon = $accordionTrigger.querySelector('.bc-accordion__block-trigger__icon > .bc-svg-icon');
 						const $accordionBody = $accordionTrigger.closest('.bc-accordion__block-heading').nextElementSibling;
 						const $accordionCloseLink = $accordionBody.querySelector('.bc-accordion__close > a');
-						const $accordionHeading = $accordionBody.previousElementSibling;
-						const headingOffsets = $bc.getElOffset($accordionHeading);
 						if ($accordionTrigger.classList.contains('is-active') === false) {
 							showAccordionBody($accordionBody);
 							$bc.gsap.to($accordionTriggerIcon, { rotate: '90deg', duration: 0.1 }).eventCallback('onComplete', function () {
 								$accordionTrigger.classList.toggle('is-active');
 							});
-							$bc.gsapFns.scrollTo({ scrollTo: { y: headingOffsets.top }, duration: 0.2 });
 						} else {
 							hideAccordionBody($accordionBody);
 							$bc.gsap.to($accordionTriggerIcon, { rotate: '45deg', duration: 0.1 }).eventCallback('onComplete', function () {
 								$accordionTrigger.classList.toggle('is-active');
 							});
-							$bc.gsapFns.scrollTo({ scrollTo: { y: headingOffsets.top }, duration: 0.2 });
 						}
 						$accordionCloseLink.addEventListener('click', function closeLinkClickHander(evt) {
 							evt.preventDefault();
@@ -714,7 +731,7 @@
 						$nextElWrap.style.paddingTop = paddingTop + $waves.clientHeight + 'px';
 						$nextEl.style.zIndex = '4';
 					} else {
-						$nextEl.style.paddingTop = $nextEl.classList.contains('bc-breadcrumbs') ? paddingTop * 3.5 + 'px' : paddingTop + $waves.clientHeight + 'px';
+						$nextEl.style.paddingTop = $nextEl.classList.contains('bc-breadcrumbs') ? $waves.clientHeight + 'px' : paddingTop + $waves.clientHeight + 'px';
 					}
 				});
 			}

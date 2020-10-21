@@ -7,30 +7,42 @@
 			.bc-flickty-slider__slide
 				&__content
 					width: 61.8%
+	padding-bottom: 3rem
+	.bc-flickty-slider__controls
+		position: relative
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		width: 100%
+		padding-top: 		$vertical-unit
+		padding-bottom: $vertical-unit
+		.bc-flickty-slider__counter
+			position: absolute
+			left: 50%
+			top: 50%
+			font-size: $text--1
+			font-weight: 300 
+			color: $shade-06
+			transform: translate(-50%, -50%)
 	.bc-flickty-slider__next, .bc-flickty-slider__prev
-		position: absolute
+		height: 100%
+		width: 	2.5rem
 		display: flex
 		justify-content: center
-		align-items: center
-		width: 10%
-		top: 0
-		bottom: 0
-		z-index: 20 
-		transition: background-color 240ms ease-out
-		.bc-svg-icon
-			fill: $white
+		align-items: center 
 		&.is-inactive
+			opacity: 0.75
+		&:active, &:focus, &:hover
+			background-color: $shade-01
 			.bc-svg-icon
-				opacity: 0.5
-		&:hover, &:active, &:focus
-			background-color: rgba($brand-primary, 0.36)
-	.bc-flickty-slider__prev
-		left: 0
-		transition: background-color 240ms ease-out
+				fill: $black
 		.bc-svg-icon
-			transform: rotate(180deg)
-	.bc-flickty-slider__next
-		right: 0
+			max-width: 	2rem
+			max-height: 2rem
+			fill: $shade-07
+			transition: fill 360ms ease-in-out
+	.bc-flickty-slider__prev
+		transform: rotate(180deg)
 	.bc-flickty-slider__slide
 		$video-slide-transition: 2s
 		position: relative

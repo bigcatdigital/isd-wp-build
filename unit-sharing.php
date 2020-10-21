@@ -23,27 +23,37 @@
 	<!-- Lightbox -->
 	<section class="bc-lightbox"> 
 		<a class="bc-lightbox__close">
-			<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use>  
-			</svg>
 			<span class="bc-lightbox__close__text">
 				CLOSE
 			</span>
+			<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use>  
+			</svg>
+			
 		</a>
 		
 		<div class="bc-flickty-slider bc-lightbox-slider ">
-			<a href="" class="bc-flickty-slider__prev is-inactive">
-				<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-				</svg>
-			</a>
-			<a href="" class="bc-flickty-slider__next">
-				<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-				</svg>
-			</a>
+			<div class="bc-flickty-slider__slider bc-lightbox-slider__slider"> 
+				
+			</div><!-- // .bc-lightbox-slider__slider -->
+			<div class="bc-flickty-slider__controls">
+				<div class="bc-flickty-slider__counter">
+					<span class="bc-flickty-slider__counter__current">0</span>/<span class="bc-flickty-slider__counter__total">0</span>
+				</div>
+				<a href="" class="bc-flickty-slider__prev is-inactive">
+					<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+					</svg>
+				</a>
+				<a href="" class="bc-flickty-slider__next">
+					<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+					</svg>
+				</a>
+			</div><!-- // .bc-flickty-slider__controls -->
 			
 		</div><!-- // .bc-flickty-slider -->
+		
 		<div class="wave-wrap">
 			<!--?xml version="1.0" encoding="utf-8"?-->			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1440 50" xml:space="preserve">

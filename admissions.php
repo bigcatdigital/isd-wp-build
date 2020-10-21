@@ -5,7 +5,7 @@
 ?>
 
 <body> 
-	<?php get_inner_site_header('Admissions', 'Apply to ISD', 'More about admissions', array('Transition Support' => '' . get_permalink(176) . '', 'Fees' => '' . get_permalink(57) . '', 'Frequently Asked Questions' => '' . get_permalink(22) . ''), ['Homepage' => home_url(), 'Admissions' => '' ], 'admissions-icon.svg#export'); ?>
+	<?php get_inner_site_header('Admissions', '', 'More about admissions', array('Transition Support' => '' . get_permalink(176) . '', 'Fees' => '' . get_permalink(57) . '', 'Frequently Asked Questions' => '' . get_permalink(22) . ''), ['Homepage' => home_url(), 'Admissions' => '' ], 'admissions-icon.svg#export'); ?>
 	<section class="bc-feature-component">
 		<article class="bc-feature-component__content">
 			<div class="bc-feature-component__content__text-content">

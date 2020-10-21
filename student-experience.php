@@ -8,47 +8,41 @@
 	<?php get_inner_site_header('Student Experience', '', 'More About Student Experience', array('End of Unit Sharing' => '' . get_permalink(112) . '', 'Field Trips and Guest Speakers' => '' . get_permalink(136) . ''), ['Homepage' => home_url(), 'Student Experience' => '' ], 'pupil-experience-reverse.svg#experience--rev'); ?> 
 	<section class="bc-feature-component">   
 		<article class="bc-feature-component__content">
-			<div class="bc-feature-component__content__text-content"> 
-				<p class="bc-content-label ib-world-school">
-					<svg class="bc-svg-icon"> 
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>'); ?>#pupil-experience-reverse"></use>  
-					</svg>
-					Student Experience
-				</p>
+			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-feature-component__heading">ISD Students</h1>
 				<p class="bc-feature-component__intro">The student experience at the International School of Dublin (ISD) cannot be simply summarised into one  statement. There are so many factors which contribute to our students having distinctive, varied and eclectic experiences.</p> 
 				<p>Families attending ISD continually remark on how much their “children love coming to school” and we pride ourselves on our ability to truly listen to our students, individualise their educational journey and provide opportunities that keep learning fun and engaging.</p>  
 				<p>You don’t have to take our word for it, see what our students have to say:</p>
 				<div class="bc-flickty-slider bc-text-slider">
-					<a href="" class="bc-flickty-slider__prev is-inactive">
-						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-						</svg>
-					</a><!-- // .bc-flickty-slider__prev -->
-					<a href="" class="bc-flickty-slider__next">
-						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-						</svg>
-					</a><!-- // .bc-flickty-slider__next -->
-					<div class="bc-flickty-slider__slide has-mark-right--red">
-						<p class="bc-quote-text">&quot;I love ISD because everyone is international, there is an interesting mix of people and everyone understands when we have to come and go.&quot;</p>
-						<p>
-							<strong>Alexandra – age 9</strong>
-						</p>
-					</div><!-- // .bc-flickty-slider__slide -->
-					<div class="bc-flickty-slider__slide has-mark-right--orange">
-						<p class="bc-quote-text">&quot;ISD is an excellent school that is always striving to better itself, even the teachers talk about how they are learners just like us. I’m proud to be one of its students.&quot;</p>
-						<p>
-							<strong>Noah – age 12</strong>
-						</p>
-					</div><!-- // .bc-flickty-slider__slide -->
-					<div class="bc-flickty-slider__slide has-mark-right--purple">
-						<p class="bc-quote-text">&quot;At ISD you have the chance to give your own opinion and learn to give reasons for your
-Thoughts. You have a chance to help and participate in the school community.&quot;</p>						
-						<p>
-							<strong>Suzanne - age 11</strong>
-						</p>
-					</div><!-- // .bc-flickty-slider__slide -->
+					<div class="bc-flickty-slider__slider">
+						<a href="" class="bc-flickty-slider__prev is-inactive">
+							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+							</svg> 
+						</a><!-- // .bc-flickty-slider__prev -->
+						<a href="" class="bc-flickty-slider__next">
+							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+							</svg>
+						</a><!-- // .bc-flickty-slider__next -->	
+				
+						<div class="bc-flickty-slider__slide has-mark-right--red">
+							<p>"I love ISD because everyone is international, there is an interesting mix of people and everyone understands when we have to come and go."</p>
+							<p><stong>Alexandra - age 9</stong></p>
+						</div><!-- // .bc-flickty-slider__slide -->
+						<div class="bc-flickty-slider__slide has-mark-right--orange">
+							<p class="bc-quote-text">&quot;ISD is an excellent school that is always striving to better itself, even the teachers talk about how they are learners just like us. I’m proud to be one of its students.&quot;</p>
+							<p>
+								<strong>Noah – age 12</strong>
+							</p>
+						</div><!-- // .bc-flickty-slider__slide -->
+						<div class="bc-flickty-slider__slide has-mark-right--purple">
+							<p class="bc-quote-text">&quot;At ISD you have the chance to give your own opinion and learn to give reasons for your thoughts. You have a chance to help and participate in the school community.&quot;</p>						
+							<p>
+								<strong>Suzanne - age 11</strong>
+							</p>
+						</div><!-- // .bc-flickty-slider__slide -->
+					</div><!-- // .bc-flickty-slider__slider -->
 				</div><!-- // .bc-flickty-slider -->
 			</div><!-- // .bc-feature-component__content__text-content -->
 		</article><!-- // .bc-feature-component__content -->
@@ -64,59 +58,65 @@ Thoughts. You have a chance to help and participate in the school community.&quo
 		</header><!-- // .bc-feature-component__header -->
 		<div class="bc-feature-component__content ">
 			<div class="bc-flickty-slider bc-card-slider has-colored-text">
-				<a href="" class="bc-flickty-slider__prev is-inactive">
-						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-						</svg>
-					</a>
-					<a href="" class="bc-flickty-slider__next">
-						<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-						</svg>
-					</a>
-					<div class="bc-card has-image bc-flickty-slider__slide">	
-						<picture class="bc-card__media is-4x3">
-							<img src="<?php echo get_theme_file_uri('/media/parent-workshop.jpg'); ?>" alt="A parent and teacher meeting">
-						</picture>
-						<h2 class="bc-card__heading">Parent Workshop</h2>
-						<p>ISD parents have the opportunity to become more familiar with the IBPYP curriculum through interactive workshops provided by the ISD teaching team. </p>
+					<div class="bc-flickty-slider__slider">
+						<div class="bc-card has-image bc-flickty-slider__slide">	
+							<picture class="bc-card__media is-4x3">
+								<img src="<?php echo get_theme_file_uri('/media/parent-workshop.jpg'); ?>" alt="A parent and teacher meeting">
+							</picture>
+							<h2 class="bc-card__heading">Parent Workshop</h2>
+							<p>ISD parents have the opportunity to become more familiar with the IBPYP curriculum through interactive workshops provided by the ISD teaching team. </p>
+
+						</div><!-- // Parent Workshop -->
+						<div class="bc-card has-image bc-flickty-slider__slide">	
+							<picture class="bc-card__media  is-4x3">
+								<img src="<?php echo get_theme_file_uri('/media/exhibition-night.jpg'); ?>" alt="A final year student presenting at Exhibition Night">
+							</picture>
+							<h2 class="bc-card__heading">Exhibition Night</h2>
+							<p>In final year of the Primary Years Programme students have the opportunity to lead their own final inquiry project and present this at The Exhibition.</p>
+						</div><!-- // Parent Workshop -->
+						<div class="bc-card has-image bc-flickty-slider__slide">	
+							<picture class="bc-card__media  is-4x3">
+								<img src="<?php echo get_theme_file_uri('/media/holiday-celebrations.jpg'); ?>" alt="A parent and teacher meeting">
+							</picture>
+							<h2 class="bc-card__heading">Holiday Celebrations</h2>
+							<p>We celebrate a variety of holiday celebrations to help our students become more internationally minded. </p>
+						</div><!-- // Parent Workshop -->
+						<div class="bc-card has-image bc-flickty-slider__slide">	
+							<picture class="bc-card__media  is-4x3">
+								<img src="<?php echo get_theme_file_uri('/media/sports-day.jpg'); ?>" alt="Children during sports day">
+							</picture>
+							<h2 class="bc-card__heading">Sports Day</h2>
+							<p>The annual sports day allows Students take part in activities to showcase athletic abilities, skills gained throughout the year and to have fun!</p>
+						</div><!-- // Parent Workshop -->
+						<div class="bc-card has-image bc-flickty-slider__slide">	
+							<picture class="bc-card__media  is-4x3">
+								<img src="<?php echo get_theme_file_uri('/media/100th-day-of-school.jpg'); ?>" alt="Children together creating the shape of the number 100">
+							</picture>
+							<h2 class="bc-card__heading">100th Day of School</h2>
+							<p>The 100th day of the School year is celebrated by exploring math concepts that can be taught using the number 100.</p>
+						</div><!-- // 100th day of School -->
+						<div class="bc-card has-image bc-flickty-slider__slide">
+							<picture class="bc-card__media  is-4x3">
+								<img src="<?php echo get_theme_file_uri('/media/peace-proms.jpg'); ?>" alt="Children at the annual Peace Proms in Dublin">
+							</picture>
+							<h2 class="bc-card__heading">Peace Proms</h2>
+							<p>Peace Proms is an project for primary schools that gives students the opportunity to sing with a choir of 3,000 children and a full symphony orchestra.</p>
+						</div><!-- // Peace Proms -->
+					</div><!-- // .bc-flickty-slider__slider -->
+					
+					<div class="bc-flickty-slider__controls"> 
 						
-					</div><!-- // Parent Workshop -->
-					<div class="bc-card has-image bc-flickty-slider__slide">	
-						<picture class="bc-card__media  is-4x3">
-							<img src="<?php echo get_theme_file_uri('/media/exhibition-night.jpg'); ?>" alt="A final year student presenting at Exhibition Night">
-						</picture>
-						<h2 class="bc-card__heading">Exhibition Night</h2>
-						<p>In final year of the Primary Years Programme students have the opportunity to lead their own final inquiry project and present this at The Exhibition.</p>
-					</div><!-- // Parent Workshop -->
-					<div class="bc-card has-image bc-flickty-slider__slide">	
-						<picture class="bc-card__media  is-4x3">
-							<img src="<?php echo get_theme_file_uri('/media/holiday-celebrations.jpg'); ?>" alt="A parent and teacher meeting">
-						</picture>
-						<h2 class="bc-card__heading">Holiday Celebrations</h2>
-						<p>We celebrate a variety of holiday celebrations to help our students become more internationally minded. </p>
-					</div><!-- // Parent Workshop -->
-					<div class="bc-card has-image bc-flickty-slider__slide">	
-						<picture class="bc-card__media  is-4x3">
-							<img src="<?php echo get_theme_file_uri('/media/sports-day.jpg'); ?>" alt="Children during sports day">
-						</picture>
-						<h2 class="bc-card__heading">Sports Day</h2>
-						<p>The annual sports day allows Students take part in activities to showcase athletic abilities, skills gained throughout the year and to have fun!</p>
-					</div><!-- // Parent Workshop -->
-					<div class="bc-card has-image bc-flickty-slider__slide">	
-						<picture class="bc-card__media  is-4x3">
-							<img src="<?php echo get_theme_file_uri('/media/100th-day-of-school.jpg'); ?>" alt="Children together creating the shape of the number 100">
-						</picture>
-						<h2 class="bc-card__heading">100th Day of School</h2>
-						<p>The 100th day of the School year is celebrated by exploring math concepts that can be taught using the number 100.</p>
-					</div><!-- // 100th day of School -->
-					<div class="bc-card has-image bc-flickty-slider__slide">
-						<picture class="bc-card__media  is-4x3">
-							<img src="<?php echo get_theme_file_uri('/media/peace-proms.jpg'); ?>" alt="Children at the annual Peace Proms in Dublin">
-						</picture>
-						<h2 class="bc-card__heading">Peace Proms</h2>
-						<p>Peace Proms is an project for primary schools that gives students the opportunity to sing with a choir of 3,000 children and a full symphony orchestra.</p>
-					</div><!-- // Peace Proms -->
+						<a href="" class="bc-flickty-slider__prev is-inactive">
+							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+							</svg>
+						</a>
+						<a href="" class="bc-flickty-slider__next">
+							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+							</svg>
+						</a>
+					</div><!-- // .bc-flickty-slider__controls -->
 			</div><!-- // .bc-flickty-slider -->
 		</div><!-- // ..bc-feature-component__content -->
 	</section><!-- // .bc-feature-component Student Experience -->
@@ -174,7 +174,7 @@ Thoughts. You have a chance to help and participate in the school community.&quo
 	<section class="bc-feature-component has-colored-text">
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
-				<h1 class="bc-inner-page-content__heading">Student committes</h1>
+				<h1 class="bc-inner-page-content__heading">Student Committes</h1>
 				<p class="bc-inner-page-content__intro">Education for us is centred around learner voice, choice &amp; ownership, we call this <em>agency</em>. By promoting agency, we aim for students to be active in their development, to take initiative, express interest, voice opinions and ultimately feel ownership in their learning, both in and outside of school.</p>	
 				<p>One way of encouraging students to work collaboratively and exercise agency is through student committees.</p>
 			</div>
@@ -226,20 +226,7 @@ Thoughts. You have a chance to help and participate in the school community.&quo
 							</svg>
 						</a>
 					</div>-->
-				</div><!-- // Cristen Schwab -->
-				
-				<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
-					<h2 class="bc-card__heading">Welcoming Committee</h2>
-					<p>ISD has established a Welcoming Committee to allow students to assist with the school tour process for prospective families.</p>
-					<!--<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-icon-link">
-							The Welcoming Committee
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
-							</svg>
-						</a>
-					</div>-->
-				</div><!-- // Welcoming Committee -->
+				</div><!-- // Yearbook Committe -->
 			</article><!-- // .bc-3-columns -->
 		</div><!-- // .bc-feature-component__content -->
 	</section><!-- // .bc-feature-component -->
@@ -247,7 +234,7 @@ Thoughts. You have a chance to help and participate in the school community.&quo
 	<section class="bc-feature-component has-shade-01">   
 		<header class="bc-feature-component__header">
 			<div class="bc-feature-component__content__text-content">
-				<h1 class="bc-feature-component__heading">Global connections</h1>
+				<h1 class="bc-feature-component__heading">Global Connections</h1>
 			</div>
 		</header><!-- // .bc-feature-component__header -->
 		<div class="bc-feature-component__content">

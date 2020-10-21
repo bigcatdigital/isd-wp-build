@@ -4,7 +4,7 @@
 	get_header();
 ?>
 <body> 
-	<?php get_inner_site_header('Admissions', 'Frequently Asked Questions', '', '', $bcs = array('Homepage' => home_url(), 'Admission' => get_permalink(20), 'Frequently Asked Questions' => ''), 'admissions-icon.svg#export'); ?>
+	<?php get_inner_site_header('Admissions', 'Frequently Asked Questions', 'More about Admissions', array('Transition Support' => '' . get_permalink(176) . '', 'Fees' => '' . get_permalink(57) . '', 'Frequently Asked Questions' => '' . get_permalink(22) . ''), $bcs = array('Homepage' => home_url(), 'Admission' => get_permalink(20), 'Frequently Asked Questions' => ''), 'admissions-icon.svg#export'); ?>
 	<!-- FAQs -->
 	<section class="bc-feature-component">     
 		<header class="bc-feature-component__header">

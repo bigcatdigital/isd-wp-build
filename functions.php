@@ -71,10 +71,12 @@
 
 	function ISD_build_styles() {
 		wp_enqueue_style('scope-one', '//fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap', NULL, microtime());	
+		wp_enqueue_style('isd-flickty',  'https://unpkg.com/flickity@2/dist/flickity.min.css', NULL, microtime());	
 		wp_enqueue_style('isd-styles', get_stylesheet_uri());	
 	}
 	add_action('wp_enqueue_scripts', 'ISD_build_styles');
 	function ISD_build_scripts() {
+		
 		wp_enqueue_script('isd-scripts',  get_theme_file_uri('/scripts/app-concat.min.js'), array(), microtime(), true);	
 	}
 	add_action('wp_enqueue_scripts', 'ISD_build_scripts');

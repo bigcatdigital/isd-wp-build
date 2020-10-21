@@ -169,7 +169,7 @@
 					<p>The IB is increasingly recognised as the gold-standard measurement of academic and intellectual development both by universities and leading graduate employers.</p> 
 
 					<a class="bc-button" href="<?php echo get_permalink(86) ?>">
-						Find out about Learning &amp; Teaching at ISD
+						Learning &amp; Teaching at ISD
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
 						</svg>
@@ -196,7 +196,7 @@
 					<p class="bc-feature-component__intro">At ISD we work hard to ensure our students&apos; learning experiences are distinctive, varied and eclectic.</p>
 					<p>We pride ourselves on our ability to make students&apos; educational journeys fun and engaging.</p> 
 					<a class="bc-button" href="<?php echo get_permalink(24) ?>">
-						Learn about the ISD Student Exerience
+						The ISD Student Experience
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
 						</svg>

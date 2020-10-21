@@ -78,6 +78,7 @@
 	</section><!-- // .bc-feature-component -->
 	<!-- // Frequently asked questions -->
 	<?php  
+		get_inner_section_nav('More About Admissions', array('Transition Support' => '' . get_permalink(176) . '', 'Fees' => '' . get_permalink(57) . '', 'Frequently Asked Questions' => '' . get_permalink(22) . ''));
 		get_global_CTA();
 		get_footer();
 		get_floating_section_nav(); 

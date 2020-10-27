@@ -740,5 +740,17 @@
 		window.addEventListener('resize', function () {
 			resizeForWaves();
 		});
+		//Give two col features some padding before and after each set
+		if (document.querySelectorAll('.bc-2-col-full-features')) {
+			const $twoColFeaturesWrap = document.createElement('div');
+			$twoColFeaturesWrap.classList.add('bc-2-col-full-features__wrap');	
+			const twoColFeatures = document.querySelectorAll('.bc-2-col-full-features');
+			const $twoColFeaturesParent = twoColFeatures[0].parentNode;
+			const $twoColFeaturesNextSibling = twoColFeatures[twoColFeatures.length-1].nextElementSibling;
+			Array.from(twoColFeatures).forEach((el) => {
+				$twoColFeaturesWrap.appendChild(el);
+			});
+			$twoColFeaturesParent.insertBefore($twoColFeaturesWrap, $twoColFeaturesNextSibling);
+		}
 	};
 })();

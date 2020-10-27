@@ -4,7 +4,6 @@
 	get_header();
 ?>
 <body> 
-		
 	<?php get_inner_site_header('Student Experience', '', 'More About Student Experience', array('End of Unit Sharing' => '' . get_permalink(112) . '', 'Field Trips and Guest Speakers' => '' . get_permalink(136) . ''), ['Homepage' => home_url(), 'Student Experience' => '' ], 'pupil-experience-reverse.svg#experience--rev'); ?> 
 	<section class="bc-feature-component">   
 		<article class="bc-feature-component__content">
@@ -15,12 +14,12 @@
 				<p>You don’t have to take our word for it, see what our students have to say:</p>
 				<div class="bc-flickty-slider bc-text-slider">
 					<div class="bc-flickty-slider__slider">
-						<a href="" class="bc-flickty-slider__prev is-inactive">
+						<a href="javascript:void(0)" class="bc-flickty-slider__prev is-inactive">
 							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
 							</svg> 
 						</a><!-- // .bc-flickty-slider__prev -->
-						<a href="" class="bc-flickty-slider__next">
+						<a href="javascript:void(0)" class="bc-flickty-slider__next">
 							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
 							</svg>
@@ -103,15 +102,13 @@
 							<p>Peace Proms is an project for primary schools that gives students the opportunity to sing with a choir of 3,000 children and a full symphony orchestra.</p>
 						</div><!-- // Peace Proms -->
 					</div><!-- // .bc-flickty-slider__slider -->
-					
 					<div class="bc-flickty-slider__controls"> 
-						
-						<a href="" class="bc-flickty-slider__prev is-inactive">
+						<a href="javascript:void(0)" class="bc-flickty-slider__prev is-inactive">
 							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
 							</svg>
 						</a>
-						<a href="" class="bc-flickty-slider__next">
+						<a href="javascript:void(0)" class="bc-flickty-slider__next">
 							<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
 							</svg>
@@ -135,13 +132,12 @@
 					<h1 class="bc-2-col-full-feature__heading">End of Unit Sharing</h1>
 					<p class="bc-feature-component__intro">Every 6 weeks the school community comes together to celebrate student learning through End of Unit Sharing.</p>
 					<p>Over the course of an afternoon, each class gives a 20-minute presentation to articulate their learning over the unit of inquiry.  Parents become the students and students become the teachers as work is presented.</p> 
-
-					<a class="bc-button" href="<?php echo get_permalink(112) ?>">
+					<a href="<?php echo get_permalink(112) ?>" class="bc-icon-link--featured">
 						See some previous events
 						<svg class="bc-svg-icon">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
 						</svg>
-					</a>	
+					</a> 
 				</div>	
 			</div><!-- // .bc-feature-component__content -->
 		</article><!-- // .bc-2-col-full-feature -->
@@ -154,17 +150,15 @@
 					</picture>
 				</div>
 				<div class="bc-2-col-full-feature__text">
-					
 					<h1 class="bc-2-col-full-feature__heading">Field Trips and Guest Speakers</h1>
 					<p class="bc-feature-component__intro">We believe that our students greatly benefit from learning both inside and outside of the classroom. We encourage our students to make both local and global connections with their Units of Inquiry. </p>
 					<p>On a regular basis students participate in field trips.  In addition, students often host guest speakers in a variety of expert areas.</p> 
-
-					<a class="bc-button" href="<?php echo get_permalink(136) ?>">
+					<a href="<?php echo get_permalink(136) ?>" class="bc-icon-link--featured">
 						See some previous events
 						<svg class="bc-svg-icon">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use>  
+							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
 						</svg>
-					</a>	
+					</a>
 				</div>	
 			</div><!-- // .bc-feature-component__content -->
 		</article><!-- // .bc-2-col-full-feature -->
@@ -188,14 +182,7 @@
 					</picture>
 					<h2 class="bc-card__heading">Student Council</h2> 
 					<p>The Student Council is an opportunity to learn leadership skills and voice ideas to support the running and development of the school</p>
-					<!--<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-icon-link">
-							The ISD Student Council
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
-							</svg>
-						</a>
-					</div>-->
+					
 				</div><!-- // The Student Council -->
 				<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
 					<picture class="bc-card__media">
@@ -203,14 +190,7 @@
 					</picture>
 					<h2 class="bc-card__heading">Libraran Committee</h2>
 					<p>The Librarian Committee keeps the school library a welcoming hub for learning. All of our students have ownership and responsibility for this learning space.</p>
-					<!--<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-icon-link">
-							The Librarian Committe 
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
-							</svg>
-						</a>
-					</div>-->
+					
 				</div><!-- // Libraran Committee -->
 				<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
 					<picture class="bc-card__media">
@@ -218,14 +198,7 @@
 					</picture>
 					<h2 class="bc-card__heading">Yearbook Committee</h2>
 					<p>Our yearbook is completely created by the students each year during “Yearbook Week”. </p>
-					<!--<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-icon-link">
-							The Yearbook Committee
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 
-							</svg>
-						</a>
-					</div>-->
+					
 				</div><!-- // Yearbook Committe -->
 			</article><!-- // .bc-3-columns -->
 		</div><!-- // .bc-feature-component__content -->

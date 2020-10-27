@@ -1,68 +1,57 @@
 /* 
 	Two column full feature - the image fills its column 
 	Images and text alternate position left and right for consecutive instances */
+.bc-2-col-full-features__wrap
+	padding-top: 		$vertical-unit * 3.5
+	padding-bottom: $vertical-unit * 3.5
+.bc-feature-component
+	
+	& &__content
+		margin-bottom: 0
+	&.bc-2-col-full-features
+		padding-top: 		0
+		padding-bottom: 0
+		margin-bottom: $vertical-unit * 2
+		&__image
+			picture
+				display: flex
+				height: 100%
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+					object-position: center
+		&__text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			padding-top: 		$vertical-unit
+			padding-bottom: $vertical-unit
+			a, .bc-button
+				flex: 0 1 auto 
+		&:nth-of-type(odd)
+			@media screen and (min-width: 860px)
+				.bc-feature-component__content
+					.bc-2-col-full-feature__text
+						order: 0
+					.bc-2-col-full-feature__image
+						order: 1
+		&:last-child
+			margin-bottom: 0
 .bc-feature-component
 	&.bc-2-col-full-features
-		padding-top: 		$vertical-unit * 2
-		padding-bottom: $vertical-unit * 2
-		.bc-2-col-full-feature
-			margin-bottom: $vertical-unit * 2
-			
-			&__image
-				picture
-					display: flex
-					height: 100%
-					img
-						width: 100%
-						height: 100%
-						object-fit: cover
-						object-position: center
-			&__text
-				display: flex
-				flex-direction: column
-				justify-content: center
-				align-items: flex-start
-				padding-top: 		$vertical-unit
-				padding-bottom: $vertical-unit
-				a, .bc-button
-					flex: 0 1 auto
-			&:nth-of-type(odd)
-				@media screen and (min-width: 860px)
-					.bc-feature-component__content
-						.bc-2-col-full-feature__text
-							order: 0
-						.bc-2-col-full-feature__image
-							order: 1
-			&:last-of-type
-				margin-bottom: 0 
-			&:nth-of-type(1n)
+		@each $name, $color in $colors	
+			$color-in-use: nth($color, 1)
+			&.is-#{$name}
 				.bc-2-col-full-feature__heading, .bc-button
-					color: $mid-green 
+					color: $color-in-use 
 				.bc-svg-icon
-					fill: $mid-green 
-			&:nth-of-type(2n)
-				.bc-2-col-full-feature__heading, .bc-button
-					color: $red 
-				.bc-svg-icon
-					fill: $red
-			&:nth-of-type(3n)
-				.bc-2-col-full-feature__heading, .bc-button
-					color: $orange 
-				.bc-svg-icon
-					fill: $orange 
-			&:nth-of-type(4n)
-				.bc-2-col-full-feature__heading, .bc-button
-					color: $purple 
-				.bc-svg-icon
-					fill: $purple
-			&.is-brand-primary
-				.bc-2-col-full-feature__heading, .bc-button
-					color: $brand-primary 
-				.bc-svg-icon
-					fill: $brand-primary 
-		@media screen and (min-width: 860px)
-			padding-top: 		$vertical-unit * 4
-			padding-bottom: $vertical-unit * 4
+					fill: $color-in-use 
+		
+@media screen and (min-width: 860px)
+	.bc-feature-component
+		&.bc-2-col-full-features
 			.bc-2-col-full-feature
 				&__text
 					padding-left: 	$gutter * 1.5

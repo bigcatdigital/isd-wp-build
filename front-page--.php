@@ -6,52 +6,53 @@
 
 <body class="bc-feature-page"> 
 	<?php get_site_header(); ?>
-	<!-- Hero with image -->
-	<section class="bc-hero bc-hero--is-feature has-waves">
-		<div class="bc-hero__content">
-			<div class="bc-hero__body">
-				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
-					<h1 class="bc-hero__heading">International School of Dublin</h1>
-					<div class="bc-hero__body__text__IB">
-						<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
-						<p>ISD is an International Baccalaureate World School</p> 
-					</div>
-					<!--<p class="bc-hero__tagline">International Education in the heart of Dublin</p> -->
-				</div><!-- // .bc-hero__body__text -->
-				<img src="<?php echo get_theme_file_uri('/media/kids-carefree--lines.svg'); ?>" alt="Feel the energy at ISD" class="is-kids-lines">
-			</div><!-- // .bc-hero__body -->
-			<div class="bc-hero__video">
-				<video src="<?php echo get_theme_file_uri('/media/videos/ISD_trailer_no audio_no logos_low-br.mp4'); ?>" class="bc-hero__video__video" autoplay muted preload="metadata" playsinline></video>
-				<a href="javascript:void(0)" class="bc-hero__video__controls">
-					<span class="bc-hero__video__controls__play-icon">
-						<svg class="bc-svg-icon ">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#play"></use>  
-						</svg>	
-						<span class="bc-hero__video__controls__text">Play video</span>
-					</span>
-					<span class="bc-hero__video__controls__pause-icon">
-						<svg class="bc-svg-icon bc-hero__video__controls__pause-icon">
-							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#pause"></use>  
-						</svg>	
-						<span class="bc-hero__video__controls__text">Pause video</span>
-					</span>
-				</a>
-			</div>
-			<!--<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/happy-kid.jpg '); ?>" alt="Happy kid" >-->
-			<div class="media-overlay"></div><!-- // .media-overlay -->
-		</div><!-- // .bc-hero__content -->
-		<div class="wave-wrap">
-			<?php
-				echo '<?xml version="1.0" encoding="utf-8"?>'
-			?>
-			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 viewBox="0 0 1440 50" xml:space="preserve">
-				<path style="fill: url(#isd-rainbow-grad)" id="isd-rainbow-wave" class="st1" d="M0,1v1v25.2c0,0,200.9-24.7,360-24.7S923.9,50,1080,50s360-23.5,360-23.5V2V1H0z"/>
-				<path class="isd-wave" id="isd-wave" d="M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z"/>
-			</svg>
-		</div><!-- // .bc-wave-wrap -->
-	</section><!-- // .bc-hero -->
+
+		<!-- Hero with image -->
+		<section class="bc-hero bc-hero--is-feature has-waves">
+			<div class="bc-hero__content">
+				<div class="bc-hero__body">
+					<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
+						<h1 class="bc-hero__heading"><?php the_field('hero-title', 18) ?></h1>
+						<div class="bc-hero__body__text__IB">
+							<?php if (get_field('show-world-school-icon', 18)[0] == 'Yes') { ?>
+								<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
+								<p>ISD is an International Baccalaureate World School</p> 
+							<?php } ?>
+						</div><!-- // .bc-hero__body__text__IB -->
+					</div><!-- // .bc-hero__body__text -->
+					<img src="<?php echo get_theme_file_uri('/media/kids-carefree--lines.svg'); ?>" alt="Feel the energy at ISD" class="is-kids-lines">		
+				</div><!-- // .bc-hero__body -->
+				<div class="bc-hero__video">
+					<video src="<?php the_field('hero-video', 18); ?>" class="bc-hero__video__video" autoplay muted preload="metadata" playsinline></video>
+					<a href="javascript:void(0)" class="bc-hero__video__controls">
+						<span class="bc-hero__video__controls__play-icon">
+							<svg class="bc-svg-icon ">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#play"></use>  
+							</svg>	
+							<span class="bc-hero__video__controls__text">Play video</span>
+						</span>
+						<span class="bc-hero__video__controls__pause-icon">
+							<svg class="bc-svg-icon bc-hero__video__controls__pause-icon">
+								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#pause"></use>  
+							</svg>	
+							<span class="bc-hero__video__controls__text">Pause video</span>
+						</span>
+					</a>
+				</div>
+				<div class="media-overlay"></div><!-- // .media-overlay -->
+			</div><!-- // .bc-hero__content -->
+			<div class="wave-wrap">
+				<?php
+					echo '<?xml version="1.0" encoding="utf-8"?>'
+				?>
+				<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 1440 50" xml:space="preserve">
+					<path style="fill: url(#isd-rainbow-grad)" id="isd-rainbow-wave" class="st1" d="M0,1v1v25.2c0,0,200.9-24.7,360-24.7S923.9,50,1080,50s360-23.5,360-23.5V2V1H0z"/>
+					<path class="isd-wave" id="isd-wave" d="M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z"/>
+				</svg>
+			</div><!-- // .bc-wave-wrap -->
+		</section><!-- // .bc-hero -->
 	<section class="bc-feature-component site-quicklinks-component has-waves has-shade-01">
 		<div class="bc-feature-component__wrap">
 			<div class="bc-feature-component__content">

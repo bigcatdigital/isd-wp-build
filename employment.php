@@ -10,7 +10,6 @@
 		<article class="bc-feature-component__content">
 			<div class="bc-feature-component__content__text-content">
 				
-				
 					<h1 class="bc-inner-page-content__heading">Employment Opportunities</h1>
 					<p>If you are interested in working at ISD, <a href="https://docs.google.com/forms/d/e/1FAIpQLSewBsCadgtogQTY4sg3KS6SSQWgFQ-dVj6eeqQh-CcIrjNgyQ/viewform">please click here to complete our application</a>.</p>
 					

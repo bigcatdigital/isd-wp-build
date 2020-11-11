@@ -132,7 +132,7 @@
 					<h1 class="bc-2-col-full-feature__heading">End of Unit Sharing</h1>
 					<p class="bc-feature-component__intro">Every 6 weeks the school community comes together to celebrate student learning through End of Unit Sharing.</p>
 					<p>Over the course of an afternoon, each class gives a 20-minute presentation to articulate their learning over the unit of inquiry.  Parents become the students and students become the teachers as work is presented.</p> 
-					<a href="<?php echo get_permalink(112) ?>" class="bc-icon-link--featured">
+					<a href="<?php echo get_permalink(112) ?>" class="bc-button">
 						See some previous events
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
@@ -141,6 +141,8 @@
 				</div>	
 			</div><!-- // .bc-feature-component__content -->
 		</article><!-- // .bc-2-col-full-feature -->
+	</section>
+	<section class="bc-feature-component bc-2-col-full-features">
 		<article class="bc-2-col-full-feature is-brand-primary">
 			<div class="bc-feature-component__content">
 				<div class="bc-2-col-full-feature__image">
@@ -153,7 +155,7 @@
 					<h1 class="bc-2-col-full-feature__heading">Field Trips and Guest Speakers</h1>
 					<p class="bc-feature-component__intro">We believe that our students greatly benefit from learning both inside and outside of the classroom. We encourage our students to make both local and global connections with their Units of Inquiry. </p>
 					<p>On a regular basis students participate in field trips.  In addition, students often host guest speakers in a variety of expert areas.</p> 
-					<a href="<?php echo get_permalink(136) ?>" class="bc-icon-link--featured">
+					<a href="<?php echo get_permalink(136) ?>" class="bc-button">
 						See some previous events
 						<svg class="bc-svg-icon">
 							<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
@@ -162,8 +164,8 @@
 				</div>	
 			</div><!-- // .bc-feature-component__content -->
 		</article><!-- // .bc-2-col-full-feature -->
+	</section>
 		
-	</section><!-- // .bc-2-col-full-features -->
 	<!-- Student committes -->
 	<section class="bc-feature-component has-colored-text">
 		<header class="bc-feature-component__header">

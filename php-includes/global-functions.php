@@ -14,7 +14,7 @@
 		$headericon = 'media/svg/images/' . $icon;
 		global $breadcrumbs;
 		$breadcrumbs = $bcs;
-		 
+		
 		global $inner_nav_title;
 		global $inner_nav_links;
 		$inner_nav_title = $nav_title;
@@ -29,11 +29,7 @@
 		$inner_sect_nav_links = $sect_nav_links;
 		include 'inner-section-nav.php';	
 	}
-	function get_floating_section_nav($nav_title = 'Inner section navigation', $nav_links = array('Content link#1' => '#', 'Content link#2' => '#', 'Content link#3' => '#', 'Content link#4' => '#')) {
-		global $floating_nav_title;
-		global $floating_nav_links;
-		$floating_nav_title = $nav_title;
-		$floating_nav_links = $nav_links;
+	function get_floating_section_nav() {
 		include 'floating-section-nav.php';	
 	}
 	function get_global_CTA() {

@@ -10,7 +10,8 @@
 		<article class="bc-feature-component__content">
 			<div class="bc-gr-feature">
 				<picture class="bc-gr-feature__media">
-					<img src="http://localhost/isd-wordpress/wp-content/themes/isd-twenty-twenty/media/fair-fun-2x3.jpg" alt="Support for your transition to Dublin">
+					
+					<img src="<?php echo get_theme_file_uri('/media/fair-fun-2x3.jpg') ?>" alt="Support for your transition to Dublin">
 				</picture>
 				<div class="bc-gr-feature__text">
 					<h1 class="bc-inner-page-content__heading">Transition Support</h1>

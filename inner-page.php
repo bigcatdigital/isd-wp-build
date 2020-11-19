@@ -17,9 +17,31 @@
 		while (have_posts()) {
 			the_post();
 			the_content();
-		}
+			wp_reset_postdata();
+			if (get_field('content-shortcodes')) { 
+				$shortcodes = get_field('content-shortcodes');
+				$pattern = get_shortcode_regex();
+				preg_match_all('/' . $pattern . '/s', $shortcodes, $matches);
+				//var_dump($matches);
+				foreach ($matches[0] as $shortcode) {
+					$o = '';
+					$o .= (substr(do_shortcode($shortcode), 0, 1 ) !== '[') ? do_shortcode($shortcode) : '' ;
+					if (strcmp($o, '') === 0 || strcmp($o, '-1') === 0) {
+						continue;
+					} else {
+						echo $o;	
+					}
+					
+				}
+				
+			}//end if
+			wp_reset_postdata();
+		}//end while 
 	?>
-	
+	<section class="content-wrap">
+			
+				
+		</section>
 	<!-- // Frequently asked questions -->
 	<?php  
 		get_global_CTA();

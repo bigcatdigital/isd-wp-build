@@ -44,13 +44,18 @@
 				font-size: $text-02
 				font-weight: 300
 				
-
+.bc-feature-component
+	&.bc-feature-component--text-slider
+		padding-top: $vertical-unit * 3
+		padding-bottom: $vertical-unit * 3
+	
 @media screen and (min-width: $large)
 	.bc-feature-component
 		&__header
 			max-width: $text-max-width
 		&__content, &__header, &__cta
 			max-width: $content-max-width 
+	
 		
 @import 'bc-multi-col-features' 
 @import 'bc-2-col-media-feature'

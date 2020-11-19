@@ -6,7 +6,6 @@
 
 <body class="bc-feature-page"> 
 	<?php get_site_header(); ?>
-
 		<!-- Hero with image -->
 		<section class="bc-hero bc-hero--is-feature has-waves">
 			<div class="bc-hero__content">
@@ -63,9 +62,7 @@
 								What would you like to know?	
 							</span>
 							<a href="javascript:void(0)" class="site-quicklinks__toggle bc-navigation-toggle">
-									<?php
-							echo '<?xml version="1.0" encoding="utf-8"?>'
-						?>
+									<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 									<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 									<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 										 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -114,50 +111,15 @@
 		</div><!-- // .bc-wave-wrap -->
 		
 	</section><!-- // .bc-feature-component -->
-	<?php while (have_posts()) {
-			the_post();
-			the_content(); 
-		} ?>
-	<section class="bc-hero bc-hero--inpage has-mid-green-grad"> 
-		<div class="bc-hero__content">
-			<div class="bc-hero__body">
-				<div class="bc-hero__body__text__IB bc-content-label bc-fade-in-up--is-not-visible">
-					<svg class="bc-svg-icon"> 
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#family-simple-icon"></use>  
-					</svg>
-					Families in Ireland
-				</div><!-- // .bc-content-label -->
-				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<h1 class="bc-hero__heading">A Progressive Learning Alternative</h1>
-					<p class="bc-hero__tagline">International education for families in Ireland</p>
-					<p>An international education is not solely for international families, find out how ISD offers local families a progressive learning alternative.</p>
-					<div class="bc-hero__cta">
-						<a href="<?php echo get_permalink(15) ?>" class="bc-icon-link--featured">
-							Learn more about this learning alternative
-							<svg class="bc-svg-icon">
-								<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#arrow"></use> 	
-							</svg>
-						</a> 
-					</div>
-				</div><!-- // .bc-hero__body__text --> 
-			</div><!-- // .bc-hero__body -->
-			<img class="bc-hero__image" src="<?php echo get_theme_file_uri('/media/irish-family.jpg '); ?>" alt="A family" >
-			<div class="media-overlay"></div> 
-			
-		</div><!-- // .bc-hero__content -->
-		
-	</section><!-- // .bc-hero--inpage -->
-	<section class="bc-feature-component bc-one-col-feature  has-shade-02">     
-		<div class="bc-feature-component__content">
-			<div class="bc-feature-component__content__text-content">
-				<h1 class="bc-feature-component__heading">Mission statement</h1>
-				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
-				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
-			</div>
-		</div><!-- // .bc-inner-page-content__content -->
-	</section><!-- // .bc-inner-page-content Mission Statement -->
-	<?php  
-		get_global_CTA();
+	<?php 
+	while (have_posts()) {
+		the_post();
+		the_content(); 
+		if (get_field('show-feature-cta') !== 'no') {
+			get_global_CTA();	
+		}
 		get_footer();
-		get_floating_section_nav(); 
-	?>
+		if (get_field('show-show-to-top') === 'yes') {
+			get_floating_section_nav(); 	
+		}
+	}//end while have_posts() ?>

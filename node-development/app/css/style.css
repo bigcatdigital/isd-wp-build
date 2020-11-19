@@ -2220,6 +2220,10 @@ figcaption {
       font-size: 1.3195rem;
       font-weight: 300; }
 
+.bc-feature-component.bc-feature-component--text-slider {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem; }
+
 @media screen and (min-width: 1024px) {
   .bc-feature-component__header {
     max-width: 42rem; }
@@ -2651,6 +2655,10 @@ figcaption {
     .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-icon-link--featured {
       font-size: 1.3195rem;
       font-weight: 300; }
+
+.bc-feature-component.bc-feature-component--text-slider {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem; }
 
 @media screen and (min-width: 1024px) {
   .bc-feature-component__header {
@@ -3212,12 +3220,12 @@ figcaption {
   overflow-y: auto;
   overflow-x: scroll; }
 
-.bc-responsive-table {
+.bc-responsive-table, table {
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 1.5rem;
   min-width: 720px; }
-  .bc-responsive-table td, .bc-responsive-table th {
+  .bc-responsive-table td, .bc-responsive-table th, table td, table th {
     padding: 0.75rem 0.375rem;
     text-align: left;
     border-bottom: 1px solid #e0e0e0; }
@@ -3704,6 +3712,8 @@ iframe {
         padding-right: 0; }
         .bc-hero.bc-hero--inpage .bc-hero__body__text p {
           margin-bottom: 0.75rem; }
+          .bc-hero.bc-hero--inpage .bc-hero__body__text p + .bc-button {
+            margin-top: 0.75rem; }
     .bc-hero.bc-hero--inpage .bc-hero__heading {
       margin-bottom: 0.75rem;
       border-bottom: none; }
@@ -4330,9 +4340,6 @@ hr.is-featured {
     margin-bottom: 0.75rem; }
 
 /* Heroes and content features next links */
-.bc-feature-component .bc-feature-component__header {
-  margin-bottom: 1.5rem; }
-
 .bc-feature-component .bc-feature-component__cta .bc-button, .bc-hero .bc-feature-component__cta .bc-button, .bc-feature-component .bc-hero__cta .bc-button, .bc-hero .bc-hero__cta .bc-button {
   margin-top: 0; }
 

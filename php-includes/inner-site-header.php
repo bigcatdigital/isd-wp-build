@@ -100,7 +100,8 @@ if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' &
 if ($innersubtitle !== '') {
  echo "				<h2 class=\"bc-inner-page-header__sub-heading\"> $innersubtitle</h2>";
 }
-if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' && is_array($inner_nav_links)) {
+
+if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== ''&& $inner_nav_title !== null && is_array($inner_nav_links)) {
  echo "				<nav class=\"bc-header-sub-nav\">";
  echo "					<div class=\"bc-header-sub-nav__toggle\"> ";
  echo "						<h3 class=\"bc-header-sub-nav__toggle__label\">$inner_nav_title:</h3> ";
@@ -111,10 +112,10 @@ if ($inner_nav_title !== 'Inner section navigation' && $inner_nav_title !== '' &
  echo "						</a>	";
  echo "					</div>";
  echo "					<ul class=\"bc-section-navigation__list bc-header-sub-nav__list\"> ";
-	foreach ($inner_nav_links as $link_text => $link) {
+	foreach ($inner_nav_links as $link) {
  		echo "				<li class=\"bc-section-navigation__item bc-header-sub-nav__item\">";
-		echo "					<a href=\"$link\" class=\"bc-section-navigation__link bc-icon-link\">";
-		echo "							$link_text";
+		echo "					<a href=\"" . $link['url'] . "\" class=\"bc-section-navigation__link bc-icon-link\">";
+		echo 							$link['title'];
 		echo " 					</a>";
 		echo " 				</li>";
 	}

@@ -14,7 +14,6 @@
 		</header>
 		<article class="bc-feature-component__content">
 		 	<div class="bc-feature-component__content__text-content">
-		 		
 		 		<p>ISD's doors open daily at 8:30am and classes begin at 8:45am.  Classes finish at 2:45pm followed by an optional after school programme 3:00-5:00pm.</p>
 				<p>The school day is structured into six, 45-minute periods with a morning snack break and midday lunch break. Students are taught all subjects through inquiry.</p>
 				<p>Our curriculum framework is guided by six transdisciplinary themes of global significance, explored using knowledge and skills from six subject areas: language, social studies, mathematics, arts, science, physical/social/personal education. This example timetable demonstrates that students take part in four specialist subjects twice weekly: visual arts/drama, music/dance, spanish/english, physical education. They also engage in all other subjects of the curriculum daily through homeroom.</p>

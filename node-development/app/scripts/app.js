@@ -515,7 +515,6 @@
 					$sliderCounter__current.innerHTML = (idx + 1 > 1 && Number.isInteger(opts.groupCells)) ? idx + opts.groupCells : idx + 1; 
 				});	
 			}
-			
 			return $newSlider;
 		}
 		const pageSliders = document.querySelectorAll('.bc-flickty-slider__slider:not(.bc-lightbox-slider__slider)'); 
@@ -729,7 +728,9 @@
 						$nextElWrap.setAttribute('style', '');
 						paddingTop = Number.parseInt(window.getComputedStyle($nextElWrap).getPropertyValue('padding-top'));
 						$nextElWrap.style.paddingTop = paddingTop + $waves.clientHeight + 'px';
-						$nextEl.style.zIndex = '4';
+						console.log(window.getComputedStyle($nextEl).getPropertyValue('z-index'));
+						console.log($nextEl.classList);
+						$el.style.zIndex = parseInt(window.getComputedStyle($nextEl).getPropertyValue('z-index')) + 1;
 					} else {
 						$nextEl.style.paddingTop = $nextEl.classList.contains('bc-breadcrumbs') ? $waves.clientHeight + 'px' : paddingTop + $waves.clientHeight + 'px';
 					}
@@ -741,7 +742,7 @@
 			resizeForWaves();
 		});
 		//Give two col features some padding before and after each set
-		if (document.querySelectorAll('.bc-2-col-full-features')) {
+		if (document.querySelectorAll('.bc-2-col-full-features').length > 0) {
 			const $twoColFeaturesWrap = document.createElement('div');
 			$twoColFeaturesWrap.classList.add('bc-2-col-full-features__wrap');	
 			const twoColFeatures = document.querySelectorAll('.bc-2-col-full-features');

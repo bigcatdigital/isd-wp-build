@@ -37,81 +37,9 @@
 			$header_icon = get_field('header-icon');
 			
 			get_inner_site_header($this_title, '', $section_nav_title, $sub_nav_links, $breadcrumbs, $header_icon); ?>
-			<?php echo do_shortcode('[onecoltextslider id="251"]'); ?>
-			<!-- Community Events -->
-			<section class="bc-feature-component bc-feature-component--slider has-shade-01">   
-				<header class="bc-feature-component__header">
-					<div class="bc-feature-component__content__text-content">
-						<h1>Community Events</h1>
-						<p class="bc-intro-paragraph">We run a series of Community Events throughout the School year which allow parents, teachers and students to meet and find out what&apos;s happening at the School.</p> 
-						<p>For parents this is an excellent opportunity build their network in Dublin and to be involved with academic progess at the School.</p>
-					</div>
-				</header><!-- // .bc-feature-component__header -->
-				<div class="bc-feature-component__content ">
-					<div class="bc-flickty-slider bc-card-slider has-colored-text">
-							<div class="bc-flickty-slider__slider">
-								<div class="bc-card has-image bc-flickty-slider__slide">	
-									<picture class="bc-card__media is-4x3">
-										<img src="<?php echo get_theme_file_uri('/media/parent-workshop.jpg'); ?>" alt="A parent and teacher meeting">
-									</picture>
-									<h2 class="bc-card__heading">Parent Workshop</h2>
-									<p>ISD parents have the opportunity to become more familiar with the IBPYP curriculum through interactive workshops provided by the ISD teaching team. </p>
-
-								</div><!-- // Parent Workshop -->
-								<div class="bc-card has-image bc-flickty-slider__slide">	
-									<picture class="bc-card__media  is-4x3">
-										<img src="<?php echo get_theme_file_uri('/media/exhibition-night.jpg'); ?>" alt="A final year student presenting at Exhibition Night">
-									</picture>
-									<h2 class="bc-card__heading">Exhibition Night</h2>
-									<p>In final year of the Primary Years Programme students have the opportunity to lead their own final inquiry project and present this at The Exhibition.</p>
-								</div><!-- // Parent Workshop -->
-								<div class="bc-card has-image bc-flickty-slider__slide">	
-									<picture class="bc-card__media  is-4x3">
-										<img src="<?php echo get_theme_file_uri('/media/holiday-celebrations.jpg'); ?>" alt="A parent and teacher meeting">
-									</picture>
-									<h2 class="bc-card__heading">Holiday Celebrations</h2>
-									<p>We celebrate a variety of holiday celebrations to help our students become more internationally minded. </p>
-								</div><!-- // Parent Workshop -->
-								<div class="bc-card has-image bc-flickty-slider__slide">	
-									<picture class="bc-card__media  is-4x3">
-										<img src="<?php echo get_theme_file_uri('/media/sports-day.jpg'); ?>" alt="Children during sports day">
-									</picture>
-									<h2 class="bc-card__heading">Sports Day</h2>
-									<p>The annual sports day allows Students take part in activities to showcase athletic abilities, skills gained throughout the year and to have fun!</p>
-								</div><!-- // Parent Workshop -->
-								<div class="bc-card has-image bc-flickty-slider__slide">	
-									<picture class="bc-card__media  is-4x3">
-										<img src="<?php echo get_theme_file_uri('/media/100th-day-of-school.jpg'); ?>" alt="Children together creating the shape of the number 100">
-									</picture>
-									<h2 class="bc-card__heading">100th Day of School</h2>
-									<p>The 100th day of the School year is celebrated by exploring math concepts that can be taught using the number 100.</p>
-								</div><!-- // 100th day of School -->
-								<div class="bc-card has-image bc-flickty-slider__slide">
-									<picture class="bc-card__media  is-4x3">
-										<img src="<?php echo get_theme_file_uri('/media/peace-proms.jpg'); ?>" alt="Children at the annual Peace Proms in Dublin">
-									</picture>
-									<h2 class="bc-card__heading">Peace Proms</h2>
-									<p>Peace Proms is an project for primary schools that gives students the opportunity to sing with a choir of 3,000 children and a full symphony orchestra.</p>
-								</div><!-- // Peace Proms -->
-							</div><!-- // .bc-flickty-slider__slider -->
-							<div class="bc-flickty-slider__controls"> 
-								<a href="javascript:void(0)" class="bc-flickty-slider__prev is-inactive">
-									<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-									</svg>
-								</a>
-								<a href="javascript:void(0)" class="bc-flickty-slider__next">
-									<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-										<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
-									</svg>
-								</a>
-							</div><!-- // .bc-flickty-slider__controls -->
-					</div><!-- // .bc-flickty-slider -->
-				</div><!-- // ..bc-feature-component__content -->
-			</section><!-- // .bc-feature-component Student Experience -->
-
 			<?php 
-				/** End of Unit sharing and Field trips **/
+				echo do_shortcode('[onecoltextslider id="251"]'); 
+				echo do_shortcode('[card-slider id="792"]');
 				echo do_shortcode('[twocolfeature id="562"]'); 
 				echo do_shortcode('[twocolfeature id="563"]'); 
 			?>

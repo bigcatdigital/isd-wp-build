@@ -18,7 +18,7 @@
 					}	
 				}
 			}
-			$parent_title = get_the_title($parent_id);
+			$parent_title = (get_the_title($parent_id)) ? get_the_title($parent_id) : '';
 			if (the_title !== null) {
 				$this_title = get_the_title();
 			}

@@ -64,10 +64,21 @@
 			
 			$urls = array_diff( $urls, array( $emoji_svg_url ) );
 		}
-		
+			
 		return $urls;
 	}
 	// ******************** Clean up WordPress Header END ********************** //
+
+	/** Add CPTs to categories listing page **/
+	
+	$cpts = array('post', 'staffprofile');
+	function query_post_type($query) {
+		if( $query->is_category() ) {
+			$query->set('post_type',$cpts);
+		}
+		return $query;
+	}
+	add_filter('pre_get_posts', 'query_post_type');
 
 	function ISD_build_styles() {
 		wp_enqueue_style('scope-one', '//fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap', NULL, microtime());	

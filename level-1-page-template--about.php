@@ -64,31 +64,10 @@
 					</div>
 				</article><!-- // .bc-feature-component__content -->
 		</section><!-- // .bc-feature-component -->
-		<section class="bc-feature-component has-shade-01">   
-			<header class="bc-feature-component__header">
-				<div class="bc-feature-component__content__text-content">
-					<h1 class="bc-inner-page-content__heading">Our Story</h1>	
-					<p class="bc-feature-component__intro">ISD is the first accredited IB World Primary School in Ireland. Founded in 2007, ISD is very proud of forging the path to demonstrate the demand for, and success in, a progressive education at the primary level.  </p>  
-				</div>
-			</header>
-			<article class="bc-feature-component__content">
-				<div class="bc-feature-component__content__text-content">
-					<div class="bc-media-embed">
-						<div class="bc-media-embed__media">
-							<video controls currentTime=1>
-								<source src="<?php echo get_theme_file_uri('/media/videos/ISD-short-promo-trailer.mp4'); ?>" type="video/mp4">
-
-							</video>
-						</div>
-						<div class="bc-media-embed__caption">The ISD Story</div>
-					</div>
-					<p>Established to expand diversity within the educational offering across Ireland, ISD provides an array of educational choice in a culturally diverse environment. We are co-educational and non-denominational. <a href="<?php echo get_permalink(86) ?>">The curriculum is learner driven</a>, facilitated through inquiry and focused on intercultural understanding, lifelong learning and respect.</p>  
-					<p>Community is maintained as the heart of the school’s mission.  The welcoming, responsive and warm atmosphere of the school provides a home for both local and international families. ISD prides itself on its strong connections with alumni all over the globe.</p>
-				</div>
-			</article>
-		</section><!-- // .bc-inner-page-content Our Story-->
-		<!-- Meet the team -->
 		<?php 
+			
+			wp_reset_postdata();
+			echo do_shortcode('[onecolivdeofeature id="939"]');
 			wp_reset_postdata();
 			$people_query = new WP_Query([
 				'post_type' => 'staffprofile'
@@ -98,7 +77,9 @@
 			if ($people_query->have_posts()) {
 				while($people_query->have_posts()) {
 					$people_query->the_post();
-					if (get_field('profile-image')) { 
+					$pr_image = '';
+					$has_image = '';
+					if (get_field('profile-image') && count(get_field('profile-image'))) { 
 						$pr_image = get_field('profile-image');
 						$has_image = ' has-image ';
 					} else {
@@ -108,7 +89,7 @@
 					$name = get_field('first-name') . ' ' . get_field('last-name');
 					$o = '';
 					$o .= '<div class="bc-column bc-card' . $has_image . 'bc-fade-in-up--is-not-visible">';
-					if ($pr_image) {
+					if ($pr_image && is_array($pr_image)) {
 						$o .= '	<picture class="bc-card__media">';
 						$o .= '		<img src="' . esc_url($pr_image['url']) . '" alt="' . esc_html($pr_image['alt']) . '">'	;
 						$o .= '	</picture>';
@@ -184,28 +165,10 @@
 		<!-- //Meet the Board -->
 		<?php }//end if empty($teachers) ?>
 		<!-- ISD Values -->
-		<section class="bc-feature-component bc-one-col-feature has-brand-darker-background">     
-			<div class="bc-feature-component__content">
-				<div class="bc-feature-component__content__text-content">
-					<h1>Our Values</h1>
-					<p class="bc-feature-component__intro">The <a href="https://www.ibo.org/benefits/learner-profile/">International Baccalaureate (IB) Learner Profile</a> represents a common set of values across all IB World Schools. The Learner Profile provides a long-term vision of education.</p> 
-					<p>At ISD all community members are encouraged to recognise, model and support these attributes.</p>
-					<p>The Learner Profile encourages IB students to become:</p>
-					<ul class="bc-en-dash-list">  
-						<li>Inquirers</li>
-						<li>Knowledgeable</li>
-						<li>Thinkers</li>
-						<li>Communicators</li>
-						<li>Principled</li>
-						<li>Open-minded</li>
-						<li>Caring</li>
-						<li>Risk-takers</li>
-						<li>Balanced</li>
-						<li>Reflective</li>
-					</ul>
-				</div>
-			</div><!-- // .bc-inner-page-content__content -->
-		</section><!-- // .bc-feature-component -->
+		<?php 
+			wp_reset_postdata();
+			echo do_shortcode('[onecolfeature id="930"]');
+		?>
 		<!-- // ISD Values -->
 		<!-- About Dublin -->
 		<section class="bc-feature-component has-shade-01 has-background-svg">

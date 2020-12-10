@@ -33,24 +33,23 @@
 			
 			$section_nav_title = (empty($sub_nav_links)) ? '' : 'More about ' . $parent_title ; 
 			$header_icon = get_field('header-icon', $parent_id);
-			
 			get_inner_site_header($parent_title, $this_title, $section_nav_title, $sub_nav_links, $breadcrumbs, $header_icon); ?> 
-	<section class="bc-feature-component">  
-		<article class="bc-feature-component__content">
-			<div class="bc-gr-feature">
-				<picture class="bc-gr-feature__media">
-					<img src="<?php echo get_theme_file_uri('/media/fair-fun-2x3.jpg') ?>" alt="Support for your transition to Dublin">
-				</picture>
-				<div class="bc-gr-feature__text">
-					<h1 class="bc-inner-page-content__heading">Transition Support</h1>
-					<p class="bc-intro-para">ISD prides itself on its strong sense of community. From your initial expression of interest we provide you with support. We adapt our communication to suit your needs and try to provide support through mother tongues.</p>
-					<p>As a new family, you will receive a comprehensive Dublin Information Pack with resources on a wide range of information. A Welcome Back to School event begins the academic year and settling in parent-teacher conferences take place within one month of the school’s commencement.</p>	
-					<p>Communication is key at ISD. The School App keeps you updated of student work in real time. We maintain an open door policy and welcome the opportunity to meet with you at any stage should you require assistance.</p>			
-				</div>
-			</div><!-- // .bc-feature-component__content__text-content -->
-				
-		</article><!-- // .bc-feature-component__content -->
-	</section><!-- // .bc-inner-page-content -->
+		<section class="bc-feature-component">  
+			<article class="bc-feature-component__content">
+				<div class="bc-gr-feature">
+					<picture class="bc-gr-feature__media">
+						<img src="<?php echo get_theme_file_uri('/media/fair-fun-2x3.jpg') ?>" alt="Support for your transition to Dublin">
+					</picture>
+					<div class="bc-gr-feature__text">
+						<h1 class="bc-inner-page-content__heading">Transition Support</h1>
+						<p class="bc-intro-para">ISD prides itself on its strong sense of community. From your initial expression of interest we provide you with support. We adapt our communication to suit your needs and try to provide support through mother tongues.</p>
+						<p>As a new family, you will receive a comprehensive Dublin Information Pack with resources on a wide range of information. A Welcome Back to School event begins the academic year and settling in parent-teacher conferences take place within one month of the school’s commencement.</p>	
+						<p>Communication is key at ISD. The School App keeps you updated of student work in real time. We maintain an open door policy and welcome the opportunity to meet with you at any stage should you require assistance.</p>			
+					</div>
+				</div><!-- // .bc-feature-component__content__text-content -->
+
+			</article><!-- // .bc-feature-component__content -->
+		</section><!-- // .bc-inner-page-content -->
 	
 	
 	<?php }//end while have_posts()  

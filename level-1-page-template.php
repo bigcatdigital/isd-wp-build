@@ -37,8 +37,10 @@
 			
 			$header_icon = get_field('header-icon');
 			get_inner_site_header($this_title, '', $section_nav_title, $sub_nav_links, $breadcrumbs, $header_icon);
-	
+			
+			/** Content is output here **/
 			the_content();
+			
 		}//end while have_posts()  
 		get_inner_section_nav($section_nav_title, $sub_nav_links);	
 		wp_reset_postdata();

@@ -1,25 +1,48 @@
 <?php
-	/* Template Name: Student Experience - Unit Sharing */
+	/* Template Name: Level 2 page template -- Modula Gallery */
 	include 'php-includes/global-functions.php';
 	get_header();
 ?>
 <body> 
-	<?php get_inner_site_header('Student Experience', 'End of Unit Sharing', 'More About Student Experience', array('End of Unit Sharing' => '' . get_permalink(112) . '', 'Field Trips and Guest Speakers' => '' . get_permalink(136) . ''), ['Homepage' => home_url(), 'Student Experience' => '' . get_permalink(24) . '', 'End of Unit Sharing' => ''], 'pupil-experience-reverse.svg#experience--rev'); ?> 
-	<!-- Main -->
-	<section class="bc-feature-component">     
+	<?php 
+		while (have_posts()) {
+			the_post();
+			$parent_id = $post->post_parent;
+			$sub_nav_links_field;
+			$sub_nav_links = [];
+			if (get_field('sub-navigation-links', $parent_id)) {
+				$sub_nav_links_field = get_field('sub-navigation-links', $parent_id);
+				foreach ($sub_nav_links_field as $linkfield) {
+					if ($linkfield !== null && is_array($linkfield) && strcmp($linkfield['url'], '') !== 0) {
+						array_push($sub_nav_links, $linkfield);	
+					}	
+				}
+			}
+			$parent_title = (get_the_title($parent_id)) ? get_the_title($parent_id) : '';
+			if (the_title !== null) {
+				$this_title = get_the_title();
+			}
+			$breadcrumbs = [
+				'Homepage' => home_url()
+			];
+			$ancestor_ids = get_post_ancestors($post);
+			foreach ($ancestor_ids as $ancestor_id) {
+				$breadcrumbs[get_the_title($ancestor_id)] = get_the_permalink($ancestor_id);
+			}
+			$breadcrumbs[$this_title] = '';
+			
+			$section_nav_title = (empty($sub_nav_links)) ? '' : 'More about ' . $parent_title ; 
+			
+			$header_icon = get_field('header-icon', $parent_id);
+			get_inner_site_header($parent_title, $this_title, $section_nav_title, $sub_nav_links, $breadcrumbs, $header_icon); ?> 
+	<section class="bc-feature-component">  
 		<article class="bc-feature-component__content">
-			<div class="bc-feature-component__content__text-content">
-				<h1 class="bc-inner-page-content__heading">End of Unit Sharings</h1>	
-				<p class="bc-feature-component__intro">See students participate in previous End of Unit Sharing events.</p>
-				<?php while (have_posts()) {
-					the_post(); ?>
-					<?php the_content() ?>
-				<?php } ?>
-			</div>
-			<!-- // .bc-feature-component__content__text-content -->
-		</article><!-- //  .bc-feature-component__content -->
-	</section><!-- // .bc-feature-component -->
-	<!-- // Main -->
+			<div class="bc-feature-component__content__text-content"> 
+						<?php the_content(); ?>
+				</div><!-- // .bc-feature-component__content__text-content -->
+			</article><!-- // .bc-feature-component__content -->
+	</section><!-- // .bc-inner-page-content -->
+	
 	<!-- Lightbox -->
 	<section class="bc-lightbox"> 
 		<a class="bc-lightbox__close">
@@ -27,7 +50,7 @@
 				CLOSE
 			</span>
 			<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-				<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#close-x"></use>  
+				<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg');  ?>#close-x"></use>  
 			</svg>
 			
 		</a>
@@ -42,12 +65,12 @@
 				</div>
 				<a href="" class="bc-flickty-slider__prev is-inactive">
 					<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg');  ?>#carat"></use>  
 					</svg>
 				</a>
 				<a href="" class="bc-flickty-slider__next">
 					<svg version="1.1" class="bc-svg-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg'); ?>#carat"></use>  
+						<use xlink:href="<?php echo get_theme_file_uri('/media/svg/icons/bc-svgs.svg');  ?>#carat"></use>  
 					</svg>
 				</a>
 			</div><!-- // .bc-flickty-slider__controls -->
@@ -63,8 +86,9 @@
 		</div><!-- // .wave-wrap -->
 	</section><!-- // .bc-lightbox -->
 	<!-- // Lightbox -->
-	<?php  
-		get_inner_section_nav('More About Student Experience', array('End of Unit Sharing' => '' . get_permalink(112) . '', 'Field Trips and Guest Speakers' => '' . get_permalink(136) . ''));
-		get_global_CTA();
+	
+	<?php }//end while have_posts()  
+		get_inner_section_nav($section_nav_title, $sub_nav_links);
 		get_footer();
+		get_floating_section_nav(); 
 	?>

@@ -11,9 +11,9 @@
 			<div class="bc-hero__content">
 				<div class="bc-hero__body">
 					<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
-						<h1 class="bc-hero__heading"><?php the_field('hero-title', 18) ?></h1>
+						<h1 class="bc-hero__heading"><?php the_field('hero-title') ?></h1>
 						<div class="bc-hero__body__text__IB">
-							<?php if (get_field('show-world-school-icon', 18)[0] == 'Yes') { ?>
+							<?php if (get_field('show-world-school-icon')[0] == 'Yes') { ?>
 								<img src="<?php echo get_theme_file_uri('/media/ib-world-school-logo-2-colour.png'); ?>" alt="ISD is an International Baccalaureate World School">
 								<p>ISD is an International Baccalaureate World School</p> 
 							<?php } ?>
@@ -22,7 +22,7 @@
 					<img src="<?php echo get_theme_file_uri('/media/kids-carefree--lines.svg'); ?>" alt="Feel the energy at ISD" class="is-kids-lines">		
 				</div><!-- // .bc-hero__body -->
 				<div class="bc-hero__video">
-					<video src="<?php the_field('hero-video', 18); ?>" class="bc-hero__video__video" autoplay muted preload="metadata" playsinline></video>
+					<video src="<?php the_field('hero-video'); ?>" class="bc-hero__video__video" autoplay muted preload="metadata" playsinline></video>
 					<a href="javascript:void(0)" class="bc-hero__video__controls">
 						<span class="bc-hero__video__controls__play-icon">
 							<svg class="bc-svg-icon ">

@@ -36,60 +36,14 @@
 			
 			$header_icon = get_field('header-icon');
 			
-			get_inner_site_header($this_title, '', $section_nav_title, $sub_nav_links, $breadcrumbs, $header_icon); ?>
-			<?php 
-				echo do_shortcode('[onecoltextslider id="251"]'); 
-				echo do_shortcode('[card-slider id="792"]');
-				echo do_shortcode('[twocolfeature id="562"]'); 
-				echo do_shortcode('[twocolfeature id="563"]'); 
-			?>
-
-			<!-- Student committes -->
-			<section class="bc-feature-component has-colored-text">
-				<header class="bc-feature-component__header">
-					<div class="bc-feature-component__content__text-content">
-						<h1 class="bc-inner-page-content__heading">Student Committes</h1>
-						<p class="bc-inner-page-content__intro">Education for us is centred around learner voice, choice &amp; ownership, we call this <em>agency</em>. By promoting agency, we aim for students to be active in their development, to take initiative, express interest, voice opinions and ultimately feel ownership in their learning, both in and outside of school.</p>	
-						<p>One way of encouraging students to work collaboratively and exercise agency is through student committees.</p>
-					</div>
-				</header>
-
-				<div class="bc-feature-component__content"> 
-					<article class="bc-3-columns ">
-						<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
-							<picture class="bc-card__media">
-								<img src="<?php echo get_theme_file_uri('/media/student-council.jpg'); ?>" alt="The Student Council">
-							</picture>
-							<h2 class="bc-card__heading">Student Council</h2> 
-							<p>The Student Council is an opportunity to learn leadership skills and voice ideas to support the running and development of the school</p>
-
-						</div><!-- // The Student Council -->
-						<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
-							<picture class="bc-card__media">
-								<img src="<?php echo get_theme_file_uri('/media/librarian-committee.jpg'); ?>" alt="The ISD Librarian Committee">
-							</picture>
-							<h2 class="bc-card__heading">Libraran Committee</h2>
-							<p>The Librarian Committee keeps the school library a welcoming hub for learning. All of our students have ownership and responsibility for this learning space.</p>
-
-						</div><!-- // Libraran Committee -->
-						<div class="bc-column bc-card has-image bc-fade-in-up--is-not-visible">	
-							<picture class="bc-card__media">
-								<img src="<?php echo get_theme_file_uri('/media/yearbook-committee.jpg'); ?>" alt="The Yearbook Committee">
-							</picture>
-							<h2 class="bc-card__heading">Yearbook Committee</h2>
-							<p>Our yearbook is completely created by the students each year during “Yearbook Week”. </p>
-
-						</div><!-- // Yearbook Committe -->
-					</article><!-- // .bc-3-columns -->
-				</div><!-- // .bc-feature-component__content -->
-			</section><!-- // .bc-feature-component -->
-			<!-- // Student Committees -->
-			<section class="bc-feature-component has-shade-01">   
-				<header class="bc-feature-component__header">
-					<div class="bc-feature-component__content__text-content">
-						<h1 class="bc-feature-component__heading">Global Connections</h1>
-					</div>
-				</header><!-- // .bc-feature-component__header -->
+			get_inner_site_header($this_title, '', $section_nav_title, $sub_nav_links, $breadcrumbs, $header_icon); 
+			the_content(); 
+	?>
+			
+			<section class="bc-feature-component">   
+				<div class="bc-feature-component__content__text-content">
+					<h1 class="bc-feature-component__heading">Global Connections</h1>
+				</div>
 				<div class="bc-feature-component__content">
 					<div class="bc-feature-component__content__text-content"> 
 						<article class="bc-1-columns bc-expandible-block">

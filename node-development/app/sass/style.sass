@@ -43,6 +43,9 @@ figure
 	margin: 0
 iframe
 	border: none
+.bc-feature-component__content__text-content
+	iframe 
+		max-width: 100% !important
 /* Project custom utilities */
 .bc-svg-icon
 	fill: $brand-darker
@@ -1114,7 +1117,6 @@ hr.is-featured
 							background-color: $purple 
 	& .bc-gr-feature__text
 		justify-content: flex-start
-		padding-top: $vertical-unit/2
 .bc-gr-feature
 	&.has-colored-text 
 		&:nth-child(1n)
@@ -1681,6 +1683,12 @@ $waves-height: 50px
 					&:after
 						right: 0%
 	&.bc-card-slider
+		margin-top: $vertical-unit
+		padding-bottom: 0
+		&.is-disabled
+			.bc-flickty-slider__controls
+				display: none;
+				
 		.bc-card
 			width: 100%
 			margin-right: $vertical-unit/2 

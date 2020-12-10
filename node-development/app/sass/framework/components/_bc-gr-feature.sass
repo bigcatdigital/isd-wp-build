@@ -6,7 +6,6 @@
 		display: flex
 		flex-direction: column
 		justify-content: flex-start
-		padding-top: $vertical-unit/2
 		p:last-child 
 			margin-bottom: 0
 		img
@@ -26,6 +25,9 @@
 	& &__intro
 		font-size: 		$text-01
 		font-weight: 	300	
+	& &__media
+		img 
+			width: 100%
 	&:last-of-type
 		margin-bottom: $vertical-unit
 	@media screen and (min-width: $med) 

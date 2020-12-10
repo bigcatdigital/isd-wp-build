@@ -460,12 +460,16 @@
 		}// end if $pageFeatures
 		function initializeFlicktySlider($sliderEl, opts) {
 			const $sliderWrap = $sliderEl.closest('.bc-flickty-slider');
+			if ($sliderWrap.classList.contains('bc-card-slider') && $sliderEl.querySelectorAll('.bc-flickty-slider__slide').length === 3 && opts.groupCells === 3) {
+				$sliderWrap.classList.add('is-disabled');
+			}
 			const $sliderNext = $sliderWrap.querySelector('.bc-flickty-slider__next');
 			const $sliderPrev = $sliderWrap.querySelector('.bc-flickty-slider__prev');
 			$sliderEl.querySelectorAll('.bc-flickty-slider__slide').forEach(($slide) => {
 				$slide.style.height = $slide.clientHeight + 'px';	
 			});
 			const $newSlider = new Flickity($sliderEl, opts);
+			
 			if ($newSlider.selectedIndex === 0) {
 				$sliderPrev.classList.add('is-inactive');
 				$sliderNext.classList.remove('is-inactive');

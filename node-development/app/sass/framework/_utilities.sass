@@ -55,10 +55,16 @@
 		width: 100%
 		height: 100%
 	transition: opacity 480ms ease-out
+	&--pdf
+		@extend .bc-responsive-embed
+		position: relative
+		padding-top: 0
+		iframe
+			position: static
 	&.is-not-loaded
 		opacity: 0
 @media screen and (min-width: 600px)
-	.bc-responsive-embed
+	.bc-responsive-embed:not(.bc-responsive-embed--pdf)
 		padding-top: (9/16 * 100%)
 	
 //Button

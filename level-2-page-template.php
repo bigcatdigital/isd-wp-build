@@ -41,22 +41,6 @@
 						<?php the_content(); ?>
 				</div><!-- // .bc-feature-component__content__text-content -->
 			</article><!-- // .bc-feature-component__content -->
-		<?php wp_reset_postdata();
-			
-			if (get_field('content-shortcodes')) { 
-				$shortcodes = get_field('content-shortcodes');
-				$pattern = get_shortcode_regex();
-				preg_match_all('/' . $pattern . '/s', $shortcodes, $matches);
-				foreach ($matches[0] as $shortcode) {
-					if (do_shortcode($shortcode) === null) {
-						continue;
-					} else {
-						echo do_shortcode($shortcode);	
-					}	
-				}
-			}//end if 'content-shortcodes'
-			wp_reset_postdata();
-		?>
 	</section><!-- // .bc-inner-page-content -->
 	
 	

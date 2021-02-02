@@ -1,6 +1,5 @@
 <?php
 	if (get_field('show-show-to-top') == 'yes') { 
-	echo get_field('show-show-to-top');
 ?>
 	<section class="bc-floating-widget  ">
 		<a href="javascript:void(0)" class="bc-to-page-top">

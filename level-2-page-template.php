@@ -23,7 +23,7 @@
 				$this_title = get_the_title();
 			}
 			$breadcrumbs = [
-				'Homepage' => home_url()
+				'Homepage' => home_url() 
 			];
 			$ancestor_ids = get_post_ancestors($post);
 			foreach ($ancestor_ids as $ancestor_id) {

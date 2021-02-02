@@ -37,7 +37,7 @@
 			$role = (get_field('profile-role')) ? get_field('profile-role') : '' ;
 			$intro = (get_field('profile-intro')) ? get_field('profile-intro') : '' ;
 			$body = (get_field('profile-body')) ? get_field('profile-body') : '' ;
-	?>l
+	?>
 	<section class="bc-feature-component">     
 		<article class="bc-feature-component__content">
 			<div class="bc-gr-feature isd-staff-profile">

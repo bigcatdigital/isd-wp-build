@@ -5,33 +5,16 @@
 	padding-top: 		$vertical-unit * 3.5
 	padding-bottom: $vertical-unit * 3.5
 .bc-feature-component
+	
 	& &__content
 		margin-bottom: 0
 	&.bc-2-col-full-features
 		padding-top: 		0
 		padding-bottom: 0
 		margin-bottom: $vertical-unit * 3
-		&__image
-			picture
-				display: flex
-				height: 100%
-				img
-					width: 100%
-					height: 100%
-					object-fit: cover
-					object-position: center
-		&__text
-			display: flex
-			flex-direction: column
-			justify-content: center
-			align-items: flex-start
-			padding-top: 		$vertical-unit
-			padding-bottom: $vertical-unit
-			a, .bc-button
-				flex: 0 1 auto 
 		.bc-button 
 			margin-top: 0.75rem
-	
+		
 		&:nth-of-type(odd)
 			@media screen and (min-width: 860px)
 				.bc-feature-component__content
@@ -41,8 +24,6 @@
 						order: 1
 		&:last-child
 			margin-bottom: 0
-.bc-feature-component
-	&.bc-2-col-full-features
 		@each $name, $color in $colors	
 			$color-in-use: nth($color, 1)
 			&.is-#{$name}
@@ -51,6 +32,27 @@
 				.bc-svg-icon
 					fill: $color-in-use 
 		
+.bc-2-col-full-feature 
+	
+	& &__image
+		picture
+			display: flex
+			height: 100%
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				object-position: center
+	&__text
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		padding-top: 		$vertical-unit
+		padding-bottom: $vertical-unit
+		a, .bc-button
+			flex: 0 1 auto 
+			
 @media screen and (min-width: 860px)
 	.bc-feature-component
 		&.bc-2-col-full-features

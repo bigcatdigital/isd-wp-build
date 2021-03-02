@@ -48,8 +48,7 @@
 			get_global_CTA();	
 		}
 		get_footer();
-		if (get_field('show-show-to-top') && get_field('show-show-to-top') === 'yes') {
-			
+		if (get_field('show-show-to-top') && get_field('show-show-to-top') === 'yes') {	
 			get_floating_section_nav(); 	
 		}
 		wp_reset_postdata();

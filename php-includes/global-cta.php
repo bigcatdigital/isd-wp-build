@@ -1,13 +1,14 @@
 <?php
  	wp_reset_postdata();
-	if (get_field('show-feature-cta') === 'yes') {
+	
+	
 	$featureCTAs = new WP_Query([
 		'post_type' => 'feature-cta',
 		'post_count' => 1
 	]); 
 	while ($featureCTAs->have_posts()) {
-		$featureCTAs->the_post() ?>
-		<section id="global-cta" class="bc-feature-component bc-feature-component bc-cta-feature has-high-chroma">
+	$featureCTAs->the_post() ?>
+			<section id="global-cta" class="bc-feature-component bc-feature-component bc-cta-feature has-high-chroma">
 			<div class="bc-elipses">
 				<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280">
 					<title>Elipses</title>
@@ -38,7 +39,7 @@
 					</svg>
 				</h1>
 		 	<?php if (get_field('content-intro-leader-text')) { 
-			$intro_leader = get_field('content-intro-leader-text'); ?>
+		$intro_leader = get_field('content-intro-leader-text'); ?>
 				<p class="bc-feature-component__intro"><?php echo $intro_leader['content-intro-first-para']; ?></p>
 				<?php if ($intro_leader['content-intro-second-para']) { ?>
 		 		<p><?php echo $intro_leader['content-intro-first-para']; ?></p>	
@@ -71,7 +72,6 @@
 		 </div>
 		</section><!-- // .bc-cta-component -->
 			<?php 
-		}//while $featureCTAs->have_posts()
-	} //end if 'show-feature-cta'
+	}//while $featureCTAs->have_posts()
 wp_reset_postdata(); ?>
 			

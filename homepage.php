@@ -156,11 +156,7 @@
 	while (have_posts()) {
 		the_post();
 		the_content(); 
-		if (get_field('show-feature-cta') !== 'no') {
-			get_global_CTA();	
-		}
+		get_global_CTA();
 		get_footer();
-		if (get_field('show-show-to-top') === 'yes') {
-			get_floating_section_nav(); 	
-		}
+		get_floating_section_nav(); 	
 	}//end while have_posts() ?>

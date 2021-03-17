@@ -103,10 +103,15 @@
 .bc-en-dash-list 
 	display: grid
 	grid-template-rows: auto
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) 
+	row-gap: $vertical-unit/4
+	column-gap: $gutter/2
+	> li
+		color: $brand-secondary
 	margin: 0
 	margin-left: $gutter 
 	padding-left: 15px
+	font-weight: 500
 	li
 		list-style: none
 		position: relative

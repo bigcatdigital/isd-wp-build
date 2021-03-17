@@ -1,6 +1,8 @@
 <?php 
+	/**
+ 	* The template for displaying 404 pages (Not Found)
+	*/
  wp_reset_postdata();
-	
 	
 	$site_headers = new WP_Query([
 		'post_type' => 'site-header',
@@ -8,7 +10,6 @@
 	]);  
  while ($site_headers->have_posts()) {
 	 $site_headers->the_post(); ?>
-	 
 	 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 	 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
 	 	<defs>

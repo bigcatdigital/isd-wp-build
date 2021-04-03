@@ -117,7 +117,7 @@
 				criticalAsync(recursiveFileSearch(process.cwd() + '/' +sourcePath, '.html'), criticalOptions);	
 			} catch (err) {
 				console.log(err.message);
-				(debug) ? console.error(e.stack) : false ;
+				(debug) ? console.error(err.stack) : false ;
 			}
 			
 		} else {
@@ -137,6 +137,8 @@
 	*/
 	function recursiveFileSearch(sourcePath, extn) {
 		let filesArray = [];
+		console.log(`Recursive file search`);
+		console.log(`Source path: ${sourcePath} extn: ${extn}`);
 		recursiveReadDirs(sourcePath);
 		
 		/* Does the recursive search */
@@ -173,7 +175,7 @@
 		}
 		const startSrc = criticalOptions.src;
 		for (let $i = 0; $i < files.length; $i++) {
-			console.log(`Critical on file ${$i} of ${files.length}`);
+			console.log(`Critical on file ${$i} of ${files.length} file: ${files[$i]}`);
 			let htmlFile = files[$i];
 			htmlFile = htmlFile.slice(htmlFile.indexOf(startSrc));
 			options.src = htmlFile;

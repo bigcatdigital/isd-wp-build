@@ -3798,7 +3798,7 @@ iframe {
         .bc-card--person--featured .bc-card__heading, .bc-two-col-card--person--featured .bc-card__heading {
           font-size: 1.3195rem; } }
 
-.has-colored-text .bc-card:nth-child(1n) .bc-card__heading, .has-colored-text .bc-card:nth-child(1n) .bc-card__cta a {
+.has-colored-text .bc-card:nth-child(1n) .bc-card__heading, .has-colored-text .bc-card:nth-child(1n) .bc-card__cta a, .has-colored-text .bc-card:nth-child(1n) a {
   color: #3B857E; }
 
 .has-colored-text .bc-card:nth-child(1n) .bc-card__heading {
@@ -3807,7 +3807,7 @@ iframe {
 .has-colored-text .bc-card:nth-child(1n) .bc-svg-icon {
   fill: #3B857E; }
 
-.has-colored-text .bc-card:nth-child(2n) .bc-card__heading, .has-colored-text .bc-card:nth-child(2n) .bc-card__cta a {
+.has-colored-text .bc-card:nth-child(2n) .bc-card__heading, .has-colored-text .bc-card:nth-child(2n) .bc-card__cta a, .has-colored-text .bc-card:nth-child(2n) a {
   color: #EC1C24; }
 
 .has-colored-text .bc-card:nth-child(2n) .bc-card__heading {
@@ -3816,7 +3816,7 @@ iframe {
 .has-colored-text .bc-card:nth-child(2n) .bc-svg-icon {
   fill: #EC1C24; }
 
-.has-colored-text .bc-card:nth-child(3n) .bc-card__heading, .has-colored-text .bc-card:nth-child(3n) .bc-card__cta a {
+.has-colored-text .bc-card:nth-child(3n) .bc-card__heading, .has-colored-text .bc-card:nth-child(3n) .bc-card__cta a, .has-colored-text .bc-card:nth-child(3n) a {
   color: #F6921E; }
 
 .has-colored-text .bc-card:nth-child(3n) .bc-card__heading {
@@ -3825,7 +3825,7 @@ iframe {
 .has-colored-text .bc-card:nth-child(3n) .bc-svg-icon {
   fill: #F6921E; }
 
-.has-colored-text .bc-card:nth-child(4n) .bc-card__heading, .has-colored-text .bc-card:nth-child(4n) .bc-card__cta a {
+.has-colored-text .bc-card:nth-child(4n) .bc-card__heading, .has-colored-text .bc-card:nth-child(4n) .bc-card__cta a, .has-colored-text .bc-card:nth-child(4n) a {
   color: #651A7B; }
 
 .has-colored-text .bc-card:nth-child(4n) .bc-card__heading {
@@ -5506,5 +5506,3 @@ hr.is-featured {
 
 .modula .modula-item.effect-pufrobo .jtg-title {
   font-size: 0.8706rem; }
-
-/*# sourceMappingURL=style.css.map */

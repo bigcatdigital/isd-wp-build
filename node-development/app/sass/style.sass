@@ -281,7 +281,7 @@ iframe
 		&__text
 			z-index: 5
 			background-color: $brand-primary
-			padding: $vertical-unit $gutter/2
+			padding: $vertical-unit
 			&__IB
 				display: flex
 				align-items: center
@@ -353,14 +353,14 @@ iframe
 			margin-bottom: $vertical-unit/2
 			border-bottom: none
 		.bc-hero__tagline
-			margin-bottom: $vertical-unit/2
+			margin-bottom: $vertical-unit/2 
 		.bc-hero__cta
 			margin-bottom: 0
 		
 	&.has-waves:not(.bc-hero--inpage)
 		height: auto
 		.bc-hero__content
-			height: 100vh
+			flex: 1 1 100vh
 		.wave-wrap
 			svg
 				.isd-wave
@@ -1778,7 +1778,7 @@ $waves-height: 50px
 	transition: scale 460ms ease-in-out 
 .modula .modula-item:hover img, .modula .modula-items .modula-item.tg-loaded:hover img.pic
 	opacity: 1 !important
-	transform: scale(1.1) 
+	transform: scale(1.1)
 .modula .modula-items .modula-item .figc
 	display: flex
 	align-items: flex-end

@@ -101,7 +101,7 @@ html {
 
 body {
   font-size: 100%;
-  line-height: 1.5; }
+  line-height: 1.6; }
 
 h1, h2, h3, h4, h5 {
   color: #303030;
@@ -132,7 +132,7 @@ h5 {
 
 p {
   color: #303030;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1.5rem; }
 
@@ -177,7 +177,7 @@ figcaption {
   .bc-icon-link--featured {
     font-size: 1.1487rem; }
     .bc-icon-link--featured .bc-svg-icon {
-      max-height: 1.72305rem; }
+      max-height: 1.83792rem; }
     .bc-icon-link--featured:hover, .bc-icon-link--featured:active, .bc-icon-link--featured:focus {
       background-color: transparent;
       text-decoration: underline; }
@@ -1804,11 +1804,7 @@ figcaption {
     .bc-hero .bc-hero__video__controls:hover, .bc-hero .bc-hero__video__controls:active, .bc-hero .bc-hero__video__controls:focus, .bc-hero--inpage .bc-hero__video__controls:hover, .bc-hero--inpage .bc-hero__video__controls:active, .bc-hero--inpage .bc-hero__video__controls:focus, .bc-hero .bc-hero--inpage__video__controls:hover, .bc-hero .bc-hero--inpage__video__controls:active, .bc-hero .bc-hero--inpage__video__controls:focus, .bc-hero--inpage .bc-hero--inpage__video__controls:hover, .bc-hero--inpage .bc-hero--inpage__video__controls:active, .bc-hero--inpage .bc-hero--inpage__video__controls:focus {
       opacity: 1; }
     .bc-hero .bc-hero__video__controls__text, .bc-hero--inpage .bc-hero__video__controls__text, .bc-hero .bc-hero--inpage__video__controls__text, .bc-hero--inpage .bc-hero--inpage__video__controls__text {
-      font-size: 1rem;
-      margin-top: 0.6rem; }
-    .bc-hero .bc-hero__video__controls__play-icon .bc-svg-icon, .bc-hero .bc-hero__video__controls__pause-icon .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls__play-icon .bc-svg-icon, .bc-hero--inpage .bc-hero__video__controls__pause-icon .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls__play-icon .bc-svg-icon, .bc-hero .bc-hero--inpage__video__controls__pause-icon .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__play-icon .bc-svg-icon, .bc-hero--inpage .bc-hero--inpage__video__controls__pause-icon .bc-svg-icon {
-      max-width: 2.75rem;
-      max-height: 2.75rem; } }
+      margin-top: 0.6rem; } }
 
 .bc-site-header {
   position: relative;
@@ -3616,7 +3612,7 @@ iframe {
     .bc-hero .bc-hero__body__text {
       z-index: 5;
       background-color: #017CC0;
-      padding: 1.5rem 0.75rem; }
+      padding: 1.5rem; }
       .bc-hero .bc-hero__body__text__IB {
         display: flex;
         align-items: center;
@@ -3690,7 +3686,7 @@ iframe {
   .bc-hero.has-waves:not(.bc-hero--inpage) {
     height: auto; }
     .bc-hero.has-waves:not(.bc-hero--inpage) .bc-hero__content {
-      height: 100vh; }
+      flex: 1 1 100vh; }
     .bc-hero.has-waves:not(.bc-hero--inpage) .wave-wrap svg .isd-wave {
       fill: #02659B; }
   @media screen and (min-width: 768px) and (orientation: portrait) {
@@ -4419,7 +4415,7 @@ hr.is-featured {
       align-items: center;
       padding: 0.3rem 0.5rem;
       padding-left: 5.2rem;
-      padding-top: calc((0.8706rem * 1.5) + 0.125rem);
+      padding-top: calc((0.8706rem * 1.6) + 0.125rem);
       overflow: hidden; }
       .bc-expandible-block__expander__button__text .inactive-text, .bc-expandible-block__expander__button__text .active-text {
         width: 100%;
@@ -4566,7 +4562,7 @@ hr.is-featured {
     .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-icon-link--featured, .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-icon-link--featured {
       font-size: 1.5157rem; }
       .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-icon-link--featured .bc-svg-icon, .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-icon-link--featured .bc-svg-icon {
-        max-height: 2.27355rem;
+        max-height: 2.42512rem;
         margin-left: 0.75rem; }
     .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-button, .bc-feature-component.bc-cta-feature .bc-feature-component__cta .bc-button {
       background-color: #CA1622;

@@ -109,7 +109,7 @@
     "flickity": "^2.2.1",
     "gsap": "^3.6.0",
     "live-server": "^1.2.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^9.0.0",
     "npm-watch": "^0.6.0",
     "postcss": "^8.2.10",
     "postcss-cli": "^6.1.3",
